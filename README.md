@@ -49,9 +49,9 @@ consistency:
 
 ### Download Unity
 
-[Download Unity 2022.3.17](https://unity.com/releases/editor/whats-new/2022.3.17)
+[Download Unity 2022.3.22](https://unity.com/releases/editor/whats-new/2022.3.22)
 
-**Please** assure you are using 2022.3.17
+**Please** assure you are using 2022.3.22
 
 ### Configure Unity
 
