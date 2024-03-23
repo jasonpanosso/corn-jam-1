@@ -4,22 +4,23 @@ Oh we jamming
 
 ## Environment setup
 
-### Install Dotnet
-
-[Download Dotnet](https://dotnet.microsoft.com/en-us/download/dotnet)
-
-I had to install the 6.0, 7.0(maybe?), AND 8.0 runtimes + SDKs for all of the
-tooling to work correctly. Absolutely insane & janky ecosystem by the biggest
-company in the world :)
-
-Note: You do not need the ASP.NET, nor .NET Desktop runtimes. Only the SDKs +
-the standard .NET runtimes.
-
 ### Install Git LFS
 
 [Install Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
 
 Verify Git LFS is working with `git lfs install` before cloning this repo
+
+### Install Dotnet
+
+Note: Not necessary if you are using Visual Studio, or VS Code
+
+[Download Dotnet](https://dotnet.microsoft.com/en-us/download/dotnet)
+
+I had to install the 6.0, 7.0, AND 8.0 runtimes + SDKs for all of the
+tooling to work correctly.
+
+Note: You do not need the ASP.NET, nor .NET Desktop runtimes. Only the SDKs +
+the standard .NET runtimes.
 
 ### Editor Setup
 
@@ -68,11 +69,9 @@ the `External Script Editor` option.
 
 ## Contribution notes
 
-- Do not use your file explorer, or IDE/editor to move ANY asset in the project.
-  This includes C# files. Unity tracks these files with unique IDs, and if you
-  move them, it will break the IDs and introduce bugs
-- Nullable reference types are enabled, you must explicitly annotate when a
-  reference could be null or else the LSP will be mad.
-- Please god do not use visual scripting
+- Do not use your file explorer, or IDE to move ANY asset in the project.
+  This includes C# files. Unity tracks these files via unique IDs. In order to
+  keep these IDs up to date and accurate, you MUST move the file within the
+  Unity file explorer.
 - We are using Git LFS, and I believe we only get 1gb of storage for free.
   Please message Jason if you are pushing large files! :)
