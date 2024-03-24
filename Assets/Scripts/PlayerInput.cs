@@ -3,17 +3,18 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public event Action<float> OnMove = delegate { };
-    public event Action OnJump = delegate { };
+    public event Action<float> OnMoveInput = delegate { };
+    public event Action OnJumpInput = delegate { };
 
     private void Update()
     {
-        OnMove.Invoke(Input.GetAxis("Horizontal"));
+        // TODO: this is clunky; it just fires every frame until we figure out
+        // how movement should work. Not setting up something intelligent rn.
+        float moveHorizontal = GetHorizontalInput();
+        OnMoveInput.Invoke(moveHorizontal);
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            OnJump.Invoke();
-        }
+        if (GetJumpInput())
+            OnJumpInput.Invoke();
     }
 
     public float GetHorizontalInput()

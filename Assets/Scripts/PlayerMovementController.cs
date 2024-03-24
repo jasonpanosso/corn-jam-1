@@ -1,18 +1,19 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
-public class PlayerCharacterController : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 3f;
+    public float jumpForce = 6f;
 
     [SerializeField]
-    private ContactFilter2D ContactFilter;
+    private LayerMask groundLayer = 1 << 3;
+    private ContactFilter2D GroundedContactFilter = new();
 
     private Rigidbody2D rb;
     private PlayerInput playerInput;
 
-    public bool IsGrounded => rb.IsTouching(ContactFilter);
+    public bool IsGrounded => rb.IsTouching(GroundedContactFilter);
 
     private void HandleMove(float moveInput)
     {
@@ -31,17 +32,19 @@ public class PlayerCharacterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
+
+        GroundedContactFilter.SetLayerMask(groundLayer);
     }
 
     private void OnEnable()
     {
-        playerInput.OnMove += HandleMove;
-        playerInput.OnJump += HandleJump;
+        playerInput.OnMoveInput += HandleMove;
+        playerInput.OnJumpInput += HandleJump;
     }
 
     private void OnDisable()
     {
-        playerInput.OnMove -= HandleMove;
-        playerInput.OnJump -= HandleJump;
+        playerInput.OnMoveInput -= HandleMove;
+        playerInput.OnJumpInput -= HandleJump;
     }
 }
