@@ -1,0 +1,5390 @@
+fileFormatVersion: 2
+guid: 8ae207225277c4f21aa7ccbca26e480a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 8
+  _sprites:
+  - name: Caverns_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 425624913f50b73c49353148559166fa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 8d22705a61ff84eb8b69bd0a70f98ef3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 0cb6563a5f08c2a5e91bc362972075d5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 87954e5d91041fbe8b8a6882b93272dc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 248
+      width: 8
+      height: 8
+    spriteID: edc8ffa3012ff6b5da655b64b9e9a72b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 67d6524709eeef05c9ed61cb3c10efad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 7398fe5847d72c22e85aa28215940f20
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 90edfabf5d537bac89ffcc7b1b296f73
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 0dd5c22bddfc641c29ad4a11d81a4429
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 248
+      width: 8
+      height: 8
+    spriteID: 8cca652487bb995b3939ad28c8205253
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 248
+      width: 8
+      height: 8
+    spriteID: c08d2e2c359f8dab093a8cce7ede4e1f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 248
+      width: 8
+      height: 8
+    spriteID: f6962152ffe1d785382e001f152ad572
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 4cee2b19be0988123ac7c67d5f309ed1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 24a0b2b140ec14e7b8a2a7acade69df9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 97e13ecdf0ad2aca2a19597b4b69e63e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 67c4ab72c28927d91a615768d6be9311
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 0ccc514e69b9fadec9c5543ca95a9fd1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 92910c75c6b4226c88a4e6f2a0feb6ff
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 240
+      width: 8
+      height: 8
+    spriteID: f98a538aedfe89c7f84dbf125cc78418
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 32d4c348564a16f3aa657c0c3e4bba20
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 0c4b8946ab678e65b8e066ca8cbb533f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 240
+      width: 8
+      height: 8
+    spriteID: adf2aa2539ed2e742b6986bdc6d9dd58
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 2f6aa0686e6ed47dbb32b084ba1e4512
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 240
+      width: 8
+      height: 8
+    spriteID: 54eeab2f22c587a4dacbb7b50d754add
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 7e24948f088885072bcc046fd3f15a90
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 49a394bb5f9b1ef07a3c63ffb877b4ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 232
+      width: 8
+      height: 8
+    spriteID: c4b642c2c21580e21b48a6768f05812e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 232
+      width: 8
+      height: 8
+    spriteID: cf9396dec4494818187c8f2b6fed7429
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 232
+      width: 8
+      height: 8
+    spriteID: b93b5463be766c39d9c7477ebeeb86b4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 6750aa057b9c3f0f0a3d724b92cb6bab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 232
+      width: 8
+      height: 8
+    spriteID: cbf973abc3747e4d39437de54dc9f815
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 623234755505379b48a95ee5034c1a37
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 17385bd3a6d876e1891002c68e8cdd11
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 9af62e0820eacc2a283588ec3385de13
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 086e1e2a060fa95629ba209e1ca5572b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 232
+      width: 8
+      height: 8
+    spriteID: 9ef7d0f189596ada581e00156ba1bb94
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 8
+      height: 8
+    spriteID: f56dd3d353e8ea4acab50f2fe218f036
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 224
+      width: 8
+      height: 8
+    spriteID: e3c2350b723cc506bbfd70014aa2e1f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 224
+      width: 8
+      height: 8
+    spriteID: 5a5c50629bf76c0ad90941e81b0c1a07
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 224
+      width: 8
+      height: 8
+    spriteID: deb018873f8892be3bf7191c8fb8b4fb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 224
+      width: 8
+      height: 8
+    spriteID: f9125efc0864c286194ce0223af99f1c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 224
+      width: 8
+      height: 8
+    spriteID: ad7b6f722ede4ed23888c99745405947
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 224
+      width: 8
+      height: 8
+    spriteID: b752f46edaf4ecce7ac1d81762106eda
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 224
+      width: 8
+      height: 8
+    spriteID: c1d8d1235df103ca0944345bf2c81382
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 224
+      width: 8
+      height: 8
+    spriteID: 8519a96f9e6f87ad2be40b57f94e441d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 224
+      width: 8
+      height: 8
+    spriteID: ebfb673f780d4aeefb4d4991ecba20fe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 224
+      width: 8
+      height: 8
+    spriteID: fd27fc9a98fa7216eb8bfaede3429042
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 224
+      width: 8
+      height: 8
+    spriteID: ae3f286f451558aa2b46e4901799b046
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 9bb27f582a5c8750b8a596f76c481974
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 216
+      width: 8
+      height: 8
+    spriteID: e65c70b797a4198b2a4ef1d83f6f3664
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 4e76a030e772af1379be6b34c795b3a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 8982e5a4a773f7aa1bb916e58f9d15e9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 24830f5216f17667f8cbb842f3f35043
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 5d3239091bab14ed2bc0157a0e320bab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 8e23433bd0283706da42a6f4341aef47
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 64e7f46686bf0da939de7848970b2f50
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 216
+      width: 8
+      height: 8
+    spriteID: fc342581610f445089a601ebb1471fe2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 216
+      width: 8
+      height: 8
+    spriteID: 1360734a1e691d6898a6aabbb808e5e1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 216
+      width: 8
+      height: 8
+    spriteID: ffb044208c3f82806a82830e2f6b88a0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 216
+      width: 8
+      height: 8
+    spriteID: faf51b822cf584765963416438724690
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 72d4a8babd1a91e839e8e596484ee214
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 3fa7438b753006bfeb423d664a6efe05
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 8ade71b46252690be951b9f4f400e606
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 74bd0e498e36e5598b1acf20015b0821
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 4ee68208a2c1f06e2b69f1104fb80261
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 208
+      width: 8
+      height: 8
+    spriteID: a989cb5db402ccb46878996bac5c4f4a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 681edb59205495fb8924485c7751c57c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 208
+      width: 8
+      height: 8
+    spriteID: bcd679dbe2e5398c6a554ef200a04380
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 8f7cbce012a8bfc5db9abb150cdc779f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 11123d9a88c19f92b8ca185a6bc6fd2e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 5520432d7c958c3318a418b9b5f32228
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 208
+      width: 8
+      height: 8
+    spriteID: 0e3a670f84ad1018bab53401fd668038
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 200
+      width: 8
+      height: 8
+    spriteID: dfcb426cbede8794caf7ae34097d4138
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 200
+      width: 8
+      height: 8
+    spriteID: b505430630efdaee5abeaaef77b072bd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 200
+      width: 8
+      height: 8
+    spriteID: 0ce23591f069f8898b7b7d1364e7842d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 200
+      width: 8
+      height: 8
+    spriteID: 1ef6de25d54b636b49fb0da360c4bfba
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 200
+      width: 8
+      height: 8
+    spriteID: ffca05294b677c19781525e2773b8bf5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 200
+      width: 8
+      height: 8
+    spriteID: b2bd8984a567042ecbfd02e540cf994c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 200
+      width: 8
+      height: 8
+    spriteID: f36265a498b754ba2ac80c3f2c732b8f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 200
+      width: 8
+      height: 8
+    spriteID: 5319e230aeb373382b413647b11360d1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 200
+      width: 8
+      height: 8
+    spriteID: 7bca6da6c6224005a9c68ac3dfc0a001
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 200
+      width: 8
+      height: 8
+    spriteID: f59a66fcd95e00ebbb283b1c4531e918
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 200
+      width: 8
+      height: 8
+    spriteID: 96e784b70905dd2caa2b02f99e6155ee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 200
+      width: 8
+      height: 8
+    spriteID: c7686d6d6e517aefabf5a846c1fee222
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 34869a0459d47668ca1a220bbfee125e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 192
+      width: 8
+      height: 8
+    spriteID: c6961cee4ca967257ac7ef7f592024d1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 8528d28f3278b6e1d8bd47a1c742f271
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 38b54838f468491c381848d7bc646e31
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 77f5f12b5811cd7d4a81f0e8037ceffa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 192
+      width: 8
+      height: 8
+    spriteID: f51d257e904a530d3984d0625acc39f7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 1223a3e030ac2537aa9535f310c444ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 2d6c031052617d4ec9d9ce14465f43db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 642b5ba3b0def866bb89ea34f7adb295
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 192
+      width: 8
+      height: 8
+    spriteID: e947b9ec3ff3567d4ae0930eeb8c6c7e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 192
+      width: 8
+      height: 8
+    spriteID: c5f6ce2f55c488c0e8d2ee425129cb5f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 192
+      width: 8
+      height: 8
+    spriteID: 1759bb467579f1a27894ccf719051fe6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 184
+      width: 8
+      height: 8
+    spriteID: a0cf09d43ba0b6eca807c487c80bce74
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 7d4665d8c59defb19863920005e83622
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 7162d2c17f824f1feb1d428b4e9db068
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 184
+      width: 8
+      height: 8
+    spriteID: caa4363f7a77083a88be7bd33e1dba5e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 0d1d47c06b2a9eca881f68e223919159
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 010a94f3d59445edeabe547cdbaa8ca9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 4d0d3f8e63271949191e36c72a13123a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 2602225d238fd3acd85e339a86d75330
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 184
+      width: 8
+      height: 8
+    spriteID: c5c60d7ccf0e902edbc6224dc25945c7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 674a2a83e9da105978e73825ecc76aa8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 8f8fa07aadcdfff34ace7c67e3eae3fc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 184
+      width: 8
+      height: 8
+    spriteID: 912430f3f205bdefc952437ba92214d8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 176
+      width: 8
+      height: 8
+    spriteID: 1aaa778a8adc90c80b5030a98d1b2de1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 176
+      width: 8
+      height: 8
+    spriteID: 10235eb085ad349c58a6deb41de4a30c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 176
+      width: 8
+      height: 8
+    spriteID: de91d62e2ee8b25308776b511aff8e70
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 176
+      width: 8
+      height: 8
+    spriteID: 0cc20cd840ff5f4edaa9d5240f078020
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 176
+      width: 8
+      height: 8
+    spriteID: d5af22e82493465c1b9504b699b2e8a2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 176
+      width: 8
+      height: 8
+    spriteID: 78cc7e3b09d5da755890b4e36ff32c56
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 176
+      width: 8
+      height: 8
+    spriteID: d344cc8e965c0b5dbbff7d3b8bb5e97c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 176
+      width: 8
+      height: 8
+    spriteID: ad209fd418d113e1b9317121ab9c1672
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 176
+      width: 8
+      height: 8
+    spriteID: e50fb02ab8c20443398636e9c7e4667b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 176
+      width: 8
+      height: 8
+    spriteID: ec1d21a4378830f70b455aaf6f0f53f7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 176
+      width: 8
+      height: 8
+    spriteID: f72c573a2768650cc9c40801a7cb2e0c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 176
+      width: 8
+      height: 8
+    spriteID: 328f98dc6f29899b5bfcc6baec7b8be7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 168
+      width: 8
+      height: 8
+    spriteID: ad0127cf082200182b44cdc40ec8167f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 616a9fb9bc38d6b108bac35bbc731ce4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 311ee58180a4a5f68888e6f310f96587
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 16fbfe79e9da85a259c4f3164e97d5da
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 99fc3a74eaea878a0920eb33adfca657
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 9e91cec240fcc8147abe1e28e30f6d1a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 168
+      width: 8
+      height: 8
+    spriteID: cb699bde0e09a6ac996eb574c09ba115
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 5e9c730739ab44eeca4e1b67fa1e7e2f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 7f6615c3cc3da07f58dd76e0fffa043c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 168
+      width: 8
+      height: 8
+    spriteID: ebf0194735624a5d7964b15ec1232e32
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 12522ffd236109b29a6c48417f464c62
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 168
+      width: 8
+      height: 8
+    spriteID: 32691586d9c3bd3c18b1851f1ca3eb4f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 160
+      width: 8
+      height: 8
+    spriteID: bfa4ab015a3af9a04a7382b32ba654e3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 3121a6cf0b40f1b00a384f1769761f46
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 19b17a8c1bcbe6b3fb3d05ee434d2710
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 81c39f1f2ad9c3fb19c6997d261ddd04
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 160
+      width: 8
+      height: 8
+    spriteID: d9c3cf87daf667326b0759f37a0ed619
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_137
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 3ce3ce8047337789c82f1fc0da34762f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 401641b918d09dab48be93935adbb81f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 1deffa9c067586bb28aeffd4d401531e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 160
+      width: 8
+      height: 8
+    spriteID: cc32ad7500da0fea6abebec1e4725155
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 36aa753d4a584e8f585f31bbefa90c74
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 7d42aa923ed4fb5fc813421dcb650729
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 160
+      width: 8
+      height: 8
+    spriteID: 9b4548aef5ccb55e9ad2705130c52d50
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 152
+      width: 8
+      height: 8
+    spriteID: c91eb3dc055f936fb94ef7ad3598add4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 576bfff5fab555662863d23452fb42ad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 152
+      width: 8
+      height: 8
+    spriteID: a06fac87f925e84baaff93e9f56ab116
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 0d67e4e4c2fc2988bb1b309da9dd6956
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 152
+      width: 8
+      height: 8
+    spriteID: e0fd358578096a6418f7ce28b4815415
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 2c61827980e8875e195f9840bc2377d7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 1a5ae3aa026771b8ea93f70c0caaa540
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 744161b537fc08b64af3d025f0390d38
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_152
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 152
+      width: 8
+      height: 8
+    spriteID: e1b1f886b2ab91503b156de3d85f9993
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_153
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 152
+      width: 8
+      height: 8
+    spriteID: b4e4ed929b16ed1e8bfe90d694a4acb9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_154
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 152
+      width: 8
+      height: 8
+    spriteID: d63edb04a619c7252b2c8207cb65979b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_155
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 152
+      width: 8
+      height: 8
+    spriteID: 57c607610185130a6b128369b794785e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_156
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 144
+      width: 8
+      height: 8
+    spriteID: a72810072b5aada5e8a08bd03965ba2d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_157
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 144
+      width: 8
+      height: 8
+    spriteID: eec05cea1bbddb122bb4e9cecf789046
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_158
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 144
+      width: 8
+      height: 8
+    spriteID: fe55d22e84a728d21936b5331e4354b1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_159
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 144
+      width: 8
+      height: 8
+    spriteID: b489f439050e12dae8d5a85426b8a577
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_160
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 208c838953899ba3180dccd210f4e6e8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 61ef840da1ca6c62b9e33cd65a269219
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 8d686060e7c53b515b986f164a3f01bb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 852921988af7dc605a3e5a3d627a41fe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 144
+      width: 8
+      height: 8
+    spriteID: ec86982f80974df9c9d14936fdba3f92
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 7397580961e45aca3aada1f6c09230bd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 144
+      width: 8
+      height: 8
+    spriteID: a9fb4f06c6897a6e99f87df56a68e5d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 144
+      width: 8
+      height: 8
+    spriteID: 8f2f3985e756d2285ad9161695c43680
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 136
+      width: 8
+      height: 8
+    spriteID: f9b70afc081ff46299ac8ab41364bb95
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 136
+      width: 8
+      height: 8
+    spriteID: a12bb059ac2919cc3857061c01929624
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 528da3a8a6c0d7acb86b1780c3f3b530
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 2843cff5b4d70cd76995088f56b38f22
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 136
+      width: 8
+      height: 8
+    spriteID: c934e1c917f5a42e786ecf81e25dc3bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 67b60559a7f1155298b006ade8028e7c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 136
+      width: 8
+      height: 8
+    spriteID: ed8e5f1d55792fc7181e216add948702
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 416e5be58aa9516b289783789defce56
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 631389497d9324e84b3b4fac5868ce8c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 136
+      width: 8
+      height: 8
+    spriteID: f2f08ad9cc11bb20cbf69bd60241dc1c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 136
+      width: 8
+      height: 8
+    spriteID: 14aa1cc146dee26c29ebc406faac989c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 136
+      width: 8
+      height: 8
+    spriteID: d72eb08d5d17ff9669ae24c63c9891be
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 7d6868c6b43256efb867e058870ae72a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 128
+      width: 8
+      height: 8
+    spriteID: eda369afcb12e3d2eb0b27bd8c6b85c8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_182
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 75d2357c0c7ccbb1983750557d162ac1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_183
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 18ec5c24ed38abfbb903b51ce7d58fec
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_184
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 6e33522af00fae9c188db21d77c743dd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_185
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 43ed506537631f8ccb011974d7b08393
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_186
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 01684b14bf267b001a2886fc25b12f63
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_187
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 128
+      width: 8
+      height: 8
+    spriteID: a9f9393d9af988863916a73e5aed4f54
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_188
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 128
+      width: 8
+      height: 8
+    spriteID: ec6f4da0ae55d86219adfc61b5f2d25f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_189
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 6b5d2e85549fc841790bdfc746f1630e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_190
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 1b9273ea3eba20ddc97ccec4adc317c1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_191
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 128
+      width: 8
+      height: 8
+    spriteID: 444ec1b077b0983cdb0e779e526857c7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_192
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 120
+      width: 8
+      height: 8
+    spriteID: b2377a09bf00efb11bd7edd418e9a4d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_193
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 8289fd630dfbdcddda260436256473aa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_194
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 4e593e067159060dcb4d150b2b11440a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_195
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 120
+      width: 8
+      height: 8
+    spriteID: becf47cdf5208680a97c6a63db98fe6b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_196
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 120
+      width: 8
+      height: 8
+    spriteID: f28a70dca213535818aa9a588a971cf4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_197
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 120
+      width: 8
+      height: 8
+    spriteID: fa6e77fba0c27e3959360db5efd589f1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_198
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 120
+      width: 8
+      height: 8
+    spriteID: c328adf11ba77f5b19f67ed6e38bd40b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_199
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 9670d4b7348d1657998aea32ad86ffef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_200
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 32e4a9de310324692aaacf0cf13b045c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_201
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 2c6149afb2361dd79897b585611e3489
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_202
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 120
+      width: 8
+      height: 8
+    spriteID: ad6db32cd8d350435bb9717b0d79bd03
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_203
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 120
+      width: 8
+      height: 8
+    spriteID: 71a1a4c2643aeb137ba597a3fbf20f6d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_204
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 4dd061aa34f267e68986e2e95f124f9c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_205
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 2bde693d4bcc54c0c8904c1e88767598
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_206
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 112
+      width: 8
+      height: 8
+    spriteID: d60f8cdec01aacfc09b518e0f2618dc3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_207
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 142c9369b43d16c0c825e380a045ba4f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_208
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 41ba8dcaf4ec12ea5b54774557042daf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_209
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 034db339ea328c33f809e7dddf2b7c5b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_210
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 12a6018fed3f7ba8fa2f663a46ceebb2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 05ac4805d9ae8956b8f9ff1fc909efd2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_212
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 9390e5b5dccc039f7a31a34fc47099d2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_213
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 704d5268aa63c09f781ab8ddd1e7dc83
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_214
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 112
+      width: 8
+      height: 8
+    spriteID: fe010e09f3dd1c809b2c6c88aa878abd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_215
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 112
+      width: 8
+      height: 8
+    spriteID: 85c6f5b4928617d44bcb813f557edeb6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_216
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 104
+      width: 8
+      height: 8
+    spriteID: cdb706bd9b0769d13a29d5b22df0e8f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_217
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 104
+      width: 8
+      height: 8
+    spriteID: 46f28e7f89a95595b93da5e9d1fa5f1c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_218
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 104
+      width: 8
+      height: 8
+    spriteID: 84b20d7707ef4a284b32a2acba0fbc6a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_219
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 104
+      width: 8
+      height: 8
+    spriteID: 15507b059462545f69c89ee68076e579
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_220
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 104
+      width: 8
+      height: 8
+    spriteID: f356b2f7df37083a7a4dd218d658f25e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_221
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 104
+      width: 8
+      height: 8
+    spriteID: a660901cd2a96b16094f7de8acc0a471
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_222
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 104
+      width: 8
+      height: 8
+    spriteID: f1269fe9f14eb4b429ae90a7545926d3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_223
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 104
+      width: 8
+      height: 8
+    spriteID: c61eed8647b91ac7883b9c949cfc8206
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_224
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 104
+      width: 8
+      height: 8
+    spriteID: 127926ff289c86f849a7d3b8dbabd4da
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_225
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 104
+      width: 8
+      height: 8
+    spriteID: aabed764e3e109f828c391fee8be14f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_226
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 104
+      width: 8
+      height: 8
+    spriteID: 77578c68e7ae6a984aa2d7fae19b04f8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_227
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 104
+      width: 8
+      height: 8
+    spriteID: c4606ea4470eda4ff8ed1c2b00903c83
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_228
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 23cbd624b4a5859d986d5d56a785e754
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_229
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 96
+      width: 8
+      height: 8
+    spriteID: bc0fdda69d57c4177a684eab904aeed0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_230
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 7d6503885b810ca94b46f840086493c7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_231
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 96
+      width: 8
+      height: 8
+    spriteID: e3125b67dea9a2ce89bedf391e2b6452
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_232
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 6abd52afdfbc062428f4bbe3e432a7e2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_233
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 96
+      width: 8
+      height: 8
+    spriteID: cc5365af8563d2eb08bbc0a5c538395a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_234
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 77a302eed1e48693b862386046cc33f3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_235
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 77abf20d9ce1c4ba592c4e4b14865151
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_236
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 6949448b10f6533789df151e356d8bf5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_237
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 61914c3c80b215b178ea4857aa4e71ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_238
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 79c58ff0b0f336d96be47cdc091d6ae9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_239
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 96
+      width: 8
+      height: 8
+    spriteID: 73a3773553cc867d09e992024d1eba88
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_240
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 474d7e26975bf73f89c6acf947b98b84
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_241
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 362a0a413f90a7a188c0c16d48e43fa5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_242
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 30c415b4b01eea18ab1c4e7bc6e33a77
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_243
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 88
+      width: 8
+      height: 8
+    spriteID: fc55356b7bc53004c9aad71d1ceb34fb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_244
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 88
+      width: 8
+      height: 8
+    spriteID: bc972939ae96e29c9911935f98c0e275
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_245
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 68b72775bb929adee8e5720d74a4a47f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_246
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 361b0233d42a067918d495d7f9824e8d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_247
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 941397ee104999c769fef1bcaf686423
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_248
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 88
+      width: 8
+      height: 8
+    spriteID: 28a02951dadab15a7878e419202b9379
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_249
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 88
+      width: 8
+      height: 8
+    spriteID: d7c7a721a5dc47a6cad03ef80771015d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_250
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 88
+      width: 8
+      height: 8
+    spriteID: b30084415f10a98d7adf78f40b8c97a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_251
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 88
+      width: 8
+      height: 8
+    spriteID: c1a546e4c8f69f641b8c3e6351abb02e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_252
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 80
+      width: 8
+      height: 8
+    spriteID: 2f8a3de8ba33bd301a1d15b2ccd15349
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_253
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 80
+      width: 8
+      height: 8
+    spriteID: 083a2b786be9e2d5ba09758f0d920b4c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_254
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 80
+      width: 8
+      height: 8
+    spriteID: 56c3c06dc33defff0a0de6bb47095def
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_255
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 80
+      width: 8
+      height: 8
+    spriteID: fd47d8941e923e04d8c13cd81bb67cfd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_256
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 80
+      width: 8
+      height: 8
+    spriteID: a17decdf3654b34ad940f813ebb71f5d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_257
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 80
+      width: 8
+      height: 8
+    spriteID: d101c0e52e652602f9712896addb0f73
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_258
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 80
+      width: 8
+      height: 8
+    spriteID: 1cfc2490d4d55ab398980e242e2fc40f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_259
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 80
+      width: 8
+      height: 8
+    spriteID: de71f6fe870713ef6b60fd8bd68239f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_260
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 80
+      width: 8
+      height: 8
+    spriteID: d0284d8bfd7931dcdb4dfbd872559db3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_261
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 80
+      width: 8
+      height: 8
+    spriteID: bbc71072beabdf675b294950d4f8514f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_262
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 80
+      width: 8
+      height: 8
+    spriteID: 0d1ddd8d2c20c6340a13cc2e3d5abfab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_263
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 80
+      width: 8
+      height: 8
+    spriteID: d00be9c8e49c7cfa7a8a10c29c543bb4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_264
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 72
+      width: 8
+      height: 8
+    spriteID: a6a84d237c8b8c3a9887da28818f1e35
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_265
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 4dfa0f5cd29381327b4689ac48465e69
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_266
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 387fb26da3d681432980ead37ea82d08
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_267
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 192ecc90f2f2a4efca24de3b4c36c77a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_268
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 0d5cac9c198b656659c657fbcfa535bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_269
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 304e824672a4967bb998c63a0b3a982c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_270
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 72
+      width: 8
+      height: 8
+    spriteID: e1f42a1ef79176c19bb608bdad7cb945
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_271
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 8e8a2b7a081fa338dbb9b3b57d22411d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_272
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 5f523d3eefe7137b69bf650315564204
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_273
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 72
+      width: 8
+      height: 8
+    spriteID: d2c12aa390358560f96915189056c32e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_274
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 71e4558cf0c815c04b609b1076f3ca00
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_275
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 72
+      width: 8
+      height: 8
+    spriteID: 39cebe265352a52eca5191b2fa04f2a4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_276
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 8
+      height: 8
+    spriteID: d02bd9776424dd4448b8a87a26d80979
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_277
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 748470d03d4f663a099974057e5ffa34
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_278
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 5a8cdd4718a6980e990ea6c8e3c3650b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_279
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 172545a28d8e2218d8eb79a5deec12b5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_280
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 228de63dfbe8c9547953e12af91dd17f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_281
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 698a7125d1d3f53fcac1eb0adc0b639b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_282
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 56cea865c74873c5aaeaa3c0877c6800
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_283
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 9caee610cfa9a91eb953e0835a8858e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_284
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 8
+      height: 8
+    spriteID: e131bc8718b23bd418f6a540f8f08b62
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_285
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 5abbbc60ed770f2d6a825050ebb9723e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_286
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 64
+      width: 8
+      height: 8
+    spriteID: ce20a68b8bcd579e8ab9b15ce121e3a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_287
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 64
+      width: 8
+      height: 8
+    spriteID: 7de0ba2f62c9c75bab195aca258c1e64
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_288
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 56
+      width: 8
+      height: 8
+    spriteID: feba69ce7f78a5db7adf6fd33910d157
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_289
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 56
+      width: 8
+      height: 8
+    spriteID: c051d8c255a41854788941fcfe908925
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_290
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 56
+      width: 8
+      height: 8
+    spriteID: 5c359f61da0656956af1ad233efbf90a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_291
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 56
+      width: 8
+      height: 8
+    spriteID: e47b42c7f60d63e00add7fcea770ac1b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_292
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 56
+      width: 8
+      height: 8
+    spriteID: ac84d08ec08400051b588420593a853e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_293
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 56
+      width: 8
+      height: 8
+    spriteID: c2ce1916a38838336b0e6a57c11a4c35
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_294
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 56
+      width: 8
+      height: 8
+    spriteID: 4c7daddbd1a57329dbfb2d0da782866a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_295
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 56
+      width: 8
+      height: 8
+    spriteID: 48fa76dc783e8a5e89386c0a2c44a074
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_296
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 56
+      width: 8
+      height: 8
+    spriteID: 828d1e7b881a7f51dac3fb18c8456849
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_297
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 56
+      width: 8
+      height: 8
+    spriteID: caeff1d2661ec4586bbfa6df3a2feeb5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_298
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 56
+      width: 8
+      height: 8
+    spriteID: ced86d9816a037b62bbfe61c692793de
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_299
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 56
+      width: 8
+      height: 8
+    spriteID: 03b3db0d4430e6320bdd9659940a2e3b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_300
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 48
+      width: 8
+      height: 8
+    spriteID: eb96fba8e8f2899d09de7c209a5e184a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_301
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 48
+      width: 8
+      height: 8
+    spriteID: e1a9205df6b3efdcda2ee60f4edf96b5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_302
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 48
+      width: 8
+      height: 8
+    spriteID: dfe4a7a9e9b3366a5bcdd912f338f053
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_303
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 48
+      width: 8
+      height: 8
+    spriteID: 5ce2a4d79355a42c1b549fd0ac926a44
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_304
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 48
+      width: 8
+      height: 8
+    spriteID: d9b16b86f2865c8fb8a62df328cff4a4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_305
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 48
+      width: 8
+      height: 8
+    spriteID: 5ac6df295caeaa14984528de7de0c18d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_306
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 48
+      width: 8
+      height: 8
+    spriteID: 539cdf1ad03e717babbcac8428e18907
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_307
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 48
+      width: 8
+      height: 8
+    spriteID: 5c5c36f3fa6446732aecfe92319a3399
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_308
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 48
+      width: 8
+      height: 8
+    spriteID: d1a1f58b7826b1da89336daf02669aef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_309
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 48
+      width: 8
+      height: 8
+    spriteID: a14066ebb064f18c3a0e813868e05363
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_310
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 48
+      width: 8
+      height: 8
+    spriteID: e8a9df8b48cb0ea838849beccee26605
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_311
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 48
+      width: 8
+      height: 8
+    spriteID: 487eb140f1f709b8eb3c96f81fd891ee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_312
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 17075e53559958d38a9d03cfa15b46ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_313
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 40
+      width: 8
+      height: 8
+    spriteID: f503c10c8365241d1ae23cba6e294f05
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_314
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 40
+      width: 8
+      height: 8
+    spriteID: f6ecb4178e5ab72b0a12d700b20eae4f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_315
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 40
+      width: 8
+      height: 8
+    spriteID: f607dfbdd1ad6c4b48b995d5cf3c11ef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_316
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 95aaf5ecdb79bcc4b92addddf3493ada
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_317
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 0beed9e91a4fbfe8f90540ebcc927bf0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_318
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 4eeae2e7c73012f2fa82b33bd8e84750
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_319
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 949562e02118b392a8ca92344024882e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_320
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 40
+      width: 8
+      height: 8
+    spriteID: d03a85ed5ca9e9b208a29d52d94d1e58
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_321
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 7ef4abe9746ad21488f0a4da00364862
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_322
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 40
+      width: 8
+      height: 8
+    spriteID: 045dd0a68d95e36489c21fbb544c86eb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_323
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 40
+      width: 8
+      height: 8
+    spriteID: d11abcab50fdf8e00a1ae2c3c400c94c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_324
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 8
+      height: 8
+    spriteID: b8298b32e061fb358b893da1ec5696e3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_325
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 24482a9de16f6027eb6b694f7faf4a18
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_326
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 51ef9ec40974a190b83287841fb1daee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_327
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 76947bde685ba463fbaa1afb9ec55593
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_328
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 5d6defe6908bb7d0b891b3fb198aa1c2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_329
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 9bb9ac4b9d6c1a4678c71330052069af
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_330
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 8e9516a1373cc9073ac51c8f9654f02b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_331
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 9d4e1b2a7ac20a4349a4676ce7b7a9e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_332
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 851c0232f8410d61bacd4826eca181fb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_333
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 476271a95dd25fc04afc6d84a1267673
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_334
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 32
+      width: 8
+      height: 8
+    spriteID: 406c06418dade51b8b88b0f41f440734
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_335
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 32
+      width: 8
+      height: 8
+    spriteID: d7af23159926df616b660a50f3df634c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_336
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 6d6111207a5550ff7a90699ff2cca3a8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_337
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 81cd71000d91a65dbadecfc9f611bf0c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_338
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 472e2be7be0d39bf78def708e44e7189
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_339
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 24
+      width: 8
+      height: 8
+    spriteID: a741f5172368e2415a4444b6798e65c4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_340
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 3a9d325c328cc55a185d07ce88a89971
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_341
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 917acaccf7372ff8d916645e77a705e3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_342
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 24
+      width: 8
+      height: 8
+    spriteID: bc68d6792d6781b85a4a48d50aeeab0e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_343
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 2a77a1b15fc3cf353ab152b298f3ddc1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_344
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 7dcf2b4d0296b16638e90e56104c4309
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_345
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 496c323d9b7ecce65ae7fbf0f97ad993
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_346
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 24
+      width: 8
+      height: 8
+    spriteID: e51d744f0411fbdf482110904ede47dd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_347
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 24
+      width: 8
+      height: 8
+    spriteID: 53a13771a8c334214bd93d317a942b96
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_348
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 6145f96e323833dec8f90826acd14899
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_349
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 805d7a584047cf4f8afe0e293fad33b2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_350
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 8054780984f5cc786b970c21fddd197a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_351
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 023649d05cb4748e2b69f59f3e3d900d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_352
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 1a72a2e72c251ecaaafaa09a367e2073
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_353
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 16
+      width: 8
+      height: 8
+    spriteID: d09da381a8febeeb28676624218bf726
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_354
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 1e7f34cac5ac53d4e95749c36f5e4b3a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_355
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 16
+      width: 8
+      height: 8
+    spriteID: e92fbf017fdbf73f3881edc6b7bd1486
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_356
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 8
+      height: 8
+    spriteID: febb1e7a1ea3f79ad833ff53a4ca3035
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_357
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 60b5799f7eedf69ac93f0c562126feb2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_358
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 20343e86f103cafb5ac669dd7ba793d8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_359
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 16
+      width: 8
+      height: 8
+    spriteID: 143c0bff068324129a98ddf476ea7790
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_360
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 3cec4a07f89751045a22423e03ca4975
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_361
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 7d2a0110b7a722ae09c51d8269086dad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_362
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 107845e521fdc57a5b22bc50aa0c77b6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_363
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 8
+      width: 8
+      height: 8
+    spriteID: a4e21e19b27d400d499968c8eba61295
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_364
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 8
+      width: 8
+      height: 8
+    spriteID: eac8a21cf26a1673ea7d79f883821bdd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_365
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 8
+      width: 8
+      height: 8
+    spriteID: cd08b684027010279a688134a969cb71
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_366
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 1d995c30e86a789799e492ef04f12dd0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_367
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 8
+      width: 8
+      height: 8
+    spriteID: a3406f22c35610663a4bee2d1299b5f4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_368
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 4239e1dde352b50bab0d3b71cf1d2b48
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_369
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 8
+      width: 8
+      height: 8
+    spriteID: df5fc1da5b74704cf8968bd45fc679f5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_370
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 8
+      width: 8
+      height: 8
+    spriteID: 7e9ce65101e1aabebb6e0d5607ed4c18
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_371
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 8
+      width: 8
+      height: 8
+    spriteID: e5e1682e086c76959a4126bbb2a62fc1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_372
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 503f45ec98f7069a097fa0208c6662d8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_373
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 2b06384ec97d5be4daf165b192a28f5a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_374
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 4d8418a5f2d786ab8b6b8611edf75a57
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_375
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 65e52352adeda4cdd9e63c884dba6c6d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_376
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 4bf91b16651278bedbd03a876f198db9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_377
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 601f9767e03e624a298dc84c416b48b9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_378
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 3a59cc2276c3161b19c2d83122c070da
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_379
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 0
+      width: 8
+      height: 8
+    spriteID: ca5f02bebae6a135dbf2f8922305c7cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_380
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 48f5d105a1c02f0deb72450860a07fed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_381
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 32f8ca4607dce74269574350c48e5f36
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_382
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 0
+      width: 8
+      height: 8
+    spriteID: 686a0236fd2f7e1b0bbbbd71fc680abd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Caverns_383
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 0
+      width: 8
+      height: 8
+    spriteID: baf12ddb4c37d233aaa43e9f76d3aa62
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
