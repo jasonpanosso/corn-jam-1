@@ -7,7 +7,6 @@ public class PlayerInput : MonoBehaviour
     public event Action OnJumpInput = delegate { };
     public event Action<Vector2> OnClickInput = delegate { };
 
-
     private void Update()
     {
         // TODO: this is clunky; it just fires every frame until we figure out
@@ -20,7 +19,6 @@ public class PlayerInput : MonoBehaviour
 
         if (GetLeftClickInput())
             OnClickInput.Invoke(GetCursorPosition());
-
     }
 
     public float GetHorizontalInput()
@@ -32,6 +30,7 @@ public class PlayerInput : MonoBehaviour
     {
         return Input.GetButtonDown("Jump");
     }
+
     public bool GetLeftClickInput()
     {
         return Input.GetMouseButtonDown(0);
@@ -41,5 +40,4 @@ public class PlayerInput : MonoBehaviour
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
-
 }
