@@ -5,6 +5,8 @@ public class PlayerInput : MonoBehaviour
 {
     public event Action<float> OnMoveInput = delegate { };
     public event Action OnJumpInput = delegate { };
+    public event Action<Vector2> OnClickInput = delegate { };
+
 
     private void Update()
     {
@@ -15,6 +17,10 @@ public class PlayerInput : MonoBehaviour
 
         if (GetJumpInput())
             OnJumpInput.Invoke();
+
+        if (GetLeftClickInput())
+            OnClickInput.Invoke(GetCursorPosition());
+
     }
 
     public float GetHorizontalInput()
@@ -26,4 +32,14 @@ public class PlayerInput : MonoBehaviour
     {
         return Input.GetButtonDown("Jump");
     }
+    public bool GetLeftClickInput()
+    {
+        return Input.GetMouseButtonDown(0);
+    }
+
+    public Vector2 GetCursorPosition()
+    {
+        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
 }
