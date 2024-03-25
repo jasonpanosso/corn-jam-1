@@ -26,6 +26,9 @@ public class LevelManager : MonoBehaviour
     {
         LoadProgress();
         LoadLevelData();
+
+        // TODO/FIXME: hack until main menu is implemented
+        LoadLevel(0);
     }
 
     private void LoadLevelData()
@@ -40,7 +43,7 @@ public class LevelManager : MonoBehaviour
             LevelData levelData = levels[levelIndex];
             if (levelData.unlocked)
             {
-                SceneManager.LoadScene(levelData.sceneAsset.name);
+                SceneManager.LoadScene(levelData.sceneName);
             }
         }
     }
@@ -55,7 +58,13 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void LoadProgress() { }
+    private void LoadProgress()
+    {
+        // TODO
+    }
 
-    private void SaveProgress() { }
+    private void SaveProgress()
+    {
+        // TODO
+    }
 }
