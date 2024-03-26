@@ -8,12 +8,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private LayerMask groundLayer = 1 << 3;
-    private ContactFilter2D GroundedContactFilter = new();
+    private ContactFilter2D groundedContactFilter = new();
 
     private Rigidbody2D rb;
     private PlayerInput playerInput;
 
-    public bool IsGrounded => rb.IsTouching(GroundedContactFilter);
+    public bool IsGrounded => rb.IsTouching(groundedContactFilter);
 
     private void HandleMove(float moveInput)
     {
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
 
-        GroundedContactFilter.SetLayerMask(groundLayer);
+        groundedContactFilter.SetLayerMask(groundLayer);
     }
 
     private void OnEnable()
