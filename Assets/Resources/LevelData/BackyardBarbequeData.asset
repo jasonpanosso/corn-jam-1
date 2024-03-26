@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Level1
+  m_Name: BackyardBarbequeData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelIndex: 0
-  levelName: LevelOne
-  unlocked: 1
+  levelIndex: 1
+  levelName: Backyard Barbeque
+  unlocked: 0
   completed: 0
-  sceneAsset: {fileID: 102900000, guid: bb52e4e44e38b7372b1ea08d78038542, type: 3}
+  sceneName: BackyardBarbeque

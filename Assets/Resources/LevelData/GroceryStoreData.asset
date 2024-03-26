@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Level2
+  m_Name: GroceryStoreData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelIndex: 1
-  levelName: LevelTwo
-  unlocked: 0
+  levelIndex: 0
+  levelName: Grocery Store
+  unlocked: 1
   completed: 0
-  sceneAsset: {fileID: 102900000, guid: 178fdff27b29266d89ed24cd43f353d1, type: 3}
+  sceneName: GroceryStore
