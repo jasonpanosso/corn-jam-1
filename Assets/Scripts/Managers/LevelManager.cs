@@ -27,10 +27,7 @@ public class LevelManager : MonoBehaviour
     {
         LoadProgress();
         LoadLevelData();
-
-        // TODO/FIXME: hack until main menu is implemented. Remove when
-        // main menu level selection implemented.
-        LoadLevel(0);
+        Debug.Log(Levels.Count);
     }
 
     private void LoadLevelData()
