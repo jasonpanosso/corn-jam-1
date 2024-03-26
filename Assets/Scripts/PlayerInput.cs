@@ -18,7 +18,7 @@ public class PlayerInput : MonoBehaviour
             OnJumpInput.Invoke();
 
         if (GetLeftClickInput())
-            OnClickInput.Invoke(GetCursorPosition());
+            OnClickInput.Invoke(GetCursorWorldPosition());
     }
 
     public float GetHorizontalInput()
@@ -36,7 +36,7 @@ public class PlayerInput : MonoBehaviour
         return Input.GetMouseButtonDown(0);
     }
 
-    public Vector2 GetCursorPosition()
+    public Vector2 GetCursorWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
