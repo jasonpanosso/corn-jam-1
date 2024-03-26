@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,9 +7,8 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    private LevelData[] levels;
-
-    private LevelData currentLevel;
+    public List<LevelData> Levels { get; private set; }
+    public LevelData CurrentLevel { get; private set; }
 
     private void Awake()
     {
@@ -27,35 +28,44 @@ public class LevelManager : MonoBehaviour
         LoadProgress();
         LoadLevelData();
 
-        // TODO/FIXME: hack until main menu is implemented
+        // TODO/FIXME: hack until main menu is implemented. Remove when
+        // main menu level selection implemented.
         LoadLevel(0);
     }
 
     private void LoadLevelData()
     {
-        levels = Resources.LoadAll<LevelData>("LevelData");
+        Levels = Resources.LoadAll<LevelData>("LevelData").ToList();
+        Levels.Sort(
+            delegate(LevelData a, LevelData b)
+            {
+                return a.levelIndex.CompareTo(b.levelIndex);
+            }
+        );
     }
 
     public void LoadLevel(int levelIndex)
     {
-        if (levelIndex >= 0 && levelIndex < levels.Length)
+        if (levelIndex < 0 || levelIndex >= Levels.Count)
         {
-            LevelData levelData = levels[levelIndex];
-            if (levelData.unlocked)
-            {
-                SceneManager.LoadScene(levelData.sceneName);
-            }
+            Debug.LogError(
+                $"levelIndex passed to LevelManager.LoadLevel out of range: {levelIndex}"
+            );
+            return;
         }
+
+        LevelData levelData = Levels[levelIndex];
+        SceneManager.LoadScene(levelData.sceneName);
+        CurrentLevel = levelData;
     }
 
-    public void CompleteLevel(int levelIndex)
+    public void CompleteCurrentLevel()
     {
-        if (levelIndex >= 0 && levelIndex < levels.Length)
-        {
-            LevelData levelData = levels[levelIndex];
-            levelData.completed = true;
-            SaveProgress();
-        }
+        CurrentLevel.completed = true;
+        if (CurrentLevel.levelIndex + 1 < Levels.Count)
+            LoadLevel(CurrentLevel.levelIndex + 1);
+        else
+            Debug.LogWarning("Unimplemented: Game ending");
     }
 
     private void LoadProgress()
