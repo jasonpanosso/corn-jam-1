@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGoal
       objectReference: {fileID: 0}
+    - target: {fileID: 8310741213385001836, guid: 0e2c3730d35fdc903a182d6041fad31b, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118749069335108604, guid: 0e2c3730d35fdc903a182d6041fad31b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.42
@@ -194,11 +198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9118749069335108604, guid: bb39898edf8e2937ca24173c5648f5f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.36
+      value: 2.63
       objectReference: {fileID: 0}
     - target: {fileID: 9118749069335108604, guid: bb39898edf8e2937ca24173c5648f5f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.51
+      value: 19.72
       objectReference: {fileID: 0}
     - target: {fileID: 9118749069335108604, guid: bb39898edf8e2937ca24173c5648f5f7, type: 3}
       propertyPath: m_LocalPosition.z
