@@ -235,8 +235,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   popRadius: 2
-  knockbackForce: 30
+  knockbackForce: 40
   triggerTags:
   - Player
   knockbackTags:
   - Player
+  ignoreCollisionDuration: 1
