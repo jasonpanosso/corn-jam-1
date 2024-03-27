@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 6f;
+    public float groundAccel = 2f;
 
     [SerializeField]
     private LayerMask groundLayer = 1 << 3;
@@ -17,7 +18,19 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMove(float moveInput)
     {
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        // Remove air control
+        if (!IsGrounded)
+            return;
+
+        float targetVelocityX = moveInput * moveSpeed;
+        float forceMultiplier = Mathf.Clamp01(
+            (Mathf.Abs(targetVelocityX) - Mathf.Abs(rb.velocity.x)) * groundAccel
+        );
+        Vector2 movementForce = new((targetVelocityX - rb.velocity.x) * forceMultiplier, 0f);
+        rb.AddForce(movementForce);
+
+        float clampedVelocityX = Mathf.Clamp(rb.velocity.x, -moveSpeed, moveSpeed);
+        rb.velocity = new Vector2(clampedVelocityX, rb.velocity.y);
     }
 
     private void HandleJump()
