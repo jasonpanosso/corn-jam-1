@@ -10,4 +10,9 @@ public class PlayScript : MonoBehaviour
     {
             LevelManager.Instance.LoadLevel(0);      
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
