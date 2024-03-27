@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3be08582169fb9345b08c68760386d54
+guid: 29fad4bd72c4df7d19fa6d182f676230
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -9,16 +9,26 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
   _reimportOnDependencyChange: 1
-  _jsonFile: {instanceID: 0}
-  _pixelsPerUnit: 16
+  _jsonFile: {fileID: -164016180542632921, guid: 29fad4bd72c4df7d19fa6d182f676230, type: 3}
+  _pixelsPerUnit: 8
   _customLevelPrefab: {instanceID: 0}
-  _intGridValueColorsVisible: 0
-  _useCompositeCollider: 1
+  _intGridValueColorsVisible: 1
+  _useCompositeCollider: 0
   _geometryType: 0
   _createBackgroundColor: 1
   _createLevelBoundsTrigger: 0
-  _intGridValues: []
-  _entities: []
+  _intGridValues:
+  - _key: Colliders_1
+    _asset: {fileID: 11400000, guid: 79d76425375d7ba3aa5baffefb0bc550, type: 2}
+  - _key: Colliders_2
+    _asset: {instanceID: 0}
+  - _key: Colliders_3
+    _asset: {instanceID: 0}
+  _entities:
+  - _key: Exit
+    _asset: {fileID: 6344424294288507235, guid: 0e2c3730d35fdc903a182d6041fad31b, type: 3}
+  - _key: PlayerStart
+    _asset: {fileID: 6344424294288507235, guid: bb39898edf8e2937ca24173c5648f5f7, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
