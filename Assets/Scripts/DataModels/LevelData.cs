@@ -1,0 +1,24 @@
+[System.Serializable]
+public class LevelData
+{
+    public int index;
+    public WorldType worldType;
+    public string name = "";
+    public string sceneName;
+    public bool completed = false;
+
+    public LevelData(
+        string sceneName,
+        WorldType worldType,
+        int index = 0,
+        string name = "",
+        bool completed = false
+    )
+    {
+        this.sceneName = sceneName;
+        this.worldType = worldType;
+        this.index = index;
+        this.name = name;
+        this.completed = completed;
+    }
+}

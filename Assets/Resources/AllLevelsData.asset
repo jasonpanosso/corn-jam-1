@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adf892df414765e391bb4e646afc5f3, type: 3}
+  m_Name: AllLevelsData
+  m_EditorClassIdentifier: 
+  Levels:
+  - index: 0
+    worldType: 1
+    name: 
+    sceneName: Cave_0
+    completed: 0
+  - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_0
+    completed: 0
+  - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_1
+    completed: 0
+  - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_2
+    completed: 0
+  - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_3
+    completed: 0
+  - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_4
+    completed: 0
+  - index: 0
+    worldType: 2
+    name: 
+    sceneName: Hell_0
+    completed: 0
