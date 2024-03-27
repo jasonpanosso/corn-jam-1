@@ -9,10 +9,9 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        // TODO: this is clunky; it just fires every frame until we figure out
-        // how movement should work. Not setting up something intelligent rn.
         float moveHorizontal = GetHorizontalInput();
-        OnMoveInput.Invoke(moveHorizontal);
+        if (moveHorizontal != 0f)
+            OnMoveInput.Invoke(moveHorizontal);
 
         if (GetJumpInput())
             OnJumpInput.Invoke();
