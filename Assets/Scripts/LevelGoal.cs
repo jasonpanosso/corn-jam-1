@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class LevelGoal : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D collider)
