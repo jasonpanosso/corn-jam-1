@@ -20,12 +20,14 @@ public class LDtkSceneCreator : LDtkPostprocessor
 
     private readonly List<Scene> existingScenesToSave = new();
     private readonly List<(Scene, string)> newScenesToSave = new();
+    private Scene currentActiveScene;
 
     protected override void OnPostprocessLevel(GameObject root, LdtkJson projectJson)
     {
         if (firstRun)
         {
             firstRun = false;
+            currentActiveScene = EditorSceneManager.GetActiveScene();
 
             SaveAllLevelsDataAfterDelay();
             SaveAndCloseScenesAfterDelay();
@@ -155,13 +157,19 @@ public class LDtkSceneCreator : LDtkPostprocessor
             foreach (var scene in existingScenesToSave)
             {
                 EditorSceneManager.SaveScene(scene);
-                EditorSceneManager.CloseScene(scene, true);
+                if (scene != currentActiveScene)
+                {
+                    EditorSceneManager.CloseScene(scene, true);
+                }
             }
 
             foreach (var (scene, filePath) in newScenesToSave)
             {
                 EditorSceneManager.SaveScene(scene, filePath);
-                EditorSceneManager.CloseScene(scene, true);
+                if (scene != currentActiveScene)
+                {
+                    EditorSceneManager.CloseScene(scene, true);
+                }
             }
         };
     }
