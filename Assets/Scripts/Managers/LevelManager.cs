@@ -66,6 +66,25 @@ public class LevelManager : MonoBehaviour
         levels.AddRange(allLevelsData.Levels);
     }
 
+    public void RestartLevel()
+    {
+        if (CurrentLevel == null)
+            SetCurrentLevelIfNull();
+
+        LoadLevel(CurrentLevel.index);
+    }
+
+    private void SetCurrentLevelIfNull()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        var cur = levels.Find(l => l.sceneName == scene.name);
+
+        if (cur == null)
+            Debug.LogError("Current scene is not a valid level, defaulting to level 0");
+
+        CurrentLevel = cur ?? levels[0];
+    }
+
     private void LoadProgress()
     {
         // TODO: Load data from JSON/Some persistent format
