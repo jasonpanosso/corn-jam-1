@@ -25,7 +25,7 @@ public class ProjectileShooter : MonoBehaviour
 
         GameObject projectile = Instantiate(
             projectilePrefab,
-            (Vector2)transform.position + direction,
+            transform.position,
             rotation
         );
         OnShoot.Invoke(projectile);
