@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Hell/Hell_0.unity
     guid: 4c550a668c124598ea46dd140fc8d8a5
+  - enabled: 1
+    path: Assets/Scenes/Levels/Grass/Grass_5.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Levels/Grass/Grass_5.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Levels/Grass/Grass_5.unity
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
