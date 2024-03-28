@@ -111,6 +111,9 @@ public class LDtkSceneCreator : LDtkPostprocessor
     private void AddSceneToBuildSettings(string scenePath)
     {
         var buildScenes = EditorBuildSettings.scenes;
+        if (Array.Exists(buildScenes, el => el.path == scenePath))
+            return;
+
         var newBuildScenes = new EditorBuildSettingsScene[buildScenes.Length + 1];
 
         for (int i = 0; i < buildScenes.Length; i++)
