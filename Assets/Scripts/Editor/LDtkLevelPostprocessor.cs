@@ -52,6 +52,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
             Directory.CreateDirectory(parentDirectory);
 
         var newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
+        newScene.name = level.name;
 
         newScenesToSave.Add((newScene, filePath));
         AddSceneToBuildSettings(filePath);
@@ -74,21 +75,24 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
 
     private void AddSceneToBuildSettings(string scenePath)
     {
-        var buildScenes = EditorBuildSettings.scenes;
-        if (Array.Exists(buildScenes, el => el.path == scenePath))
-            return;
-
-        var newBuildScenes = new EditorBuildSettingsScene[buildScenes.Length + 1];
-
-        for (int i = 0; i < buildScenes.Length; i++)
+        EditorApplication.delayCall += () =>
         {
-            newBuildScenes[i] = buildScenes[i];
-        }
+            var buildScenes = EditorBuildSettings.scenes;
+            if (Array.Exists(buildScenes, el => el.path == scenePath))
+                return;
 
-        newBuildScenes[buildScenes.Length] = new EditorBuildSettingsScene(scenePath, true);
-        EditorBuildSettings.scenes = newBuildScenes;
+            var newBuildScenes = new EditorBuildSettingsScene[buildScenes.Length + 1];
 
-        Debug.Log("Scene added to Build Settings: " + scenePath);
+            for (int i = 0; i < buildScenes.Length; i++)
+            {
+                newBuildScenes[i] = buildScenes[i];
+            }
+
+            newBuildScenes[buildScenes.Length] = new EditorBuildSettingsScene(scenePath, true);
+            EditorBuildSettings.scenes = newBuildScenes;
+
+            Debug.Log("Scene added to Build Settings: " + scenePath);
+        };
     }
 
     private void SaveAllLevelsDataAfterDelay()
