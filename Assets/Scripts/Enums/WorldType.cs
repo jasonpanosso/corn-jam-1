@@ -3,5 +3,6 @@ public enum WorldType
 {
     Grass,
     Cave,
-    Hell
+    Hell,
+    Lab
 }
