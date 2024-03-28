@@ -10,8 +10,8 @@
 	},
 	"iid": "f2b5a480-d7b0-11ee-9b8b-5b47641fa00c",
 	"jsonVersion": "1.5.3",
-	"appBuildId": 475415,
-	"nextUid": 135,
+	"appBuildId": 473703,
+	"nextUid": 143,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": null,
@@ -42,7 +42,7 @@
 		"command": "../../Library/LDtkTilesetExporter/ExportTilesetDefinition.exe \"CornLevelsLDtk\"",
 		"when": "AfterSave"
 	}],
-	"flags": ["MultiWorlds"],
+	"flags": [ "IgnoreBackupSuggest", "MultiWorlds" ],
 	"defs": { "layers": [
 		{
 			"__type": "IntGrid",
@@ -1460,83 +1460,6 @@
 					"biomeRequirementMode": 0
 				},
 				{
-					"uid": 113,
-					"name": "Shadows",
-					"color": null,
-					"icon": { "tilesetUid": 1, "x": 104, "y": 40, "w": 8, "h": 8 },
-					"active": true,
-					"isOptional": false,
-					"rules": [
-						{
-							"uid": 114,
-							"active": true,
-							"size": 3,
-							"tileRectsIds": [[93]],
-							"alpha": 1,
-							"chance": 1,
-							"breakOnMatch": false,
-							"pattern": [0,0,0,1,-1000001,0,0,0,0],
-							"flipX": true,
-							"flipY": false,
-							"xModulo": 1,
-							"yModulo": 1,
-							"xOffset": 0,
-							"yOffset": 0,
-							"tileXOffset": 0,
-							"tileYOffset": 0,
-							"tileRandomXMin": 0,
-							"tileRandomXMax": 0,
-							"tileRandomYMin": 0,
-							"tileRandomYMax": 0,
-							"checker": "None",
-							"tileMode": "Single",
-							"pivotX": 0,
-							"pivotY": 0,
-							"outOfBoundsValue": null,
-							"invalidated": false,
-							"perlinActive": false,
-							"perlinSeed": 7525329,
-							"perlinScale": 0.2,
-							"perlinOctaves": 2
-						},
-						{
-							"uid": 115,
-							"active": true,
-							"size": 5,
-							"tileRectsIds": [[109]],
-							"alpha": 1,
-							"chance": 1,
-							"breakOnMatch": true,
-							"pattern": [0,0,1,0,0,0,0,1,0,0,0,0,-1000001,0,0,0,0,0,0,0,0,0,0,0,0],
-							"flipX": false,
-							"flipY": false,
-							"xModulo": 1,
-							"yModulo": 1,
-							"xOffset": 0,
-							"yOffset": 0,
-							"tileXOffset": 0,
-							"tileYOffset": 0,
-							"tileRandomXMin": 0,
-							"tileRandomXMax": 0,
-							"tileRandomYMin": 0,
-							"tileRandomYMax": 0,
-							"checker": "None",
-							"tileMode": "Single",
-							"pivotX": 0,
-							"pivotY": 0,
-							"outOfBoundsValue": null,
-							"invalidated": false,
-							"perlinActive": false,
-							"perlinSeed": 578560,
-							"perlinScale": 0.2,
-							"perlinOctaves": 2
-						}
-					],
-					"usesWizard": false,
-					"requiredBiomeValues": [],
-					"biomeRequirementMode": 0
-				},
-				{
 					"uid": 53,
 					"name": "Lab SD",
 					"color": null,
@@ -1550,8 +1473,8 @@
 							"size": 3,
 							"tileRectsIds": [ [83], [99] ],
 							"alpha": 1,
-							"chance": 0.2,
-							"breakOnMatch": true,
+							"chance": 0.15,
+							"breakOnMatch": false,
 							"pattern": [0,1,0,0,-1,0,0,0,0],
 							"flipX": false,
 							"flipY": false,
@@ -1582,8 +1505,8 @@
 							"size": 3,
 							"tileRectsIds": [[115]],
 							"alpha": 1,
-							"chance": 0.1,
-							"breakOnMatch": true,
+							"chance": 0.05,
+							"breakOnMatch": false,
 							"pattern": [0,1,0,0,-1,0,0,0,0],
 							"flipX": false,
 							"flipY": false,
@@ -1614,8 +1537,8 @@
 							"size": 3,
 							"tileRectsIds": [ [82], [98], [114] ],
 							"alpha": 1,
-							"chance": 0.3,
-							"breakOnMatch": true,
+							"chance": 0.15,
+							"breakOnMatch": false,
 							"pattern": [0,0,0,0,-1,0,0,1,0],
 							"flipX": false,
 							"flipY": false,
@@ -1642,7 +1565,7 @@
 						}
 					],
 					"usesWizard": false,
-					"requiredBiomeValues": ["Grocery"],
+					"requiredBiomeValues": ["Lab"],
 					"biomeRequirementMode": 0
 				},
 				{
@@ -1854,7 +1777,84 @@
 						}
 					],
 					"usesWizard": false,
-					"requiredBiomeValues": ["Grocery"],
+					"requiredBiomeValues": ["Lab"],
+					"biomeRequirementMode": 0
+				},
+				{
+					"uid": 113,
+					"name": "Shadows",
+					"color": null,
+					"icon": { "tilesetUid": 1, "x": 104, "y": 40, "w": 8, "h": 8 },
+					"active": true,
+					"isOptional": false,
+					"rules": [
+						{
+							"uid": 114,
+							"active": true,
+							"size": 3,
+							"tileRectsIds": [[93]],
+							"alpha": 1,
+							"chance": 1,
+							"breakOnMatch": false,
+							"pattern": [0,0,0,1,-1000001,0,0,0,0],
+							"flipX": true,
+							"flipY": false,
+							"xModulo": 1,
+							"yModulo": 1,
+							"xOffset": 0,
+							"yOffset": 0,
+							"tileXOffset": 0,
+							"tileYOffset": 0,
+							"tileRandomXMin": 0,
+							"tileRandomXMax": 0,
+							"tileRandomYMin": 0,
+							"tileRandomYMax": 0,
+							"checker": "None",
+							"tileMode": "Single",
+							"pivotX": 0,
+							"pivotY": 0,
+							"outOfBoundsValue": null,
+							"invalidated": false,
+							"perlinActive": false,
+							"perlinSeed": 7525329,
+							"perlinScale": 0.2,
+							"perlinOctaves": 2
+						},
+						{
+							"uid": 115,
+							"active": true,
+							"size": 5,
+							"tileRectsIds": [[109]],
+							"alpha": 1,
+							"chance": 1,
+							"breakOnMatch": true,
+							"pattern": [0,0,1,0,0,0,0,1,0,0,0,0,-1000001,0,0,0,0,0,0,0,0,0,0,0,0],
+							"flipX": false,
+							"flipY": false,
+							"xModulo": 1,
+							"yModulo": 1,
+							"xOffset": 0,
+							"yOffset": 0,
+							"tileXOffset": 0,
+							"tileYOffset": 0,
+							"tileRandomXMin": 0,
+							"tileRandomXMax": 0,
+							"tileRandomYMin": 0,
+							"tileRandomYMax": 0,
+							"checker": "None",
+							"tileMode": "Single",
+							"pivotX": 0,
+							"pivotY": 0,
+							"outOfBoundsValue": null,
+							"invalidated": false,
+							"perlinActive": false,
+							"perlinSeed": 578560,
+							"perlinScale": 0.2,
+							"perlinOctaves": 2
+						}
+					],
+					"usesWizard": false,
+					"requiredBiomeValues": [],
 					"biomeRequirementMode": 0
 				}
 			],
@@ -1893,6 +1893,116 @@
 			"intGridValues": [],
 			"intGridValuesGroups": [],
 			"autoRuleGroups": [
+				{
+					"uid": 140,
+					"name": "Cinders",
+					"color": null,
+					"icon": null,
+					"active": true,
+					"isOptional": false,
+					"rules": [
+						{
+							"uid": 141,
+							"active": true,
+							"size": 5,
+							"tileRectsIds": [
+								[163],
+								[164],
+								[165],
+								[179],
+								[180],
+								[181],
+								[195],
+								[196],
+								[197]
+							],
+							"alpha": 1,
+							"chance": 0.2,
+							"breakOnMatch": true,
+							"pattern": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,-1,0,0],
+							"flipX": false,
+							"flipY": false,
+							"xModulo": 1,
+							"yModulo": 1,
+							"xOffset": 0,
+							"yOffset": 0,
+							"tileXOffset": 0,
+							"tileYOffset": 0,
+							"tileRandomXMin": -5,
+							"tileRandomXMax": 5,
+							"tileRandomYMin": -5,
+							"tileRandomYMax": 5,
+							"checker": "None",
+							"tileMode": "Single",
+							"pivotX": 0,
+							"pivotY": 0,
+							"outOfBoundsValue": null,
+							"invalidated": false,
+							"perlinActive": false,
+							"perlinSeed": 8509205,
+							"perlinScale": 0.2,
+							"perlinOctaves": 2
+						}
+					],
+					"usesWizard": false,
+					"requiredBiomeValues": ["Hell"],
+					"biomeRequirementMode": 0
+				},
+				{
+					"uid": 138,
+					"name": "Gems",
+					"color": null,
+					"icon": null,
+					"active": true,
+					"isOptional": false,
+					"rules": [
+						{
+							"uid": 139,
+							"active": true,
+							"size": 5,
+							"tileRectsIds": [
+								[160],
+								[161],
+								[162],
+								[176],
+								[177],
+								[178],
+								[192],
+								[193],
+								[194]
+							],
+							"alpha": 1,
+							"chance": 0.25,
+							"breakOnMatch": false,
+							"pattern": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1000001,0,0,0,0,-1000001,0,0],
+							"flipX": false,
+							"flipY": false,
+							"xModulo": 1,
+							"yModulo": 1,
+							"xOffset": 0,
+							"yOffset": 0,
+							"tileXOffset": 0,
+							"tileYOffset": 0,
+							"tileRandomXMin": -5,
+							"tileRandomXMax": 5,
+							"tileRandomYMin": -5,
+							"tileRandomYMax": 5,
+							"checker": "None",
+							"tileMode": "Single",
+							"pivotX": 0,
+							"pivotY": 0,
+							"outOfBoundsValue": null,
+							"invalidated": false,
+							"perlinActive": false,
+							"perlinSeed": 9912384,
+							"perlinScale": 0.2,
+							"perlinOctaves": 2
+						}
+					],
+					"usesWizard": false,
+					"requiredBiomeValues": ["Cave"],
+					"biomeRequirementMode": 0
+				},
 				{
 					"uid": 131,
 					"name": "Stars",
@@ -1951,7 +2061,7 @@
 						}
 					],
 					"usesWizard": false,
-					"requiredBiomeValues": [],
+					"requiredBiomeValues": ["Grass"],
 					"biomeRequirementMode": 0
 				}
 			],
@@ -1959,7 +2069,7 @@
 			"tilesetDefUid": 1,
 			"tilePivotX": 0,
 			"tilePivotY": 0,
-			"biomeFieldUid": null
+			"biomeFieldUid": 22
 		}
 	], "entities": [
 		{
@@ -2052,7 +2162,7 @@
 			"savedSelections": [],
 			"cachedPixelData": {
 				"opaqueTiles": "0000000001000000000000001100000000000100010000001110111011100000011011101110000001000001001100001100000100110000010000010001000011100001001110001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-				"averageColors": "e693e78235b335a3f522f43249ba4122f995f67536b3425635a3000000000000d882e87225b324a3f532f43361224222f786f255626761442493000000000000d772e87215a36492e533f533a9ba4122e675f25515a342566492000000000000f872f972f9720000f433f533f4330799f255f244f24507990000000000000000f872f972f9720000f433f433f5330000f255f245f24500000000000000000000f788f8895dab77760acc0cdd0cddfe646d857d85f26ff79f0000300000000000f889f9aa6aed45660cdd0cdd0cddfe8500000000f15ff36f0000300000000000f778f789154184330cdd0cdd0cddff96000000007eeef9af6eee000000000000f89af9abf89b00001eeb1eeb0cddfe6300000000f47ff57ff57f000000000000f89bf9abf9ab00001eeb1eeb0cdd0000000000000000000000000000000000000000089d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+				"averageColors": "e693e78235b335a3f522f43249ba4122f995f67536b3425635a3000000000000d882e87225b324a3f532f43361224222f786f255626761442493000000000000d772e87215a36492e533f533a9ba4122e675f25515a342566492000000000000f872f972f9720000f433f533f4330799f255f244f24507990000000000000000f872f972f9720000f433f433f5330000f255f245f24500000000000000000000f788f8895dab77760acc0cdd0cddfe646d857d85f26ff79f0000300000000000f889f9aa6aed45660cdd0cdd0cddfe8500000000f15ff36f0000300000000000f778f789154184330cdd0cdd0cddff96000000007eeef9af6eee000000000000f89af9abf89b00001eeb1eeb0cddfe6300000000f47ff57ff57f000000000000f89bf9abf9ab00001eeb1eeb0cdd00000000000000000000000000000000000000cc02cc00cc0e630e630e63000000000000000000000000000000000000000000cc17dd17dd1c651e861e86000000000000000000000000000000000000000024bb26cd16cd1e86077707770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 			}
 		},
 		{
@@ -2081,7 +2191,7 @@
 		{ "id": "Hell", "tileRect": { "tilesetUid": 1, "x": 48, "y": 16, "w": 8, "h": 8 }, "color": 15937024 },
 		{ "id": "Grass", "tileRect": { "tilesetUid": 1, "x": 16, "y": 0, "w": 8, "h": 8 }, "color": 6539085 },
 		{ "id": "Cave", "tileRect": { "tilesetUid": 1, "x": 80, "y": 8, "w": 8, "h": 8 }, "color": 359655 },
-		{ "id": "Grocery", "tileRect": { "tilesetUid": 1, "x": 24, "y": 40, "w": 8, "h": 8 }, "color": 14145495 }
+		{ "id": "Lab", "tileRect": { "tilesetUid": 1, "x": 24, "y": 40, "w": 8, "h": 8 }, "color": 14145495 }
 	], "iconTilesetUid": 1, "externalRelPath": null, "externalFileChecksum": null, "tags": [] }], "externalEnums": [], "levelFields": [
 		{
 			"identifier": "Biome",
@@ -2308,35 +2418,6 @@
 				],
 				"layerInstances": null,
 				"__neighbours": []
-			},
-			{
-				"identifier": "Grass_5",
-				"iid": "514f16c0-d7b0-11ee-8e41-f712544ec730",
-				"uid": 134,
-				"worldX": -1,
-				"worldY": -1,
-				"worldDepth": 0,
-				"pxWid": 384,
-				"pxHei": 216,
-				"__bgColor": "#696A79",
-				"bgColor": null,
-				"useAutoIdentifier": true,
-				"bgRelPath": null,
-				"bgPos": null,
-				"bgPivotX": 0.5,
-				"bgPivotY": 0.5,
-				"__smartColor": "#ADADB5",
-				"__bgPos": null,
-				"externalRelPath": "CornLevelsLDtk/Grass_5.ldtkl",
-				"fieldInstances": [
-					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Grass", "__tile": null, "defUid": 22, "realEditorValues": [{
-						"id": "V_String",
-						"params": ["Grass"]
-					}] },
-					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
-				],
-				"layerInstances": null,
-				"__neighbours": []
 			}
 		] },
 		{ "iid": "3c0c4110-d7b0-11ee-a9c3-f7d5b8c60979", "identifier": "Hell", "defaultLevelWidth": 384, "defaultLevelHeight": 216, "worldGridWidth": 256, "worldGridHeight": 256, "worldLayout": "LinearHorizontal", "levels": [
@@ -2352,12 +2433,12 @@
 				"__bgColor": "#40465B",
 				"bgColor": "#40465B",
 				"useAutoIdentifier": true,
-				"bgRelPath": null,
-				"bgPos": null,
+				"bgRelPath": "HellBG.png",
+				"bgPos": "Cover",
 				"bgPivotX": 0.5,
 				"bgPivotY": 0.5,
 				"__smartColor": "#9699A5",
-				"__bgPos": null,
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
 				"externalRelPath": "CornLevelsLDtk/Hell_0.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Hell", "__tile": null, "defUid": 22, "realEditorValues": [{
@@ -2380,6 +2461,37 @@
 				"worldDepth": 0,
 				"pxWid": 384,
 				"pxHei": 216,
+				"__bgColor": "#12142F",
+				"bgColor": "#12142F",
+				"useAutoIdentifier": true,
+				"bgRelPath": "CaveBG.png",
+				"bgPos": "Cover",
+				"bgPivotX": 0.5,
+				"bgPivotY": 0.5,
+				"__smartColor": "#7D7E8D",
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"externalRelPath": "CornLevelsLDtk/Cave_0.ldtkl",
+				"fieldInstances": [
+					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Cave", "__tile": null, "defUid": 22, "realEditorValues": [{
+						"id": "V_String",
+						"params": ["Cave"]
+					}] },
+					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
+				],
+				"layerInstances": null,
+				"__neighbours": []
+			}
+		] },
+		{ "iid": "9d2e4620-d7b0-11ee-844b-a95f0f1ddbbb", "identifier": "Lab", "defaultLevelWidth": 256, "defaultLevelHeight": 256, "worldGridWidth": 256, "worldGridHeight": 256, "worldLayout": "Free", "levels": [
+			{
+				"identifier": "Lab_0",
+				"iid": "9d2e4621-d7b0-11ee-844b-cd86e422d364",
+				"uid": 142,
+				"worldX": 0,
+				"worldY": 0,
+				"worldDepth": 0,
+				"pxWid": 384,
+				"pxHei": 216,
 				"__bgColor": "#696A79",
 				"bgColor": null,
 				"useAutoIdentifier": true,
@@ -2389,11 +2501,11 @@
 				"bgPivotY": 0.5,
 				"__smartColor": "#ADADB5",
 				"__bgPos": null,
-				"externalRelPath": "CornLevelsLDtk/Cave_0.ldtkl",
+				"externalRelPath": "CornLevelsLDtk/Lab_0.ldtkl",
 				"fieldInstances": [
-					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Cave", "__tile": null, "defUid": 22, "realEditorValues": [{
+					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Lab", "__tile": null, "defUid": 22, "realEditorValues": [{
 						"id": "V_String",
-						"params": ["Cave"]
+						"params": ["Lab"]
 					}] },
 					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
 				],
