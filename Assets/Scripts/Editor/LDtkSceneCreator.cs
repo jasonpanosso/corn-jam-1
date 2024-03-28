@@ -18,7 +18,8 @@ public class LDtkSceneCreator : LDtkPostprocessor
 
     private bool firstRun = true;
 
-    private readonly List<Scene> scenesToSave = new();
+    private readonly List<Scene> existingScenesToSave = new();
+    private readonly List<(Scene, string)> newScenesToSave = new();
 
     protected override void OnPostprocessLevel(GameObject root, LdtkJson projectJson)
     {
@@ -56,7 +57,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
         level.transform.position = Vector3.zero;
         GameObject.Instantiate(level, scene).name = "LDtkLevel";
 
-        scenesToSave.Add(scene);
+        existingScenesToSave.Add(scene);
     }
 
     private void CreateScene(string filePath, GameObject level, WorldType worldType)
@@ -84,7 +85,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
         level.transform.position = Vector3.zero;
         GameObject.Instantiate(level, newScene).name = "LDtkLevel";
 
-        scenesToSave.Add(newScene);
+        newScenesToSave.Add((newScene, filePath));
         AddSceneToBuildSettings(filePath);
     }
 
@@ -149,12 +150,15 @@ public class LDtkSceneCreator : LDtkPostprocessor
     {
         EditorApplication.delayCall += () =>
         {
-            if (scenesToSave.Count == 0)
-                return;
-
-            foreach (var scene in scenesToSave)
+            foreach (var scene in existingScenesToSave)
             {
                 EditorSceneManager.SaveScene(scene);
+                EditorSceneManager.CloseScene(scene, true);
+            }
+
+            foreach (var (scene, filePath) in newScenesToSave)
+            {
+                EditorSceneManager.SaveScene(scene, filePath);
                 EditorSceneManager.CloseScene(scene, true);
             }
         };
