@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using LDtkUnity;
 using LDtkUnity.Editor;
 using UnityEditor;
@@ -8,18 +9,18 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LDtkSceneCreator : LDtkPostprocessor
+// Initializes empty scenes for new LDtk levels, and uses level naming convention
+// to setup WorldOrderData.
+public class LDtkLevelPostprocessor : LDtkPostprocessor
 {
     private readonly string levelScenesPath = "Assets/Scenes/Levels/";
     private readonly string allLevelsDataPath = "Assets/Resources/AllLevelsData.asset";
-    private readonly string cameraPrefabPath = "Assets/Prefabs/Cameras.prefab";
+    private readonly string worldOrderDataPath = "Assets/Data/WorldOrderData.asset";
 
     private readonly List<LevelData> levelData = new();
+    private readonly List<(Scene, string)> newScenesToSave = new();
 
     private bool firstRun = true;
-
-    private readonly List<Scene> existingScenesToSave = new();
-    private readonly List<(Scene, string)> newScenesToSave = new();
     private Scene currentActiveScene;
 
     protected override void OnPostprocessLevel(GameObject root, LdtkJson projectJson)
@@ -27,6 +28,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
         if (firstRun)
         {
             firstRun = false;
+
             currentActiveScene = EditorSceneManager.GetActiveScene();
 
             SaveAllLevelsDataAfterDelay();
@@ -35,36 +37,13 @@ public class LDtkSceneCreator : LDtkPostprocessor
 
         WorldType worldType = GetWorldTypeFromLevelName(root.name);
         string filePath = Path.Combine(levelScenesPath, worldType.ToString(), root.name + ".unity");
+        levelData.Add(new(root.name, worldType));
 
-        if (File.Exists(filePath))
-            EditScene(filePath, root, worldType);
-        else
-            CreateScene(filePath, root, worldType);
+        if (!File.Exists(filePath))
+            CreateScene(filePath, root);
     }
 
-    private void EditScene(string filePath, GameObject level, WorldType worldType)
-    {
-        Debug.Log($"Existing level {level.name} found, editing scene {filePath}");
-
-        var scene = EditorSceneManager.OpenScene(filePath, OpenSceneMode.Additive);
-        foreach (var go in scene.GetRootGameObjects())
-        {
-            if (go.TryGetComponent<LDtkComponentLevel>(out var _))
-            {
-                GameObject.DestroyImmediate(go);
-                break;
-            }
-        }
-
-        levelData.Add(new(level.name, worldType));
-
-        level.transform.position = Vector3.zero;
-        GameObject.Instantiate(level, scene).name = "LDtkLevel";
-
-        existingScenesToSave.Add(scene);
-    }
-
-    private void CreateScene(string filePath, GameObject level, WorldType worldType)
+    private void CreateScene(string filePath, GameObject level)
     {
         Debug.Log($"New level {level.name} found, initializing scene {filePath}");
 
@@ -73,21 +52,6 @@ public class LDtkSceneCreator : LDtkPostprocessor
             Directory.CreateDirectory(parentDirectory);
 
         var newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-        levelData.Add(new(level.name, worldType));
-
-        GameObject cameraPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(cameraPrefabPath);
-        if (cameraPrefab != null)
-        {
-            GameObject instance = PrefabUtility.InstantiatePrefab(cameraPrefab) as GameObject;
-            SceneManager.MoveGameObjectToScene(instance, newScene);
-        }
-        else
-        {
-            Debug.LogError("Failed to load prefab at path: " + cameraPrefabPath);
-        }
-
-        level.transform.position = Vector3.zero;
-        GameObject.Instantiate(level, newScene).name = "LDtkLevel";
 
         newScenesToSave.Add((newScene, filePath));
         AddSceneToBuildSettings(filePath);
@@ -127,18 +91,6 @@ public class LDtkSceneCreator : LDtkPostprocessor
         Debug.Log("Scene added to Build Settings: " + scenePath);
     }
 
-    private AllLevelsData InitializeAllLevelsData()
-    {
-        var allLevelsData = AssetDatabase.LoadAssetAtPath<AllLevelsData>(allLevelsDataPath);
-        if (allLevelsData == null)
-        {
-            allLevelsData = ScriptableObject.CreateInstance<AllLevelsData>();
-            AssetDatabase.CreateAsset(allLevelsData, allLevelsDataPath);
-        }
-
-        return allLevelsData;
-    }
-
     private void SaveAllLevelsDataAfterDelay()
     {
         EditorApplication.delayCall += () =>
@@ -146,8 +98,14 @@ public class LDtkSceneCreator : LDtkPostprocessor
             if (levelData.Count == 0)
                 return;
 
-            var allLevelsData = InitializeAllLevelsData();
-            allLevelsData.Levels = levelData;
+            var allLevelsData = AssetDatabase.LoadAssetAtPath<AllLevelsData>(allLevelsDataPath);
+
+            var worldOrder = AssetDatabase
+                .LoadAssetAtPath<WorldOrderData>(worldOrderDataPath)
+                .order;
+
+            var sortedLevels = LevelSorter.SortLevelsByWorldAndLevelId(levelData, worldOrder);
+            allLevelsData.Levels = sortedLevels.ToList();
             EditorUtility.SetDirty(allLevelsData);
             AssetDatabase.SaveAssetIfDirty(allLevelsData);
         };
@@ -157,15 +115,6 @@ public class LDtkSceneCreator : LDtkPostprocessor
     {
         EditorApplication.delayCall += () =>
         {
-            foreach (var scene in existingScenesToSave)
-            {
-                EditorSceneManager.SaveScene(scene);
-                if (scene != currentActiveScene)
-                {
-                    EditorSceneManager.CloseScene(scene, true);
-                }
-            }
-
             foreach (var (scene, filePath) in newScenesToSave)
             {
                 EditorSceneManager.SaveScene(scene, filePath);
