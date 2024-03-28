@@ -100,8 +100,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 2.6499512
+  m_UseAutoMass: 0
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -140,12 +140,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5448175134a7d095be5f816024708f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
-  jumpForce: 30
-  groundAccel: 2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  maxSpeed: 10
+  jumpForce: 50
+  groundAccel: 10
+  groundedContactFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 1
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 45
+    maxNormalAngle: 135
 --- !u!60 &4820037860939074107
 PolygonCollider2D:
   m_ObjectHideFlags: 0

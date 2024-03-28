@@ -19,11 +19,11 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _intGridValues:
   - _key: Colliders_1
-    _asset: {fileID: 11400000, guid: 79d76425375d7ba3aa5baffefb0bc550, type: 2}
+    _asset: {fileID: 11400000, guid: 6d00a4f499f0b050e9fbd34c7cd57629, type: 2}
   - _key: Colliders_2
-    _asset: {instanceID: 0}
+    _asset: {fileID: 11400000, guid: 6d00a4f499f0b050e9fbd34c7cd57629, type: 2}
   - _key: Colliders_3
-    _asset: {instanceID: 0}
+    _asset: {fileID: 11400000, guid: 6d00a4f499f0b050e9fbd34c7cd57629, type: 2}
   _entities:
   - _key: Exit
     _asset: {fileID: 6344424294288507235, guid: 0e2c3730d35fdc903a182d6041fad31b, type: 3}
