@@ -23,11 +23,7 @@ public class ProjectileShooter : MonoBehaviour
         var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         rotation *= Quaternion.Euler(0f, 0f, -45f);
 
-        GameObject projectile = Instantiate(
-            projectilePrefab,
-            transform.position,
-            rotation
-        );
+        GameObject projectile = Instantiate(projectilePrefab, transform.position, rotation);
         OnShoot.Invoke(projectile);
 
         projectile.GetComponent<Projectile>().Launch(direction);
