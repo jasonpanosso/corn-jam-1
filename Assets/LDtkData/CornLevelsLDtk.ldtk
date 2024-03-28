@@ -1862,7 +1862,7 @@
 							"tileRectsIds": [[109]],
 							"alpha": 1,
 							"chance": 1,
-							"breakOnMatch": true,
+							"breakOnMatch": false,
 							"pattern": [0,0,1,0,0,0,0,1,0,0,0,0,-1000001,0,0,0,0,0,0,0,0,0,0,0,0],
 							"flipX": false,
 							"flipY": false,
