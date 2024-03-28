@@ -14,7 +14,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
     private readonly string allLevelsDataPath = "Assets/Resources/AllLevelsData.asset";
     private readonly string cameraPrefabPath = "Assets/Prefabs/Cameras.prefab";
 
-    private readonly List<LevelData> newLevels = new();
+    private readonly List<LevelData> levelData = new();
 
     private bool firstRun = true;
 
@@ -27,7 +27,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
         {
             firstRun = false;
 
-            SaveNewAllLevelsDataAfterDelay();
+            SaveAllLevelsDataAfterDelay();
             SaveAndCloseScenesAfterDelay();
         }
 
@@ -35,12 +35,12 @@ public class LDtkSceneCreator : LDtkPostprocessor
         string filePath = Path.Combine(levelScenesPath, worldType.ToString(), root.name + ".unity");
 
         if (File.Exists(filePath))
-            EditScene(filePath, root);
+            EditScene(filePath, root, worldType);
         else
             CreateScene(filePath, root, worldType);
     }
 
-    private void EditScene(string filePath, GameObject level)
+    private void EditScene(string filePath, GameObject level, WorldType worldType)
     {
         Debug.Log($"Existing level {level.name} found, editing scene {filePath}");
 
@@ -53,6 +53,8 @@ public class LDtkSceneCreator : LDtkPostprocessor
                 break;
             }
         }
+
+        levelData.Add(new(level.name, worldType));
 
         level.transform.position = Vector3.zero;
         GameObject.Instantiate(level, scene).name = "LDtkLevel";
@@ -69,7 +71,7 @@ public class LDtkSceneCreator : LDtkPostprocessor
             Directory.CreateDirectory(parentDirectory);
 
         var newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-        newLevels.Add(new(level.name, worldType));
+        levelData.Add(new(level.name, worldType));
 
         GameObject cameraPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(cameraPrefabPath);
         if (cameraPrefab != null)
@@ -132,15 +134,15 @@ public class LDtkSceneCreator : LDtkPostprocessor
         return allLevelsData;
     }
 
-    private void SaveNewAllLevelsDataAfterDelay()
+    private void SaveAllLevelsDataAfterDelay()
     {
         EditorApplication.delayCall += () =>
         {
-            if (newLevels.Count == 0)
+            if (levelData.Count == 0)
                 return;
 
             var allLevelsData = InitializeAllLevelsData();
-            allLevelsData.Levels.AddRange(newLevels);
+            allLevelsData.Levels = levelData;
             EditorUtility.SetDirty(allLevelsData);
             AssetDatabase.SaveAssetIfDirty(allLevelsData);
         };
