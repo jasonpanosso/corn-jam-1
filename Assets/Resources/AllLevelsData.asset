@@ -14,7 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levels:
   - index: 0
+    worldType: 0
+    name: 
+    sceneName: Grass_0
+    completed: 0
+  - index: 1
+    worldType: 0
+    name: 
+    sceneName: Grass_1
+    completed: 0
+  - index: 2
+    worldType: 0
+    name: 
+    sceneName: Grass_2
+    completed: 0
+  - index: 3
+    worldType: 0
+    name: 
+    sceneName: Grass_3
+    completed: 0
+  - index: 4
+    worldType: 0
+    name: 
+    sceneName: Grass_4
+    completed: 0
+  - index: 5
     worldType: 3
     name: 
     sceneName: Lab_0
+    completed: 0
+  - index: 6
+    worldType: 1
+    name: 
+    sceneName: Cave_0
+    completed: 0
+  - index: 7
+    worldType: 2
+    name: 
+    sceneName: Hell_0
     completed: 0
