@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 4644862425816635510}
   - component: {fileID: 401795998197396800}
   - component: {fileID: -2378287643045907536}
-  m_Layer: 0
+  - component: {fileID: -772072594715220054}
+  m_Layer: 7
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 430a887a1e36fbc4ea4bea389b698f08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -129,8 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  screenBoundaryThreshold: 0.1
-  boundaryCheckInterval: 1
 --- !u!60 &4644862425816635510
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -231,13 +230,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0369c76c9217c20cbb8d28117a8e7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 8
   popRadius: 2
   knockbackForce: 75
-  triggerTags:
-  - Player
   knockbackTags:
   - Player
   ignoreCollisionDuration: 1
+--- !u!114 &-772072594715220054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517045921475706807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f602212183e5e42cda8ec54aa2e98211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenBoundaryThreshold: 0.1
+  boundaryCheckInterval: 1

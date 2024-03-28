@@ -1,24 +1,10 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class Projectile : MonoBehaviour
+public class OffScreenDespawner : MonoBehaviour
 {
-    public float speed = 10f;
     public float screenBoundaryThreshold = 0.1f;
     public float boundaryCheckInterval = 1f;
     private float nextBoundaryCheckTime = 0f;
-
-    private Rigidbody2D rb;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
-        nextBoundaryCheckTime = Time.time + boundaryCheckInterval;
-    }
 
     private void Update()
     {
@@ -31,11 +17,6 @@ public class Projectile : MonoBehaviour
 
             nextBoundaryCheckTime = Time.time + boundaryCheckInterval;
         }
-    }
-
-    public void Launch(Vector2 direction)
-    {
-        rb.velocity = direction.normalized * speed;
     }
 
     private bool IsOutsideScreenBounds()
