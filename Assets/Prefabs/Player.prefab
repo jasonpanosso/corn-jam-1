@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8054840531981654546}
   - component: {fileID: 4448131734561145425}
   - component: {fileID: 2099448523896157215}
+  - component: {fileID: -3732328272265895158}
   - component: {fileID: 4820037860939074107}
   - component: {fileID: 8062080091962130547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -157,6 +158,18 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 45
     maxNormalAngle: 135
+--- !u!114 &-3732328272265895158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174636957305673674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af47754dcb8f610849979b20fb850388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!60 &4820037860939074107
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -273,4 +286,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7517045921475706807, guid: 453112e4478350502bab376c6a400cf6, type: 3}
   fireRate: 0.5
-  projectileSpawnOffset: 0.4
