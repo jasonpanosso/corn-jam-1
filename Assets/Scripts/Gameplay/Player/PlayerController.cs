@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Remove air control
         if (wishDir != 0f)
             ApplyClampedHorizontalMovement(wishDir);
 

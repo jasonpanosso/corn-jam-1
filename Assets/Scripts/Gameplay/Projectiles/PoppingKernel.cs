@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Collision2D))]
+[RequireComponent(typeof(Animator))]
 public class PoppingKernel : ProjectileAction
 {
     public float popRadius = 2f;
