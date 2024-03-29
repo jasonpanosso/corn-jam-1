@@ -11,7 +11,7 @@ ScriptedImporter:
   _reimportOnDependencyChange: 1
   _jsonFile: {fileID: -164016180542632921, guid: 29fad4bd72c4df7d19fa6d182f676230, type: 3}
   _pixelsPerUnit: 8
-  _customLevelPrefab: {instanceID: 0}
+  _customLevelPrefab: {fileID: 2759116870186889311, guid: 867b5a408c4403e26ab83ba1dc4e1408, type: 3}
   _intGridValueColorsVisible: 0
   _useCompositeCollider: 0
   _geometryType: 0
