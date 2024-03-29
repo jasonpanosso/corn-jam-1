@@ -76,6 +76,13 @@ public class LevelManager : MonoBehaviour
     private void TrySetCurrentLevelFromSceneName()
     {
         Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Menu")
+        {
+            CurrentLevel = levels[0];
+            return;
+        }
+
         var cur = levels.Find(l => l.sceneName == scene.name);
 
         if (cur == null)
