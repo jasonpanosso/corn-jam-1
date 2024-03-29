@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     {
         if (Instance == null)
         {
+            transform.parent = null;
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }

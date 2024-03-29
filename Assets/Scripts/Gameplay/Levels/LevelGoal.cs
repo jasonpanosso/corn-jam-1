@@ -7,7 +7,7 @@ public class LevelGoal : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            LevelManager.Instance.CompleteCurrentLevel();
+            ServiceLocator.LevelManager.CompleteCurrentLevel();
         }
     }
 }

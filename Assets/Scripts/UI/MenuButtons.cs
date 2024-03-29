@@ -4,7 +4,7 @@ public class MenuButtons : MonoBehaviour
 {
     public void StartLevel0()
     {
-        LevelManager.Instance.LoadLevel(0);
+        ServiceLocator.LevelManager.LoadLevel(0);
     }
 
     public void QuitGame()
