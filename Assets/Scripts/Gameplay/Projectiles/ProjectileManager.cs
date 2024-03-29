@@ -6,10 +6,25 @@ public class ProjectileManager : MonoBehaviour
 {
     private readonly Queue<ProjectileAction> activeProjectileActions = new();
 
+    private ProjectileShooter shooter;
+    private PlayerInput playerInput;
+
+    private void Awake()
+    {
+        shooter = GetComponent<ProjectileShooter>();
+        playerInput = GetComponent<PlayerInput>();
+    }
+
     public void ExecuteFirstActiveProjectile(Vector2 _)
     {
-        if (activeProjectileActions.TryDequeue(out var pa))
+        if (activeProjectileActions.Count == 0)
+            return;
+
+        // GameObjects could be despawned, which requires this jank logic.
+        if (activeProjectileActions.TryDequeue(out var pa) && pa != null)
             pa.Execute();
+        else
+            ExecuteFirstActiveProjectile(_);
     }
 
     private void HandleShoot(GameObject go)
@@ -24,23 +39,13 @@ public class ProjectileManager : MonoBehaviour
 
     private void OnEnable()
     {
-        var shooter = FindObjectOfType<ProjectileShooter>();
-        if (shooter)
-            shooter.OnShoot += HandleShoot;
-
-        var pi = FindObjectOfType<PlayerInput>();
-        if (pi)
-            pi.OnRightClickInput += ExecuteFirstActiveProjectile;
+        shooter.OnShoot += HandleShoot;
+        playerInput.OnRightClickInput += ExecuteFirstActiveProjectile;
     }
 
     private void OnDisable()
     {
-        var shooter = FindObjectOfType<ProjectileShooter>();
-        if (shooter)
-            shooter.OnShoot -= HandleShoot;
-
-        var pi = FindObjectOfType<PlayerInput>();
-        if (pi)
-            pi.OnRightClickInput -= ExecuteFirstActiveProjectile;
+        shooter.OnShoot -= HandleShoot;
+        playerInput.OnRightClickInput -= ExecuteFirstActiveProjectile;
     }
 }
