@@ -99,6 +99,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
     {
         EditorApplication.delayCall += () =>
         {
+            Debug.Log($"Saving {levelData.Count} levels to AllLevelsData..");
             if (levelData.Count == 0)
                 return;
 
