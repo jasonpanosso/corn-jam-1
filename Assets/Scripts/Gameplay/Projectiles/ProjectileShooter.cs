@@ -10,6 +10,7 @@ public class ProjectileShooter : MonoBehaviour
     public float fireRate = 0.5f;
     private float lastFireTime = 0f;
     private PlayerInput playerInput;
+    public string audioItemKey = "blop";
 
     public void Fire(Vector2 clickPosition)
     {
@@ -28,6 +29,8 @@ public class ProjectileShooter : MonoBehaviour
 
         projectile.GetComponent<Projectile>().Launch(direction);
         lastFireTime = Time.time;
+
+        ServiceLocator.AudioManager.PlayAudioItem(audioItemKey);
     }
 
     private void Awake()
