@@ -2,6 +2,9 @@
 
 Audio in the game is broken down like so:
 
+`AudioManager` is automatically instantiated into each scene via a custom level
+prefab configured in `Assets/LDtkData/CornLevelsLDtk.ldtk`
+
 the singleton `AudioManager` manages the lifecycle of [AudioSources](https://docs.unity3d.com/ScriptReference/AudioSource.html)
 
 To play an audio file, make a call to `ServiceLocator.AudioManager.PlayAudioItem(NAME_OF_AUDIO_ITEM);`
