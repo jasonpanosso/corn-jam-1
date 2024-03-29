@@ -40,6 +40,8 @@ This list is used to load levels by index. The list is sorted by the order that
 the levels should be played in, therefore the first item in the list will be
 the first level of the game, the second item would be the second level, etc.
 
+To load a level, call `ServiceLocator.LevelManager.LoadLevel(LEVEL_INDEX)`
+
 ## Custom `LDtkToUnity` PostProcessor editor script
 
 This script has a handful of jobs:
