@@ -8,8 +8,13 @@ public class PlayerInput : MonoBehaviour
     public event Action<Vector2> OnLeftClickInput = delegate { };
     public event Action<Vector2> OnRightClickInput = delegate { };
 
+    private bool inputDisabled = false;
+
     private void Update()
     {
+        if (inputDisabled)
+            return;
+
         float moveHorizontal = GetHorizontalInput();
         if (moveHorizontal != 0f)
             OnMoveInput.Invoke(moveHorizontal);
@@ -22,6 +27,16 @@ public class PlayerInput : MonoBehaviour
 
         if (GetRightClickInput())
             OnRightClickInput.Invoke(GetCursorWorldPosition());
+    }
+
+    public void EnableInput()
+    {
+        inputDisabled = false;
+    }
+
+    public void DisableInput()
+    {
+        inputDisabled = true;
     }
 
     public float GetHorizontalInput()

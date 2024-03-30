@@ -16,7 +16,6 @@ public class AudioManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            transform.parent = null;
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }

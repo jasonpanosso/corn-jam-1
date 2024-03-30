@@ -16,7 +16,6 @@ public class LevelManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            transform.parent = null;
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -45,13 +44,32 @@ public class LevelManager : MonoBehaviour
         CurrentLevel = levelData;
     }
 
+    public void LoadNextLevel()
+    {
+        var index = CurrentLevel.index;
+        if (index >= levels.Count)
+        {
+            Debug.LogWarning("Unimplemented: Game ending");
+            return;
+        }
+
+        LevelData levelData = levels[index + 1];
+        SceneManager.LoadScene(levelData.sceneName);
+        CurrentLevel = levelData;
+        FindObjectOfType<PlayerInput>().EnableInput();
+    }
+
     public void CompleteCurrentLevel()
     {
         CurrentLevel.completed = true;
-        if (CurrentLevel.index + 1 < levels.Count)
-            LoadLevel(CurrentLevel.index + 1);
-        else
-            Debug.LogWarning("Unimplemented: Game ending");
+
+        var playerInput = FindObjectOfType<PlayerInput>();
+        var postLevelSummary = FindObjectOfType<PostLevelSummary>();
+
+        playerInput.DisableInput();
+
+        // TODO/FIXME: No scoring system is implemented, simply show three stars
+        postLevelSummary.Show(3);
     }
 
     private void InitializeLevels()
