@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using LDtkUnity;
 using LDtkUnity.Editor;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -99,8 +100,10 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
     {
         EditorApplication.delayCall += () =>
         {
-            Debug.Log($"Saving {levelData.Count} levels to AllLevelsData..");
-            if (levelData.Count == 0)
+            var distinctLevels = levelData.DistinctBy(level => level.sceneName);
+
+            Debug.Log($"Saving {distinctLevels.Count()} levels to AllLevelsData..");
+            if (distinctLevels.Count() == 0)
                 return;
 
             var allLevelsData = AssetDatabase.LoadAssetAtPath<AllLevelsData>(allLevelsDataPath);
@@ -109,7 +112,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
                 .LoadAssetAtPath<WorldOrderData>(worldOrderDataPath)
                 .order;
 
-            var sortedLevels = LevelSorter.SortLevelsByWorldAndLevelId(levelData, worldOrder);
+            var sortedLevels = LevelSorter.SortLevelsByWorldAndLevelId(distinctLevels, worldOrder);
             allLevelsData.Levels = sortedLevels.ToList();
             EditorUtility.SetDirty(allLevelsData);
             AssetDatabase.SaveAssetIfDirty(allLevelsData);
