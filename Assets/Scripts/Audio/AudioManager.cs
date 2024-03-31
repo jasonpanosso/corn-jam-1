@@ -1,18 +1,19 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
+[DefaultExecutionOrder(-10)]
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
     [SerializeField]
-    private AudioItemScriptableObject[] audioItemAssets;
-    public int initialAudioPoolSize = 10;
+    private int initialAudioPoolSize = 10;
 
-    private readonly Dictionary<string, AudioItem> audioItems = new();
-    private readonly List<AudioSource> audioSourcePool = new();
+    private static readonly Dictionary<string, AudioItem> audioItems = new();
+    private static readonly List<AudioSource> audioSourcePool = new();
 
-    private void Awake()
+    private void OnEnable()
     {
         if (Instance == null)
         {
@@ -20,24 +21,37 @@ public class AudioManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else
-        {
             Destroy(gameObject);
-        }
 
+#if UNITY_EDITOR
+        Awake();
+#endif
+    }
+
+    private void Awake()
+    {
+        InitializeAudioItemsFromResources();
+        InitializeAudioPool();
+    }
+
+    private void InitializeAudioItemsFromResources()
+    {
+        foreach (
+            var audioAsset in Resources
+                .LoadAll("Audio", typeof(AudioItemScriptableObject))
+                .Cast<AudioItemScriptableObject>()
+        )
+            RegisterAudioItem(audioAsset.name, audioAsset.ToAudioItem());
+    }
+
+    private void InitializeAudioPool()
+    {
         for (int i = 0; i < initialAudioPoolSize; i++)
         {
             GameObject audioSourceObject = new("AudioSource");
             audioSourceObject.transform.SetParent(transform);
             AudioSource audioSource = audioSourceObject.AddComponent<AudioSource>();
             audioSourcePool.Add(audioSource);
-        }
-    }
-
-    private void Start()
-    {
-        foreach (AudioItemScriptableObject audioItemAsset in audioItemAssets)
-        {
-            RegisterAudioItem(audioItemAsset.name, audioItemAsset.ToAudioItem());
         }
     }
 
@@ -64,12 +78,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource GetAudioSourceFromPool()
     {
         foreach (AudioSource audioSource in audioSourcePool)
-        {
             if (!audioSource.isPlaying)
-            {
                 return audioSource;
-            }
-        }
 
         // if no all AudioSources are still playing, create a new one and add it to the pool
         GameObject audioSourceObject = new("AudioSource");
