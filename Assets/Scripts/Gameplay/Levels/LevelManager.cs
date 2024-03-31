@@ -1,18 +1,23 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DefaultExecutionOrder(-10)]
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
+    public event Action OnLevelComplete = delegate { };
+    public event Action OnLevelLoad = delegate { };
+
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
 
-    public readonly List<LevelData> levels = new();
-    public LevelData CurrentLevel { get; private set; }
+    public static readonly List<LevelData> levels = new();
+    public static LevelData CurrentLevel { get; private set; }
 
-    private void Awake()
+    private void OnEnable()
     {
         if (Instance == null)
         {
@@ -20,12 +25,14 @@ public class LevelManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else
-        {
             Destroy(gameObject);
-        }
+
+#if UNITY_EDITOR
+        Awake();
+#endif
     }
 
-    private void Start()
+    private void Awake()
     {
         InitializeLevels();
         TrySetCurrentLevelFromSceneName();
@@ -42,34 +49,17 @@ public class LevelManager : MonoBehaviour
         LevelData levelData = levels[levelIndex];
         SceneManager.LoadScene(levelData.sceneName);
         CurrentLevel = levelData;
+        OnLevelLoad.Invoke();
     }
 
-    public void LoadNextLevel()
-    {
-        var index = CurrentLevel.index;
-        if (index >= levels.Count)
-        {
-            Debug.LogWarning("Unimplemented: Game ending");
-            return;
-        }
+    public void LoadNextLevel() => LoadLevel(CurrentLevel.index + 1);
 
-        LevelData levelData = levels[index + 1];
-        SceneManager.LoadScene(levelData.sceneName);
-        CurrentLevel = levelData;
-        FindObjectOfType<PlayerInput>().EnableInput();
-    }
+    public void RestartLevel() => LoadLevel(CurrentLevel.index);
 
     public void CompleteCurrentLevel()
     {
         CurrentLevel.completed = true;
-
-        var playerInput = FindObjectOfType<PlayerInput>();
-        var postLevelSummary = FindObjectOfType<PostLevelSummary>();
-
-        playerInput.DisableInput();
-
-        // TODO/FIXME: No scoring system is implemented, simply show three stars
-        postLevelSummary.Show(3);
+        OnLevelComplete.Invoke();
     }
 
     private void InitializeLevels()
@@ -84,11 +74,6 @@ public class LevelManager : MonoBehaviour
         }
 
         levels.AddRange(allLevelsData.Levels);
-    }
-
-    public void RestartLevel()
-    {
-        LoadLevel(CurrentLevel.index);
     }
 
     private void TrySetCurrentLevelFromSceneName()

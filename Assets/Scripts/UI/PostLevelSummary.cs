@@ -7,15 +7,10 @@ public class PostLevelSummary : MonoBehaviour
 
     private StarAnimator anim;
 
-    private void Awake()
-    {
-        anim = GetComponent<StarAnimator>();
-    }
-
-    public void Show(int score)
+    public void Show()
     {
         postLevelPanel.SetActive(true);
-        anim.ShowStars(score);
+        anim.ShowStars(3);
     }
 
     public void RetryLevel()
@@ -29,4 +24,13 @@ public class PostLevelSummary : MonoBehaviour
         postLevelPanel.SetActive(false);
         ServiceLocator.LevelManager.LoadNextLevel();
     }
+
+    private void Awake()
+    {
+        anim = GetComponent<StarAnimator>();
+    }
+
+    private void OnEnable() => ServiceLocator.LevelManager.OnLevelComplete += Show;
+
+    private void OnDisable() => ServiceLocator.LevelManager.OnLevelComplete -= Show;
 }

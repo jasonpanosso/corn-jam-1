@@ -63,4 +63,16 @@ public class PlayerInput : MonoBehaviour
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
+
+    private void OnEnable()
+    {
+        ServiceLocator.LevelManager.OnLevelComplete += DisableInput;
+        ServiceLocator.LevelManager.OnLevelLoad += EnableInput;
+    }
+
+    private void OnDisable()
+    {
+        ServiceLocator.LevelManager.OnLevelComplete -= DisableInput;
+        ServiceLocator.LevelManager.OnLevelLoad -= EnableInput;
+    }
 }
