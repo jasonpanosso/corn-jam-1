@@ -14,8 +14,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
 
-    public static readonly List<LevelData> levels = new();
-    public static LevelData CurrentLevel { get; private set; }
+    public readonly List<LevelData> levels = new();
+    public LevelData CurrentLevel { get; private set; }
 
     private void OnEnable()
     {
@@ -28,6 +28,7 @@ public class LevelManager : MonoBehaviour
             Destroy(gameObject);
 
 #if UNITY_EDITOR
+        EditorCleanup();
         Awake();
 #endif
     }
@@ -103,4 +104,8 @@ public class LevelManager : MonoBehaviour
     {
         // TODO: Save data to JSON/Some persistent format
     }
+
+#if UNITY_EDITOR
+    private void EditorCleanup() => levels.Clear();
+#endif
 }

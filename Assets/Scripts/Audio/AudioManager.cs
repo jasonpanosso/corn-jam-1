@@ -10,8 +10,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private int initialAudioPoolSize = 10;
 
-    private static readonly Dictionary<string, AudioItem> audioItems = new();
-    private static readonly List<AudioSource> audioSourcePool = new();
+    private readonly Dictionary<string, AudioItem> audioItems = new();
+    private readonly List<AudioSource> audioSourcePool = new();
 
     private void OnEnable()
     {
@@ -24,6 +24,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
 
 #if UNITY_EDITOR
+        EditorCleanup();
         Awake();
 #endif
     }
@@ -95,4 +96,15 @@ public class AudioManager : MonoBehaviour
         audioSource.volume = audioItem.volume;
         // audioSource.pitch = audioItem.GetRandomPitch();
     }
+
+#if UNITY_EDITOR
+    private void EditorCleanup()
+    {
+        audioItems.Clear();
+        audioSourcePool.Clear();
+
+        foreach (Transform child in transform)
+            Destroy(child.gameObject);
+    }
+#endif
 }
