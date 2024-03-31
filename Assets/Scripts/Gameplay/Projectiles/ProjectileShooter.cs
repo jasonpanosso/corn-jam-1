@@ -4,13 +4,19 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInput))]
 public class ProjectileShooter : MonoBehaviour
 {
+    [SerializeField]
+    private string audioItemKey = "blop";
+
+    [SerializeField]
+    private GameObject projectilePrefab;
+
+    [SerializeField]
+    private float fireRate = 0.5f;
+
     public event Action<GameObject> OnShoot = delegate { };
 
-    public GameObject projectilePrefab;
-    public float fireRate = 0.5f;
     private float lastFireTime = 0f;
     private PlayerInput playerInput;
-    public string audioItemKey = "blop";
 
     public void Fire(Vector2 clickPosition)
     {
@@ -33,18 +39,9 @@ public class ProjectileShooter : MonoBehaviour
         ServiceLocator.AudioManager.PlayAudioItem(audioItemKey);
     }
 
-    private void Awake()
-    {
-        playerInput = GetComponent<PlayerInput>();
-    }
+    private void Awake() => playerInput = GetComponent<PlayerInput>();
 
-    private void OnEnable()
-    {
-        playerInput.OnLeftClickInput += Fire;
-    }
+    private void OnEnable() => playerInput.OnLeftClickInput += Fire;
 
-    private void OnDisable()
-    {
-        playerInput.OnLeftClickInput -= Fire;
-    }
+    private void OnDisable() => playerInput.OnLeftClickInput -= Fire;
 }
