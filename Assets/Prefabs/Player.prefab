@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296383469999932128}
   - component: {fileID: 5155564537120198621}
+  - component: {fileID: 7990233933487876166}
   - component: {fileID: 8054840531981654546}
   - component: {fileID: 4448131734561145425}
   - component: {fileID: 2099448523896157215}
@@ -90,6 +91,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7990233933487876166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174636957305673674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0e88190316a64769fee7a187bad45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomStartTime: 0
+  zoomDuration: 1.5
+  desiredZoomFactor: 2.5
 --- !u!50 &8054840531981654546
 Rigidbody2D:
   serializedVersion: 4
@@ -129,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa2402e5bcc3fce08f7c0676338599f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  test: {fileID: 11400000, guid: dbdc3a783e632ceaf988126b3ff8d7ae, type: 2}
 --- !u!114 &2099448523896157215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,3 +303,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7517045921475706807, guid: 453112e4478350502bab376c6a400cf6, type: 3}
   fireRate: 0.5
+  audioItemKey: blop
