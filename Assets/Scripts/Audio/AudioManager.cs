@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
 {
-
     [SerializeField]
     private int initialAudioPoolSize = 10;
 
