@@ -20,8 +20,8 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     {
         foreach (
             var audioAsset in Resources
-                .LoadAll("Audio", typeof(AudioItemScriptableObject))
-                .Cast<AudioItemScriptableObject>()
+                .LoadAll("Audio", typeof(AudioItemData))
+                .Cast<AudioItemData>()
         )
             RegisterAudioItem(audioAsset.name, audioAsset.ToAudioItem());
     }
@@ -63,7 +63,7 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
             if (!audioSource.isPlaying)
                 return audioSource;
 
-        // if no all AudioSources are still playing, create a new one and add it to the pool
+        // if all AudioSources are still playing, create a new one and add it to the pool
         GameObject audioSourceObject = new("AudioSource");
         audioSourceObject.transform.SetParent(transform);
         AudioSource newAudioSource = audioSourceObject.AddComponent<AudioSource>();
@@ -75,7 +75,7 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     {
         audioSource.clip = audioItem.GetRandomAudioClip();
         audioSource.volume = audioItem.volume;
-        // audioSource.pitch = audioItem.GetRandomPitch();
+        audioSource.pitch = audioItem.GetRandomPitch();
     }
 
 #if UNITY_EDITOR
