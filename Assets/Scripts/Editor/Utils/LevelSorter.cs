@@ -8,19 +8,15 @@ public static class LevelSorter
         IEnumerable<WorldType> worldOrder
     )
     {
-        List<LevelData> output = new();
-
         Dictionary<WorldType, List<LevelData>> map = new();
-        foreach (WorldType wt in worldOrder)
-        {
+
+        foreach (var wt in worldOrder)
             map.Add(wt, new());
-        }
 
         foreach (var level in unsortedLevels)
-        {
             map[level.worldType].Add(level);
-        }
 
+        List<LevelData> output = new();
         int curIndex = 0;
         foreach (var wt in worldOrder)
         {
@@ -47,9 +43,7 @@ public static class LevelSorter
         string sceneName2 = b.sceneName;
 
         if (sceneName1 == null || sceneName2 == null)
-        {
             throw new NullReferenceException("Null sceneName in LevelData during level sorting");
-        }
 
         int suffixIndex1 = sceneName1.LastIndexOf('_');
         int suffixIndex2 = sceneName2.LastIndexOf('_');
@@ -63,9 +57,7 @@ public static class LevelSorter
                 int.TryParse(suffixStr1, out int suffix1)
                 && int.TryParse(suffixStr2, out int suffix2)
             )
-            {
                 return suffix1.CompareTo(suffix2);
-            }
         }
 
         throw new ArgumentException(
