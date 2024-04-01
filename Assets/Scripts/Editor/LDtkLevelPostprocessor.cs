@@ -14,9 +14,9 @@ using UnityEngine.SceneManagement;
 // to setup WorldOrderData.
 public class LDtkLevelPostprocessor : LDtkPostprocessor
 {
-    private readonly string levelScenesPath = "Assets/Scenes/Levels/";
-    private readonly string allLevelsDataPath = "Assets/Resources/AllLevelsData.asset";
-    private readonly string worldOrderDataPath = "Assets/Data/WorldOrderData.asset";
+    private const string levelScenesPath = "Assets/Scenes/Levels/";
+    private const string allLevelsDataPath = "Assets/Resources/AllLevelsData.asset";
+    private const string worldOrderDataPath = "Assets/Data/WorldOrderData.asset";
 
     private readonly List<LevelData> levelData = new();
     private readonly List<(Scene, string)> newScenesToSave = new();
@@ -56,7 +56,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
         newScene.name = level.name;
 
         newScenesToSave.Add((newScene, filePath));
-        AddSceneToBuildSettings(filePath);
+        AddSceneToBuildSettingsAfterDelay(filePath);
     }
 
     private WorldType GetWorldTypeFromLevelName(string levelName)
@@ -74,7 +74,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
         return WorldType.Grass;
     }
 
-    private void AddSceneToBuildSettings(string scenePath)
+    private void AddSceneToBuildSettingsAfterDelay(string scenePath)
     {
         EditorApplication.delayCall += () =>
         {
