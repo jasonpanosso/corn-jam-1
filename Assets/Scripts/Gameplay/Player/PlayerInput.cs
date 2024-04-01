@@ -29,40 +29,19 @@ public class PlayerInput : MonoBehaviour
             OnRightClickInput.Invoke(GetCursorWorldPosition());
     }
 
-    public void EnableInput()
-    {
-        inputDisabled = false;
-    }
+    public void EnableInput() => inputDisabled = false;
 
-    public void DisableInput()
-    {
-        inputDisabled = true;
-    }
+    public void DisableInput() => inputDisabled = true;
 
-    public float GetHorizontalInput()
-    {
-        return Input.GetAxis("Horizontal");
-    }
+    public float GetHorizontalInput() => Input.GetAxis("Horizontal");
 
-    public bool GetJumpInput()
-    {
-        return Input.GetButtonDown("Jump");
-    }
+    public bool GetJumpInput() => Input.GetButtonDown("Jump");
 
-    public bool GetLeftClickInput()
-    {
-        return Input.GetMouseButtonDown(0);
-    }
+    public bool GetLeftClickInput() => Input.GetMouseButtonDown(0);
 
-    public bool GetRightClickInput()
-    {
-        return Input.GetMouseButtonDown(1);
-    }
+    public bool GetRightClickInput() => Input.GetMouseButtonDown(1);
 
-    public Vector2 GetCursorWorldPosition()
-    {
-        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
+    public Vector2 GetCursorWorldPosition() => Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
     private void OnEnable()
     {
