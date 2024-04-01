@@ -9,12 +9,12 @@ public class ZoomToTransformOnLevelComplete : MonoBehaviour
     private float zoomDuration = 1f;
 
     [SerializeField]
-    private float desiredZoomFactor = 2.5f;
+    private float zoomFactor = 2.5f;
 
     private void PlayZoomCutscene()
     {
         CameraMovementEvent cme =
-            new(transform.position, zoomStartTime, zoomDuration, desiredZoomFactor);
+            new(transform.position, zoomStartTime, zoomDuration, zoomFactor: zoomFactor);
         ServiceLocator.CutsceneManager.PlayCutscene(new CutsceneEvent[] { cme });
     }
 
