@@ -18,7 +18,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
     private const string allLevelsDataPath = "Assets/Resources/AllLevelsData.asset";
     private const string worldOrderDataPath = "Assets/Data/WorldOrderData.asset";
 
-    private readonly List<LevelData> levelData = new();
+    private readonly List<Level> levels = new();
     private readonly List<(Scene, string)> newScenesToSave = new();
 
     private bool firstRun = true;
@@ -38,7 +38,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
 
         WorldType worldType = GetWorldTypeFromLevelName(root.name);
         string filePath = Path.Combine(levelScenesPath, worldType.ToString(), root.name + ".unity");
-        levelData.Add(new(root.name, worldType));
+        levels.Add(new(root.name, worldType));
 
         if (!File.Exists(filePath))
             CreateScene(filePath, root);
@@ -100,7 +100,7 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
     {
         EditorApplication.delayCall += () =>
         {
-            var distinctLevels = levelData.DistinctBy(level => level.sceneName);
+            var distinctLevels = levels.DistinctBy(level => level.sceneName);
 
             Debug.Log($"Saving {distinctLevels.Count()} levels to AllLevelsData..");
             if (distinctLevels.Count() == 0)

@@ -28,7 +28,7 @@ Levels are managed via a `LevelManager`
 `LevelManager` is automatically instantiated into each scene that has an LDtk level
 prefab via a custom level prefab configured in `Assets/LDtkData/CornLevelsLDtk.ldtk`
 
-`LevelManager` contains a list of `LevelData` objects which contains information
+`LevelManager` contains a list of `Level` objects which contains information
 about each level, including the corresponding scene that should be loaded, the
 level number(index), and the "formatted"(user-facing) name.
 
@@ -47,7 +47,7 @@ To load a level, call `ServiceLocator.LevelManager.LoadLevel(LEVEL_INDEX)`
 This script has a handful of jobs:
 
 1. Managing the `AllLevelsData` asset. `AllLevelData` is a `ScriptableObject` that contains
-   all instances of `LevelData`. This ScriptableObject is automatically created, and managed via an
+   all instances of `Level`. This ScriptableObject is automatically created, and managed via an
    editor script whenever our LDtkToUnity importer detects changes to levels.
 2. Creating new scenes for new LDtk levels, and adding said scene to the list
    of scenes that Unity will include at buildtime.

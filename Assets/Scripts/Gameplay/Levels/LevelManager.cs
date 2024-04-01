@@ -11,8 +11,8 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
 
-    public readonly List<LevelData> levels = new();
-    public LevelData CurrentLevel { get; private set; }
+    public readonly List<Level> levels = new();
+    public Level CurrentLevel { get; private set; }
 
     private void Awake()
     {
@@ -28,9 +28,9 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
                 $"levelIndex passed to LevelManager.LoadLevel out of range: {levelIndex}"
             );
 
-        LevelData levelData = levels[levelIndex];
-        SceneManager.LoadScene(levelData.sceneName);
-        CurrentLevel = levelData;
+        Level nextLevel = levels[levelIndex];
+        SceneManager.LoadScene(nextLevel.sceneName);
+        CurrentLevel = nextLevel;
         OnLevelLoad.Invoke();
     }
 

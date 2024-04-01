@@ -1,5 +1,5 @@
 [System.Serializable]
-public class LevelData
+public class Level
 {
     public int index;
     public WorldType worldType;
@@ -7,7 +7,7 @@ public class LevelData
     public string sceneName;
     public bool completed = false;
 
-    public LevelData(
+    public Level(
         string sceneName,
         WorldType worldType,
         int index = 0,

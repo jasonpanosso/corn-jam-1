@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 public static class LevelSorter
 {
-    public static IEnumerable<LevelData> SortLevelsByWorldAndLevelId(
-        IEnumerable<LevelData> unsortedLevels,
+    public static IEnumerable<Level> SortLevelsByWorldAndLevelId(
+        IEnumerable<Level> unsortedLevels,
         IEnumerable<WorldType> worldOrder
     )
     {
-        Dictionary<WorldType, List<LevelData>> map = new();
+        Dictionary<WorldType, List<Level>> map = new();
 
         foreach (var wt in worldOrder)
             map.Add(wt, new());
@@ -16,7 +16,7 @@ public static class LevelSorter
         foreach (var level in unsortedLevels)
             map[level.worldType].Add(level);
 
-        List<LevelData> output = new();
+        List<Level> output = new();
         int curIndex = 0;
         foreach (var wt in worldOrder)
         {
@@ -37,13 +37,13 @@ public static class LevelSorter
         return output;
     }
 
-    private static int CompareSceneNamesByIntSuffix(LevelData a, LevelData b)
+    private static int CompareSceneNamesByIntSuffix(Level a, Level b)
     {
         string sceneName1 = a.sceneName;
         string sceneName2 = b.sceneName;
 
         if (sceneName1 == null || sceneName2 == null)
-            throw new NullReferenceException("Null sceneName in LevelData during level sorting");
+            throw new NullReferenceException("Null sceneName in Level during level sorting");
 
         int suffixIndex1 = sceneName1.LastIndexOf('_');
         int suffixIndex2 = sceneName2.LastIndexOf('_');
