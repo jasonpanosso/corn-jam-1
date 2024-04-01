@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -29,7 +30,18 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
             );
 
         Level nextLevel = Levels[levelIndex];
-        SceneManager.LoadScene(nextLevel.sceneName);
+        StartCoroutine(LoadLevelAsync(nextLevel));
+    }
+
+    private IEnumerator LoadLevelAsync(Level nextLevel)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextLevel.sceneName);
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
         CurrentLevel = nextLevel;
         OnLevelLoad.Invoke();
     }
