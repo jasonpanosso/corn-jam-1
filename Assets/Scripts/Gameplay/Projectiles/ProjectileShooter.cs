@@ -11,7 +11,7 @@ public class ProjectileShooter : MonoBehaviour
     private GameObject projectilePrefab;
 
     [SerializeField]
-    private float fireRate = 0.5f;
+    private float fireRate = 0.3f;
 
     public event Action<GameObject> OnShoot = delegate { };
 
@@ -41,7 +41,7 @@ public class ProjectileShooter : MonoBehaviour
 
     private void Awake() => playerInput = GetComponent<PlayerInput>();
 
-    private void OnEnable() => playerInput.OnLeftClickInput += Fire;
+    private void OnEnable() => playerInput.OnLeftClickUp += Fire;
 
-    private void OnDisable() => playerInput.OnLeftClickInput -= Fire;
+    private void OnDisable() => playerInput.OnLeftClickUp += Fire;
 }

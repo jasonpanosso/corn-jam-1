@@ -4,9 +4,10 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public event Action<float> OnMoveInput = delegate { };
-    public event Action OnJumpInput = delegate { };
-    public event Action<Vector2> OnLeftClickInput = delegate { };
-    public event Action<Vector2> OnRightClickInput = delegate { };
+    public event Action OnJumpDown = delegate { };
+    public event Action<Vector2> OnLeftClickDown = delegate { };
+    public event Action<Vector2> OnLeftClickUp = delegate { };
+    public event Action<Vector2> OnRightClickDown = delegate { };
 
     private bool inputDisabled = false;
 
@@ -19,14 +20,17 @@ public class PlayerInput : MonoBehaviour
         if (moveHorizontal != 0f)
             OnMoveInput.Invoke(moveHorizontal);
 
-        if (GetJumpInput())
-            OnJumpInput.Invoke();
+        if (GetJumpDown())
+            OnJumpDown.Invoke();
 
-        if (GetLeftClickInput())
-            OnLeftClickInput.Invoke(GetCursorWorldPosition());
+        if (GetLeftClickDown())
+            OnLeftClickDown.Invoke(GetCursorWorldPosition());
 
-        if (GetRightClickInput())
-            OnRightClickInput.Invoke(GetCursorWorldPosition());
+        if (GetLeftClickUp())
+            OnLeftClickUp.Invoke(GetCursorWorldPosition());
+
+        if (GetRightClickDown())
+            OnRightClickDown.Invoke(GetCursorWorldPosition());
     }
 
     public void EnableInput() => inputDisabled = false;
@@ -35,11 +39,13 @@ public class PlayerInput : MonoBehaviour
 
     public float GetHorizontalInput() => Input.GetAxis("Horizontal");
 
-    public bool GetJumpInput() => Input.GetButtonDown("Jump");
+    public bool GetJumpDown() => Input.GetButtonDown("Jump");
 
-    public bool GetLeftClickInput() => Input.GetMouseButtonDown(0);
+    public bool GetLeftClickDown() => Input.GetMouseButtonDown(0);
 
-    public bool GetRightClickInput() => Input.GetMouseButtonDown(1);
+    public bool GetLeftClickUp() => Input.GetMouseButtonUp(0);
+
+    public bool GetRightClickDown() => Input.GetMouseButtonDown(1);
 
     public Vector2 GetCursorWorldPosition() => Camera.main.ScreenToWorldPoint(Input.mousePosition);
 

@@ -40,12 +40,12 @@ public class ProjectileManager : MonoBehaviour
     private void OnEnable()
     {
         shooter.OnShoot += HandleShoot;
-        playerInput.OnRightClickInput += ExecuteFirstActiveProjectile;
+        playerInput.OnRightClickDown += ExecuteFirstActiveProjectile;
     }
 
     private void OnDisable()
     {
         shooter.OnShoot -= HandleShoot;
-        playerInput.OnRightClickInput -= ExecuteFirstActiveProjectile;
+        playerInput.OnRightClickDown -= ExecuteFirstActiveProjectile;
     }
 }

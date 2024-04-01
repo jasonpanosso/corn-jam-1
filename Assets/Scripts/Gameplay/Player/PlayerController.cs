@@ -66,12 +66,12 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         playerInput.OnMoveInput += HandleMove;
-        playerInput.OnJumpInput += HandleJump;
+        playerInput.OnJumpDown += HandleJump;
     }
 
     private void OnDisable()
     {
         playerInput.OnMoveInput -= HandleMove;
-        playerInput.OnJumpInput -= HandleJump;
+        playerInput.OnJumpDown -= HandleJump;
     }
 }
