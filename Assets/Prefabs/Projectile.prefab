@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 401795998197396800}
   - component: {fileID: -2378287643045907536}
   - component: {fileID: -772072594715220054}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ MonoBehaviour:
   knockbackForce: 75
   knockbackTags:
   - Player
-  ignoreCollisionDuration: 1
+  ignoreCollisionDuration: 0.1
 --- !u!114 &-772072594715220054
 MonoBehaviour:
   m_ObjectHideFlags: 0

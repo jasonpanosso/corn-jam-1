@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator), typeof(Collider2D))]
 public class PoppingKernel : ProjectileAction
 {
     public float popRadius = 2f;
@@ -13,22 +13,25 @@ public class PoppingKernel : ProjectileAction
     private List<string> knockbackTags = new();
 
     [SerializeField]
-    private float ignoreCollisionDuration = 0.5f;
+    private float ignoreCollisionDuration = 0.1f;
 
     private Animator anim;
+    private Collider2D col;
 
     private bool isPopped = false;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        col = GetComponent<Collider2D>();
     }
 
-    private System.Collections.IEnumerator RestoreCollisionAfterDelay(Collider2D otherCollider)
+    private System.Collections.IEnumerator SwapToPopcornLayerAfterDelay()
     {
         yield return new WaitForSeconds(ignoreCollisionDuration);
 
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), otherCollider, false);
+        if (gameObject != null)
+            gameObject.layer = LayerMask.NameToLayer("Popcorn");
     }
 
     public override void Execute()
@@ -39,6 +42,7 @@ public class PoppingKernel : ProjectileAction
 
     private void Pop()
     {
+        StartCoroutine(SwapToPopcornLayerAfterDelay());
         if (anim != null)
             anim.SetTrigger("Pop");
 
@@ -47,12 +51,12 @@ public class PoppingKernel : ProjectileAction
         {
             if (knockbackTags.Any(tag => hit.CompareTag(tag)))
             {
-                Physics2D.IgnoreCollision(hit, GetComponent<Collider2D>(), true);
-                StartCoroutine(RestoreCollisionAfterDelay(hit));
-
                 Vector2 knockbackDirection = (
                     hit.transform.position - transform.position
                 ).normalized;
+
+                if (knockbackDirection == Vector2.zero)
+                    knockbackDirection.y = 1;
 
                 var hitRb = hit.GetComponent<Rigidbody2D>();
                 hitRb.velocity = Vector2.zero;
