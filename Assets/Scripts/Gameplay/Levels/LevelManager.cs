@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,24 +12,23 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
 
-    public readonly List<Level> levels = new();
+    public List<Level> Levels { get; private set; } = new();
     public Level CurrentLevel { get; private set; }
 
     private void Awake()
     {
         InitializeLevels();
         TrySetCurrentLevelFromSceneName();
-        LoadProgress();
     }
 
     public void LoadLevel(int levelIndex)
     {
-        if (levelIndex < 0 || levelIndex >= levels.Count)
+        if (levelIndex < 0 || levelIndex >= Levels.Count)
             Debug.LogError(
                 $"levelIndex passed to LevelManager.LoadLevel out of range: {levelIndex}"
             );
 
-        Level nextLevel = levels[levelIndex];
+        Level nextLevel = Levels[levelIndex];
         SceneManager.LoadScene(nextLevel.sceneName);
         CurrentLevel = nextLevel;
         OnLevelLoad.Invoke();
@@ -41,6 +41,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
     public void CompleteCurrentLevel()
     {
         CurrentLevel.completed = true;
+        SaveProgress();
         OnLevelComplete.Invoke();
     }
 
@@ -55,45 +56,43 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
             return;
         }
 
-        levels.AddRange(allLevelsData.Levels);
+        LoadProgress(allLevelsData.Levels);
     }
 
     private void TrySetCurrentLevelFromSceneName()
     {
         Scene scene = SceneManager.GetActiveScene();
-
+        // Temp hack for menu
         if (scene.name == "Menu")
         {
-            CurrentLevel = levels[0];
+            CurrentLevel = Levels[0];
             return;
         }
 
-        var cur = levels.Find(l => l.sceneName == scene.name);
+        var cur = Levels.Find(l => l.sceneName == scene.name);
 
         if (cur == null)
             Debug.Log("Current scene is not a valid level, defaulting to level 0");
 
-        CurrentLevel = cur ?? levels[0];
+        CurrentLevel = cur ?? Levels[0];
     }
 
-    private void LoadProgress()
+    private void LoadProgress(IEnumerable<Level> levelsWithoutProgression)
     {
-        // TODO: Load data from JSON/Some persistent format
+        var levelsWithProgression = PersistentLevelProgressDataStorage.LoadLevelProgression(
+            levelsWithoutProgression
+        );
+
+        Levels = levelsWithProgression.ToList();
     }
 
-    private void SaveProgress()
-    {
-        // TODO: Save data to JSON/Some persistent format
-    }
+    private void SaveProgress() => PersistentLevelProgressDataStorage.SaveLevelProgress(Levels);
 
 #if UNITY_EDITOR
     protected override void OnEnable()
     {
         base.OnEnable();
-        EditorCleanup();
         Awake();
     }
-
-    private void EditorCleanup() => levels.Clear();
 #endif
 }
