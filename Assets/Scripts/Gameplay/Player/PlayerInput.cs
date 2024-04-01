@@ -9,11 +9,11 @@ public class PlayerInput : MonoBehaviour
     public event Action<Vector2> OnLeftClickUp = delegate { };
     public event Action<Vector2> OnRightClickDown = delegate { };
 
-    private bool inputDisabled = false;
+    private bool inputEnabled = true;
 
     private void Update()
     {
-        if (inputDisabled)
+        if (!inputEnabled)
             return;
 
         float moveHorizontal = GetHorizontalInput();
@@ -33,9 +33,9 @@ public class PlayerInput : MonoBehaviour
             OnRightClickDown.Invoke(GetCursorWorldPosition());
     }
 
-    public void EnableInput() => inputDisabled = false;
+    public void EnableInput() => inputEnabled = true;
 
-    public void DisableInput() => inputDisabled = true;
+    public void DisableInput() => inputEnabled = false;
 
     public float GetHorizontalInput() => Input.GetAxis("Horizontal");
 
