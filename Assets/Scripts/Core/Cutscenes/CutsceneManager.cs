@@ -20,11 +20,11 @@ public class CutsceneManager : MonoBehaviour
     }
 
     public void PlayCutscene(IEnumerable<CutsceneEvent> cutsceneEvents) =>
-        StartCoroutine(PlayCutsceneCoroutine(cutsceneEvents.ToList()));
+        StartCoroutine(PlayCutsceneCoroutine(cutsceneEvents));
 
-    private IEnumerator PlayCutsceneCoroutine(List<CutsceneEvent> cutsceneEvents)
+    private IEnumerator PlayCutsceneCoroutine(IEnumerable<CutsceneEvent> cutsceneEvents)
     {
-        cutsceneEvents.Sort((e1, e2) => e1.startTime.CompareTo(e2.startTime));
+        cutsceneEvents.ToList().Sort((e1, e2) => e1.startTime.CompareTo(e2.startTime));
 
         foreach (var e in cutsceneEvents)
         {
