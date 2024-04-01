@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(Collider2D))]
+[RequireComponent(typeof(Animator))]
 public class PoppingKernel : ProjectileAction
 {
     public float popRadius = 2f;
@@ -16,14 +16,12 @@ public class PoppingKernel : ProjectileAction
     private float ignoreCollisionDuration = 0.1f;
 
     private Animator anim;
-    private Collider2D col;
 
     private bool isPopped = false;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        col = GetComponent<Collider2D>();
     }
 
     private System.Collections.IEnumerator SwapToPopcornLayerAfterDelay()
