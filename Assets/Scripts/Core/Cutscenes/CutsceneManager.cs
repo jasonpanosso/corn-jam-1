@@ -3,22 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[DefaultExecutionOrder(-10)]
-public class CutsceneManager : MonoBehaviour
+public class CutsceneManager : GenericSingletonMonoBehaviour<CutsceneManager>
 {
-    public static CutsceneManager Instance { get; private set; }
-
-    private void OnEnable()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-            Destroy(gameObject);
-    }
-
     public void PlayCutscene(IEnumerable<CutsceneEvent> cutsceneEvents) =>
         StartCoroutine(PlayCutsceneCoroutine(cutsceneEvents));
 

@@ -2,32 +2,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[DefaultExecutionOrder(-10)]
-public class AudioManager : MonoBehaviour
+public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
 {
-    public static AudioManager Instance { get; private set; }
 
     [SerializeField]
     private int initialAudioPoolSize = 10;
 
     private readonly Dictionary<string, AudioItem> audioItems = new();
     private readonly List<AudioSource> audioSourcePool = new();
-
-    private void OnEnable()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-            Destroy(gameObject);
-
-#if UNITY_EDITOR
-        EditorCleanup();
-        Awake();
-#endif
-    }
 
     private void Awake()
     {
@@ -98,6 +80,13 @@ public class AudioManager : MonoBehaviour
     }
 
 #if UNITY_EDITOR
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        EditorCleanup();
+        Awake();
+    }
+
     private void EditorCleanup()
     {
         audioItems.Clear();

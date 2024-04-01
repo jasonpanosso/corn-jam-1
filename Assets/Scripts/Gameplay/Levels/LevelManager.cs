@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[DefaultExecutionOrder(-10)]
-public class LevelManager : MonoBehaviour
+public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 {
-    public static LevelManager Instance { get; private set; }
-
     public event Action OnLevelComplete = delegate { };
     public event Action OnLevelLoad = delegate { };
 
@@ -16,22 +13,6 @@ public class LevelManager : MonoBehaviour
 
     public readonly List<LevelData> levels = new();
     public LevelData CurrentLevel { get; private set; }
-
-    private void OnEnable()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-            Destroy(gameObject);
-
-#if UNITY_EDITOR
-        EditorCleanup();
-        Awake();
-#endif
-    }
 
     private void Awake()
     {
@@ -106,6 +87,13 @@ public class LevelManager : MonoBehaviour
     }
 
 #if UNITY_EDITOR
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        EditorCleanup();
+        Awake();
+    }
+
     private void EditorCleanup() => levels.Clear();
 #endif
 }
