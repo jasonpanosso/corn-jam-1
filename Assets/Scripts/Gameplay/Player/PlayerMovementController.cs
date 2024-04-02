@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
-public class PlayerController : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour
 {
     public float maxSpeed = 5f;
     public float jumpForce = 6f;
@@ -47,15 +47,9 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new(clampedVelocityX, rb.velocity.y);
     }
 
-    private void HandleMove(float moveInput)
-    {
-        wishDir = moveInput;
-    }
+    private void HandleMove(float moveInput) => wishDir = moveInput;
 
-    private void HandleJump()
-    {
-        shouldJump = true;
-    }
+    private void HandleJump() => shouldJump = true;
 
     private void Awake()
     {
