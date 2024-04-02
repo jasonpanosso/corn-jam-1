@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: -3732328272265895158}
   - component: {fileID: 4820037860939074107}
   - component: {fileID: 8062080091962130547}
+  - component: {fileID: 3219780732141293892}
+  - component: {fileID: 7415246534769288837}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -303,3 +305,36 @@ MonoBehaviour:
   audioItemKey: SFX_KernelPop
   projectilePrefab: {fileID: 7517045921475706807, guid: 453112e4478350502bab376c6a400cf6, type: 3}
   fireRate: 0.3
+--- !u!114 &3219780732141293892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174636957305673674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c502243fb5dd7564aaed19b5df3fc970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftBoundaryThreshhold: 0
+  rightBoundaryThreshhold: 0
+  aboveBoundaryThreshhold: 0
+  belowBoundaryThreshhold: 1
+  detectRightOfScreen: 0
+  detectLeftOfScreen: 0
+  detectAboveScreen: 0
+  detectBelowScreen: 1
+  boundaryCheckInterval: 1
+--- !u!114 &7415246534769288837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174636957305673674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb436387c36bc113a880647d1c35da2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
