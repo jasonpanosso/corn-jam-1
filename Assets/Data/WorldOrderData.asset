@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fb5ca82d3f4470d948ec1d142c5fd7, type: 3}
   m_Name: WorldOrderData
   m_EditorClassIdentifier: 
-  order: 00000000030000000100000002000000
+  order: 00000000010000000200000003000000

@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Lab/Lab_0.unity
     guid: ec2236a3380ee0a48a66fd67e4334407
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cave/Cave_1.unity
+    guid: e992d1fbbb0edd44daba27cdc2464dc4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cave/Cave_2.unity
+    guid: 97e5ecfaccc48834c9252fce48eff0c5
   m_configObjects: {}

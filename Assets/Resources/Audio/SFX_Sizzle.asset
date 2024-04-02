@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac2b55cb99ed6d850b102def4d68ed7a, type: 3}
-  m_Name: AMB_Lab
+  m_Name: SFX_Sizzle
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: fa15294eeb9421745a20e4875c73a986, type: 3}
+  - {fileID: 8300000, guid: 4e9246a392543bc45938d95bf330da48, type: 3}
+  - {fileID: 8300000, guid: 439ab1afc0223dd439d51e20ff000b0f, type: 3}
+  - {fileID: 8300000, guid: 9fde61ddf55778f4aa4496f1c30087c2, type: 3}
+  - {fileID: 8300000, guid: 9e7ae6072d274d44a9fd6985cf448e7f, type: 3}
+  - {fileID: 8300000, guid: 3214923ae227d104989763a71578800f, type: 3}
+  - {fileID: 8300000, guid: 432f3a2fccfd69944beb43febab7687e, type: 3}
   volume: 1
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0

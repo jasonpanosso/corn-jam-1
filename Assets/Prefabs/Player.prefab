@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5448175134a7d095be5f816024708f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 15
+  maxSpeed: 12
   jumpForce: 35
   groundAccel: 30
   groundedContactFilter:
@@ -302,4 +302,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioItemKey: SFX_KernalPop
   projectilePrefab: {fileID: 7517045921475706807, guid: 453112e4478350502bab376c6a400cf6, type: 3}
-  fireRate: 0.5
+  fireRate: 0.3

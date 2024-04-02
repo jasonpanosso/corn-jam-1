@@ -39,17 +39,27 @@ MonoBehaviour:
     sceneName: Grass_4
     completed: 0
   - index: 5
-    worldType: 3
-    name: 
-    sceneName: Lab_0
-    completed: 0
-  - index: 6
     worldType: 1
     name: 
     sceneName: Cave_0
     completed: 0
+  - index: 6
+    worldType: 1
+    name: 
+    sceneName: Cave_1
+    completed: 0
   - index: 7
+    worldType: 1
+    name: 
+    sceneName: Cave_2
+    completed: 0
+  - index: 8
     worldType: 2
     name: 
     sceneName: Hell_0
+    completed: 0
+  - index: 9
+    worldType: 3
+    name: 
+    sceneName: Lab_0
     completed: 0
