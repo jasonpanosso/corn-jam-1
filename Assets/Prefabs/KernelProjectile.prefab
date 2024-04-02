@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 401795998197396800}
   - component: {fileID: -2378287643045907536}
   - component: {fileID: -772072594715220054}
+  - component: {fileID: 869505806253595864}
   m_Layer: 8
   m_Name: KernelProjectile
   m_TagString: Untagged
@@ -230,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0369c76c9217c20cbb8d28117a8e7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioKey: SFX_KernelPop
+  audioKey: SFX_PopcornPop
   popRadius: 2
   knockbackForce: 75
   knockbackTags:
@@ -248,5 +249,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f602212183e5e42cda8ec54aa2e98211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenBoundaryThreshold: 0.1
+--- !u!114 &869505806253595864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517045921475706807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c502243fb5dd7564aaed19b5df3fc970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftBoundaryThreshhold: 0.1
+  rightBoundaryThreshhold: 0.1
+  aboveBoundaryThreshhold: 0.1
+  belowBoundaryThreshhold: 0.1
+  detectRightOfScreen: 1
+  detectLeftOfScreen: 1
+  detectAboveScreen: 1
+  detectBelowScreen: 1
   boundaryCheckInterval: 1
