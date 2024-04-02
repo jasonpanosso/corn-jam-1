@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e22ea13f013a6aa4180d7d45bceae31c, type: 3}
   - {fileID: 8300000, guid: dbd232956b19d2147a1a8cc3ed8e9d7c, type: 3}
   - {fileID: 8300000, guid: bce2c2f70d54c244da116efd29f5f3a4, type: 3}
-  volume: 1
+  volume: 0.8
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0
+  loop: 0

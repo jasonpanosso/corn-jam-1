@@ -15,5 +15,6 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 3816ac9961662684e8f083a707c120a1, type: 3}
   volume: 1
-  lowerSemitoneOffset: 0
-  upperSemitoneOffset: 0
+  lowerSemitoneOffset: 5
+  upperSemitoneOffset: 5
+  loop: 0
