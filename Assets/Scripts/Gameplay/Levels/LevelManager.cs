@@ -5,10 +5,12 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DefaultExecutionOrder(-20)]
 public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 {
     public event Action OnLevelComplete = delegate { };
-    public event Action OnLevelLoad = delegate { };
+    public event Action OnLevelLoaded = delegate { };
+    public event Action OnLevelLoadBegin = delegate { };
 
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
@@ -24,6 +26,8 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 
     public void LoadLevel(int levelIndex)
     {
+        OnLevelLoadBegin.Invoke();
+
         if (levelIndex < 0 || levelIndex >= Levels.Count)
             Debug.LogError(
                 $"levelIndex passed to LevelManager.LoadLevel out of range: {levelIndex}"
@@ -43,7 +47,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         }
 
         CurrentLevel = nextLevel;
-        OnLevelLoad.Invoke();
+        OnLevelLoaded.Invoke();
     }
 
     public void LoadNextLevel() => LoadLevel(CurrentLevel.index + 1);

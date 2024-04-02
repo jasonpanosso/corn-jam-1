@@ -54,12 +54,12 @@ public class PlayerInput : MonoBehaviour
     private void OnEnable()
     {
         ServiceLocator.LevelManager.OnLevelComplete += DisableInput;
-        ServiceLocator.LevelManager.OnLevelLoad += EnableInput;
+        ServiceLocator.LevelManager.OnLevelLoaded += EnableInput;
     }
 
     private void OnDisable()
     {
         ServiceLocator.LevelManager.OnLevelComplete -= DisableInput;
-        ServiceLocator.LevelManager.OnLevelLoad -= EnableInput;
+        ServiceLocator.LevelManager.OnLevelLoaded -= EnableInput;
     }
 }
