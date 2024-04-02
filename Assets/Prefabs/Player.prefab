@@ -300,6 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab72a33adaffe4b5aaee50b52ffad6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioItemKey: SFX_KernalPop
+  audioItemKey: SFX_KernelPop
   projectilePrefab: {fileID: 7517045921475706807, guid: 453112e4478350502bab376c6a400cf6, type: 3}
   fireRate: 0.3

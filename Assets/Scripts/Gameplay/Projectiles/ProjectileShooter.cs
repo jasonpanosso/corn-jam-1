@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileShooter : MonoBehaviour
 {
     [SerializeField]
-    private string audioItemKey = "blop";
+    private string audioItemKey = "SFX_KernelPop";
 
     [SerializeField]
     private GameObject projectilePrefab;

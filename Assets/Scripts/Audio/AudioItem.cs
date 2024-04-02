@@ -7,6 +7,7 @@ public class AudioItem
     public float volume = 1f;
     public uint lowerSemitoneOffset = 0;
     public uint upperSemitoneOffset = 0;
+    public bool loop = false;
 
     public AudioClip GetRandomAudioClip()
     {

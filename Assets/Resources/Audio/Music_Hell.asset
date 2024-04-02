@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClips:
   - {fileID: 8300000, guid: 5bc826d5c0d362143b144d767d501d7c, type: 3}
-  volume: 1
+  volume: 0.5
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0
+  loop: 1

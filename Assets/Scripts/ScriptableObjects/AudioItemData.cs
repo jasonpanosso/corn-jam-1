@@ -7,6 +7,7 @@ public class AudioItemData : ScriptableObject
     public float volume = 1f;
     public uint lowerSemitoneOffset = 0;
     public uint upperSemitoneOffset = 0;
+    public bool loop = false;
 
     public AudioItem ToAudioItem() =>
         new()
@@ -14,6 +15,7 @@ public class AudioItemData : ScriptableObject
             audioClips = audioClips,
             volume = volume,
             lowerSemitoneOffset = lowerSemitoneOffset,
-            upperSemitoneOffset = upperSemitoneOffset
+            upperSemitoneOffset = upperSemitoneOffset,
+            loop = loop
         };
 }

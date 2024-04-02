@@ -5,8 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PoppingKernel : ProjectileAction
 {
-    public float popRadius = 2f;
-    public float knockbackForce = 30f;
+    [SerializeField]
+    private string audioKey = "SFX_PopcornPop";
+
+    [SerializeField]
+    private float popRadius = 2f;
+
+    [SerializeField]
+    private float knockbackForce = 30f;
 
     [Tooltip("GameObjects with tags that will be knocked back by the Pop")]
     [SerializeField]
@@ -53,6 +59,7 @@ public class PoppingKernel : ProjectileAction
                     hit.transform.position - transform.position
                 ).normalized;
 
+                // If popped directly in center of player/a transform, just send them up.
                 if (knockbackDirection == Vector2.zero)
                     knockbackDirection.y = 1;
 
@@ -62,6 +69,7 @@ public class PoppingKernel : ProjectileAction
             }
         }
 
+        ServiceLocator.AudioManager.PlayAudioItem(audioKey);
         isPopped = true;
     }
 }

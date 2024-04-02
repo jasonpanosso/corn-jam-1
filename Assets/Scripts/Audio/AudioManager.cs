@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
 {
@@ -12,8 +13,16 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
 
     private void Awake()
     {
+        SceneManager.sceneUnloaded += StopAudioSources;
         InitializeAudioItemsFromResources();
         InitializeAudioPool();
+    }
+
+    private void StopAudioSources(Scene _)
+    {
+        foreach (var source in GetComponentsInChildren<AudioSource>())
+            if (source != null)
+                source.Stop();
     }
 
     private void InitializeAudioItemsFromResources()
@@ -75,7 +84,13 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     {
         audioSource.clip = audioItem.GetRandomAudioClip();
         audioSource.volume = audioItem.volume;
+        audioSource.loop = audioItem.loop;
         audioSource.pitch = audioItem.GetRandomPitch();
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneUnloaded -= StopAudioSources;
     }
 
 #if UNITY_EDITOR

@@ -3,11 +3,18 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class LevelGoal : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D collider)
+    [SerializeField]
+    private string onEnterSFX = "SFX_Sizzle";
+
+    private bool hasTriggered = false;
+
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (!hasTriggered && collider.CompareTag("Player"))
         {
+            hasTriggered = true;
             ServiceLocator.LevelManager.CompleteCurrentLevel();
+            ServiceLocator.AudioManager.PlayAudioItem(onEnterSFX);
         }
     }
 }
