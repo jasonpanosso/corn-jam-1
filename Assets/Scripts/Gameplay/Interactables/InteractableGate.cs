@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -109,5 +110,20 @@ public class InteractableGate : Interactable
             middleGate.transform.position = upperGate.transform.position;
             lowerGate.transform.position = upperGate.transform.position;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        GUIStyle style = new();
+        style.normal.textColor = Color.white;
+        style.fontSize = 10;
+
+        Vector3 position = transform.position;
+        position.y -= 3.5f;
+        position.x -= 2.0f;
+
+        string label = $"Gate: {state}";
+
+        Handles.Label(position, label, style);
     }
 }
