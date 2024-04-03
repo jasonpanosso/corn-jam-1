@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8310741213385001836}
   - component: {fileID: 4482046504331698352}
   m_Layer: 0
-  m_Name: LevelGoal
+  m_Name: LevelGoalGrass
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
