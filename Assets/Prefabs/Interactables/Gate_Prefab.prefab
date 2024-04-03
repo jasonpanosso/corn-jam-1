@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1865809986191192269}
   - component: {fileID: 2261602156555273536}
   m_Layer: 0
-  m_Name: Gate_Cube_1
+  m_Name: Gate_Cube_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,9 +115,9 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1865809986191192269}
-  - {fileID: 1671175057227621759}
   - {fileID: 3042689406006288165}
+  - {fileID: 1671175057227621759}
+  - {fileID: 1865809986191192269}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &952033209052534141
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 3042689406006288165}
   - component: {fileID: 9117436413070178644}
   m_Layer: 0
-  m_Name: Gate_Cube_3
+  m_Name: Gate_Cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
