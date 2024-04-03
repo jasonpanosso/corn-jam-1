@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class KnockbackInteractable : Interactable
+public class KnockbackOnInteract : Interactable
 {
     [SerializeField]
     private float knockbackForce = 30f;
@@ -10,9 +10,11 @@ public class KnockbackInteractable : Interactable
 
     private void Awake() => rb = GetComponent<Rigidbody2D>();
 
-    public override void Interact(Action actor)
+    public override void Interact(GameObject interactor)
     {
-        Vector2 knockbackDirection = (transform.position - actor.transform.position).normalized;
+        Vector2 knockbackDirection = (
+            transform.position - interactor.transform.position
+        ).normalized;
 
         // If popped directly in center of player/a transform, just send them up.
         if (knockbackDirection == Vector2.zero)
