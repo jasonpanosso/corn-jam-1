@@ -2351,7 +2351,7 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
-				"pxWid": 424,
+				"pxWid": 440,
 				"pxHei": 296,
 				"__bgColor": "#1D226E",
 				"bgColor": "#1D226E",
@@ -2361,7 +2361,7 @@
 				"bgPivotX": 0.5,
 				"bgPivotY": 0,
 				"__smartColor": "#8385AF",
-				"__bgPos": { "topLeftPx": [0,0], "scale": [1.3703703703703705,1.3703703703703705], "cropRect": [37.29729729729732,0,309.40540540540536,215.99999999999997] },
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.3703703703703705,1.3703703703703705], "cropRect": [31.45945945945948,0,321.08108108108104,215.99999999999997] },
 				"externalRelPath": "CornLevelsLDtk/Grass_0.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Grass", "__tile": null, "defUid": 22, "realEditorValues": [{
