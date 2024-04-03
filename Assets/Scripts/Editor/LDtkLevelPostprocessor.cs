@@ -102,17 +102,22 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
         {
             var distinctLevels = levels.DistinctBy(level => level.sceneName);
 
-            Debug.Log($"Saving {distinctLevels.Count()} levels to AllLevelsData..");
             if (distinctLevels.Count() == 0)
                 return;
 
             var allLevelsData = AssetDatabase.LoadAssetAtPath<AllLevelsData>(allLevelsDataPath);
+            var mergedLevels = distinctLevels.Union(
+                allLevelsData.Levels,
+                new LevelEqualityComparer()
+            );
+
+            Debug.Log($"Saving {mergedLevels.Count()} levels to AllLevelsData..");
 
             var worldOrder = AssetDatabase
                 .LoadAssetAtPath<WorldOrderData>(worldOrderDataPath)
                 .order;
 
-            var sortedLevels = LevelSorter.SortLevelsByWorldAndLevelId(distinctLevels, worldOrder);
+            var sortedLevels = LevelSorter.SortLevelsByWorldAndLevelId(mergedLevels, worldOrder);
             allLevelsData.Levels = sortedLevels.ToList();
             EditorUtility.SetDirty(allLevelsData);
             AssetDatabase.SaveAssetIfDirty(allLevelsData);
@@ -132,5 +137,22 @@ public class LDtkLevelPostprocessor : LDtkPostprocessor
                 }
             }
         };
+    }
+}
+
+class LevelEqualityComparer : IEqualityComparer<Level>
+{
+    public bool Equals(Level x, Level y)
+    {
+        if (x == null && y == null)
+            return true;
+        if (x == null || y == null)
+            return false;
+        return x.sceneName == y.sceneName;
+    }
+
+    public int GetHashCode(Level obj)
+    {
+        return obj.sceneName?.GetHashCode() ?? 0;
     }
 }
