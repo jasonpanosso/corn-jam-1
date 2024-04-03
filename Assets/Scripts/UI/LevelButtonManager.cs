@@ -7,17 +7,35 @@ using UnityEngine.UI;
 public class LevelButtonManager : MonoBehaviour
 {
     public GameObject buttonPrefab;
-    public Transform buttonParent;
-
+    public Transform panelParent;
+    public GameObject panelPrefab;
+    private List<GameObject> Panels = new();
+    public int ButtonsPerRow = 4;
     void Start()
     {
         CreateLevelButtons();
     }
     void CreateLevelButtons()
     {
+        int numberOfLevels = ServiceLocator.LevelManager.Levels.Count;
+        int numberOfPanels = Mathf.CeilToInt((float) numberOfLevels / ButtonsPerRow);
+
+        for (int i = 0; i < numberOfPanels; i++)
+        {
+            GameObject panel = Instantiate(panelPrefab, panelParent);
+            Panels.Add(panel);
+        }
+
+        int currentPanelIndex = 0;
+        int buttonCount = 0;
         foreach (Level level in ServiceLocator.LevelManager.Levels)
         {
-            GameObject buttonObj = Instantiate(buttonPrefab, buttonParent);
+            if (buttonCount >= ButtonsPerRow)
+            {
+                currentPanelIndex++;
+                buttonCount = 0;
+            }
+            GameObject buttonObj = Instantiate(buttonPrefab, Panels[currentPanelIndex].transform);
             Button button = buttonObj.GetComponent<Button>();
             TextMeshProUGUI buttonText = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -32,6 +50,8 @@ public class LevelButtonManager : MonoBehaviour
             {
                 button.interactable = false;
             }
+
+            buttonCount++;
         }
     }
 
