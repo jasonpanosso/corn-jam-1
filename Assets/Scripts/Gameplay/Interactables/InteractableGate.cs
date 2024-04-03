@@ -112,6 +112,7 @@ public class InteractableGate : Interactable
         }
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         GUIStyle style = new();
@@ -126,4 +127,5 @@ public class InteractableGate : Interactable
 
         Handles.Label(position, label, style);
     }
+#endif
 }
