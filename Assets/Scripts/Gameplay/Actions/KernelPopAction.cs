@@ -1,9 +1,15 @@
 using System.Collections;
+using System.Collections.Generic;
+using TypeReferences;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class KernelPopAction : Action
 {
+    [Inherits(typeof(Interactable))]
+    [SerializeField]
+    private List<TypeReference> interactableTypes = new();
+
     [SerializeField]
     private string audioKey = "SFX_PopcornPop";
 
@@ -31,8 +37,16 @@ public class KernelPopAction : Action
 
         var inRange = Physics2D.OverlapCircleAll(transform.position, popRadius);
         foreach (var hit in inRange)
-            if (hit.TryGetComponent<Interactable>(out var target))
-                target.Interact(this);
+        {
+            foreach (var type in interactableTypes)
+            {
+                if (hit.TryGetComponent(type, out var component))
+                {
+                    Interactable target = component as Interactable;
+                    target.Interact(gameObject);
+                }
+            }
+        }
 
         ServiceLocator.AudioManager.PlayAudioItem(audioKey);
         isPopped = true;

@@ -4,12 +4,16 @@
       "name": "OpenUPM",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.cammin.ldtkunity"
+        "com.cammin.ldtkunity",
+        "com.openupm",
+        "com.solidalloy",
+        "org.nuget"
       ]
     }
   ],
   "dependencies": {
     "com.cammin.ldtkunity": "4.2.2",
+    "com.solidalloy.type-references": "2.16.0",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.2d": "2.0.0",
