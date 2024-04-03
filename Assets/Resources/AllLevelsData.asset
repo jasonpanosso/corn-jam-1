@@ -16,10 +16,5 @@ MonoBehaviour:
   - index: 0
     worldType: 1
     name: 
-    sceneName: Cave_3
-    completed: 0
-  - index: 1
-    worldType: 1
-    name: 
     sceneName: Cave_4
     completed: 0
