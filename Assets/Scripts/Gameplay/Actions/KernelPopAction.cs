@@ -31,7 +31,7 @@ public class KernelPopAction : Action
 
         var inRange = Physics2D.OverlapCircleAll(transform.position, popRadius);
         foreach (var hit in inRange)
-            if (hit.TryGetComponent<ActionTarget>(out var target))
+            if (hit.TryGetComponent<Interactable>(out var target))
                 target.Interact(this);
 
         ServiceLocator.AudioManager.PlayAudioItem(audioKey);

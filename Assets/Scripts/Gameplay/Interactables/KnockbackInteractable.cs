@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class KnockbackTarget : ActionTarget
+public class KnockbackInteractable : Interactable
 {
     [SerializeField]
     private float knockbackForce = 30f;
