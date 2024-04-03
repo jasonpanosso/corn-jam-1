@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -92,9 +93,9 @@ public class InteractableGate : Interactable
 
     private void InitializeGatePieces()
     {
-        var gatePieces = GetComponentsInChildren<SpriteRenderer>()
-            .Select(sr => sr.gameObject)
-            .ToList();
+        var gatePieces = new List<GameObject>();
+        foreach (Transform child in transform)
+            gatePieces.Add(child.gameObject);
 
         if (gatePieces.Count != 3)
             Debug.LogWarning("Unimplemented: Gates with more than three gate pieces/cubes");
