@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class ProjectileAction : MonoBehaviour
+public abstract class Action : MonoBehaviour
 {
     public abstract void Execute();
 }

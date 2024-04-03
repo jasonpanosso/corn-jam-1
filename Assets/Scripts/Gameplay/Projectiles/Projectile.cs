@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(ProjectileAction))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Action))]
 public class Projectile : MonoBehaviour
 {
     public float speed = 10f;
