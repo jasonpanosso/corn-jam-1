@@ -232,14 +232,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableTypes:
-  - GuidAssignmentFailed: 0
-    GUID: 6ad1c2e1b38eefe38870b2cda2b3cace
-    _typeNameAndAssembly: ButtonInteractable, Assembly-CSharp
-    _suppressLogs: 0
-  - GuidAssignmentFailed: 0
-    GUID: 5cd0330985406131eb785cf3372902af
-    _typeNameAndAssembly: KnockbackInteractable, Assembly-CSharp
-    _suppressLogs: 0
+  - typeId: KnockbackOnInteract, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeId: InteractableButton, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   audioKey: SFX_PopcornPop
   popRadius: 2
   ignoreCollisionDuration: 0.1

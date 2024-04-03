@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using TypeReferences;
+using CareBoo.Serially;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class KernelPopAction : Action
 {
-    [Inherits(typeof(Interactable))]
+    [TypeFilter(derivedFrom: typeof(Interactable))]
     [SerializeField]
-    private List<TypeReference> interactableTypes = new();
+    private List<SerializableType> interactableTypes = new();
 
     [SerializeField]
     private string audioKey = "SFX_PopcornPop";
@@ -40,7 +40,7 @@ public class KernelPopAction : Action
         {
             foreach (var type in interactableTypes)
             {
-                if (hit.TryGetComponent(type, out var component))
+                if (hit.TryGetComponent(type.Type, out var component))
                 {
                     Interactable target = component as Interactable;
                     target.Interact(gameObject);
