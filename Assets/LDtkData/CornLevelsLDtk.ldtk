@@ -11,7 +11,7 @@
 	"iid": "f2b5a480-d7b0-11ee-9b8b-5b47641fa00c",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 208,
+	"nextUid": 210,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": null,
@@ -2232,7 +2232,7 @@
 			"savedSelections": [],
 			"cachedPixelData": {
 				"opaqueTiles": "0000000001000000000000001100000000000100010000001110111011100000011011101110000001000001001100001100000100110000010000010001000011100001001110001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-				"averageColors": "e693e78235b335a3f522f43249ba4122f995f67536b3425635a3000000000000d882e87225b324a3f532f43361224222f786f255626761442493000000000000d772e87215a36492e533f533a9ba4122e675f25515a342566492000000000000f872f972f9720000f433f533f4330799f255f244f24507990000000000000000f872f972f9720000f433f433f5330000f255f245f24500000000000000000000f788f8895dab77760acc0cdd0cddfe646d857d85f26ff79f0000300000000000f889f9aa6aed45660cdd0cdd0cddfe8500000000f15ff36f0000300000000000f778f789154184330cdd0cdd0cddff96000000007eeef9af6eee000000000000f89af9abf89b00001eeb1eeb0cddfe6300000000f47ff57ff57f000000000000f89bf9abf9ab00001eeb1eeb0cdd00000000000000000000000000000000000000cc02cc00cc0e630e630e63000000000000000000000000000000000000000000cc17dd17dd1c651e861e86000000000000000000000000000000000000000024bb26cd16cd1e86077707770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+				"averageColors": "e693e78235b335a3f522f43249ba4122f995f67536b3425635a3000000000000d882e87225b324a3f532f43361224222f786f255626761442493000000000000d772e87215a36492e533f533a9ba4122e675f25515a342566492000000000000f872f972f9720000f433f533f4330799f255f244f24507990000000000000000f872f972f9720000f433f433f5330000f255f245f24500000000000000000000f788f8895dab77760acc0cdd0cddfe646d857d85f26ff79f0000200000000000f889f9aa6aed45660cdd0cdd0cddfe8500000000f15ff36f0000200000000000f778f789154184330cdd0cdd0cddff96000000007eeef9af6eee000000000000f89af9abf89b00001eeb1eeb0cddfe6300000000f47ff57ff57f000000000000f89bf9abf9ab00001eeb1eeb0cdd00000000000000000000000000000000000000cc02cc00cc0e630e630e63000000000000000000000000000000000000000000cc17dd17dd1c651e861e86000000000000000000000000000000000000000024bb26cd16cd1e86077707770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 			}
 		},
 		{
@@ -2599,6 +2599,64 @@
 				"__smartColor": "#7D7E8D",
 				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
 				"externalRelPath": "CornLevelsLDtk/Cave_2.ldtkl",
+				"fieldInstances": [
+					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Cave", "__tile": null, "defUid": 22, "realEditorValues": [{
+						"id": "V_String",
+						"params": ["Cave"]
+					}] },
+					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
+				],
+				"layerInstances": null,
+				"__neighbours": []
+			},
+			{
+				"identifier": "Cave_3",
+				"iid": "47c846e0-d7b0-11ee-b8ec-0faeb8e67cd9",
+				"uid": 208,
+				"worldX": -1,
+				"worldY": -1,
+				"worldDepth": 0,
+				"pxWid": 384,
+				"pxHei": 216,
+				"__bgColor": "#12142F",
+				"bgColor": "#12142F",
+				"useAutoIdentifier": true,
+				"bgRelPath": "CaveBG.png",
+				"bgPos": "Cover",
+				"bgPivotX": 0.5,
+				"bgPivotY": 0.5,
+				"__smartColor": "#7D7E8D",
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"externalRelPath": "CornLevelsLDtk/Cave_3.ldtkl",
+				"fieldInstances": [
+					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Cave", "__tile": null, "defUid": 22, "realEditorValues": [{
+						"id": "V_String",
+						"params": ["Cave"]
+					}] },
+					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
+				],
+				"layerInstances": null,
+				"__neighbours": []
+			},
+			{
+				"identifier": "Cave_4",
+				"iid": "7c100220-d7b0-11ee-b8ec-cdfb75efd1a6",
+				"uid": 209,
+				"worldX": -1,
+				"worldY": -1,
+				"worldDepth": 0,
+				"pxWid": 384,
+				"pxHei": 216,
+				"__bgColor": "#696A79",
+				"bgColor": null,
+				"useAutoIdentifier": true,
+				"bgRelPath": "CaveBG.png",
+				"bgPos": "Cover",
+				"bgPivotX": 0.5,
+				"bgPivotY": 0.5,
+				"__smartColor": "#ADADB5",
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"externalRelPath": "CornLevelsLDtk/Cave_4.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Cave", "__tile": null, "defUid": 22, "realEditorValues": [{
 						"id": "V_String",

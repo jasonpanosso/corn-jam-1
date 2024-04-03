@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Cave/Cave_2.unity
     guid: 97e5ecfaccc48834c9252fce48eff0c5
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cave/Cave_3.unity
+    guid: 35230a1608da4e043afa140353fe4517
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cave/Cave_4.unity
+    guid: 47d31210a37e2d243ab394c87cda4cae
   m_configObjects: {}
