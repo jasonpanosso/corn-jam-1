@@ -44,13 +44,13 @@ public class LevelButtonManager : MonoBehaviour
             if (level.completed)
             {
                 button.interactable = true;
-                button.onClick.AddListener(() => LoadLevel(level.index));
+                
             }
             else
             {
                 button.interactable = false;
             }
-
+            button.onClick.AddListener(() => LoadLevel(level.index));
             buttonCount++;
         }
     }
