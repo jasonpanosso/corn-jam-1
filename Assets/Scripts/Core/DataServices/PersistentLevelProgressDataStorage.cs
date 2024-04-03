@@ -44,7 +44,12 @@ public static class PersistentLevelProgressDataStorage
 
         try
         {
-            return dataService.LoadData<LevelCollection>(LEVEL_DATA_PATH).levels;
+            // TODO/FIXME
+            var loaded = dataService.LoadData<LevelCollection>(LEVEL_DATA_PATH).levels;
+            if (loaded.Count() == 0)
+                return levels;
+            else
+                return loaded;
         }
         catch
         {
