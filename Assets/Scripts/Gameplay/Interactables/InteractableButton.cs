@@ -8,8 +8,6 @@ public class InteractableButton : Interactable
 
     public override void Interact(GameObject _)
     {
-        Debug.Log("interacted with button");
-
         foreach (var interactable in interactables)
             interactable.Interact(gameObject);
     }
