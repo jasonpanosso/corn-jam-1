@@ -34,6 +34,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 
         Level nextLevel = Levels[levelIndex];
         StartCoroutine(LoadLevelAsync(nextLevel));
+        CurrentLevel = nextLevel;
     }
 
     private IEnumerator LoadLevelAsync(Level nextLevel)
@@ -45,7 +46,6 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
             yield return null;
         }
 
-        CurrentLevel = nextLevel;
         OnLevelLoaded.Invoke();
     }
 
@@ -79,10 +79,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         Scene scene = SceneManager.GetActiveScene();
         // Temp hack for menu
         if (scene.name == "Menu")
-        {
-            CurrentLevel = Levels[0];
             return;
-        }
 
         var cur = Levels.Find(l => l.sceneName == scene.name);
 
@@ -98,7 +95,10 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
             levelsWithoutProgression
         );
 
-        Levels = levelsWithProgression.ToList();
+        if (levelsWithProgression.Count() != 0)
+            Levels = levelsWithProgression.ToList();
+        else
+            Levels = levelsWithoutProgression.ToList();
     }
 
     private void SaveProgress() => PersistentLevelProgressDataStorage.SaveLevelProgress(Levels);
