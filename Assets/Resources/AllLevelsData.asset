@@ -84,6 +84,11 @@ MonoBehaviour:
     sceneName: Hell_3
     completed: 0
   - index: 14
+    worldType: 2
+    name: 
+    sceneName: Hell_4
+    completed: 0
+  - index: 15
     worldType: 3
     name: 
     sceneName: Lab_0

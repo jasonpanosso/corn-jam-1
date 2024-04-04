@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Hell/Hell_2.unity
     guid: 8e3a44a523683b94987e0824dfee3980
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell/Hell_3.unity
+    guid: 6c368a73a3804044c9193e49e7004804
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell/Hell_4.unity
+    guid: 8130959d25699124090dbb32e73e9344
   m_configObjects: {}
