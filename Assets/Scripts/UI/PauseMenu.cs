@@ -26,6 +26,10 @@ public class PauseMenu : MonoBehaviour
         PauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+
+        var pi = FindFirstObjectByType<PlayerInput>();
+        if (pi != null)
+            pi.EnableInput();
     }
 
     public void Pause()
@@ -33,6 +37,10 @@ public class PauseMenu : MonoBehaviour
         PauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+
+        var pi = FindFirstObjectByType<PlayerInput>();
+        if (pi != null)
+            pi.DisableInput();
     }
 
     public void RestartLevel()
