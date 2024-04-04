@@ -71,7 +71,9 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
             return;
         }
 
-        LoadProgress(allLevelsData.Levels);
+        Levels = allLevelsData.Levels;
+        // HACK: stop loading progress because it's hella broken hehe
+        // LoadProgress(allLevelsData.Levels);
     }
 
     private void TrySetCurrentLevelFromSceneName()
