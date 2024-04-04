@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class InteractableGate : Interactable
 {
     private enum GateState
@@ -18,7 +17,6 @@ public class InteractableGate : Interactable
     [SerializeField]
     private float moveDuration = 1f;
 
-    private Collider2D col;
     private GameObject lowerGate;
     private GameObject middleGate;
     private GameObject upperGate;
@@ -29,12 +27,6 @@ public class InteractableGate : Interactable
     private void Awake()
     {
         InitializeGatePieces();
-
-        col = GetComponent<Collider2D>();
-        if (state == GateState.Closed)
-            col.enabled = true;
-        else
-            col.enabled = false;
     }
 
     public override void Interact(GameObject _)
@@ -44,13 +36,11 @@ public class InteractableGate : Interactable
         if (state == GateState.Closed)
         {
             state = GateState.Open;
-            col.enabled = false;
             RaiseGate();
         }
         else
         {
             state = GateState.Closed;
-            col.enabled = true;
             LowerGate();
         }
     }

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class InteractableTimerGate : Interactable
 {
     private enum GateState
@@ -21,7 +20,6 @@ public class InteractableTimerGate : Interactable
 
     private float curTimer = 0f;
 
-    private Collider2D col;
     private GameObject lowerGate;
     private GameObject middleGate;
     private GameObject upperGate;
@@ -32,8 +30,6 @@ public class InteractableTimerGate : Interactable
     private void Awake()
     {
         InitializeGatePieces();
-
-        col = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -47,7 +43,6 @@ public class InteractableTimerGate : Interactable
         {
             StopAllCoroutines();
             state = GateState.Closed;
-            col.enabled = true;
             LowerGate();
         }
     }
@@ -61,7 +56,6 @@ public class InteractableTimerGate : Interactable
 
         curTimer = timerLength;
         state = GateState.Open;
-        col.enabled = false;
     }
 
     private void LowerGate()
