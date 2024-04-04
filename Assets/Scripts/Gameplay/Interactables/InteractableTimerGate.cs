@@ -26,6 +26,9 @@ public class InteractableTimerGate : Interactable
     private GameObject middleGate;
     private GameObject upperGate;
 
+    private Vector3 lowerStartPos;
+    private Vector3 middleStartPos;
+
     private void Awake()
     {
         InitializeGatePieces();
@@ -63,29 +66,19 @@ public class InteractableTimerGate : Interactable
 
     private void LowerGate()
     {
-        var upperY = upperGate.transform.position.y;
-
-        var middleTarget = upperY - 1f;
-        var lowerTarget = upperY - 2f;
-
-        StartCoroutine(MoveCoroutine(middleGate, middleTarget, moveDuration));
-        StartCoroutine(MoveCoroutine(lowerGate, lowerTarget, moveDuration));
+        StartCoroutine(MoveCoroutine(middleGate, middleStartPos, moveDuration));
+        StartCoroutine(MoveCoroutine(lowerGate, lowerStartPos, moveDuration));
     }
 
     private void RaiseGate()
     {
-        var upperY = upperGate.transform.position.y;
-
-        StartCoroutine(MoveCoroutine(middleGate, upperY, moveDuration));
-        StartCoroutine(MoveCoroutine(lowerGate, upperY, moveDuration));
+        StartCoroutine(MoveCoroutine(middleGate, upperGate.transform.position, moveDuration));
+        StartCoroutine(MoveCoroutine(lowerGate, upperGate.transform.position, moveDuration));
     }
 
-    private IEnumerator MoveCoroutine(GameObject go, float endY, float duration)
+    private IEnumerator MoveCoroutine(GameObject go, Vector2 endPos, float duration)
     {
         var startPos = go.transform.position;
-        var endPos = upperGate.transform.position;
-        endPos.y = endY;
-
         var elapsedTime = 0f;
 
         while (elapsedTime < duration)
@@ -113,6 +106,9 @@ public class InteractableTimerGate : Interactable
         upperGate = gatePieces[0];
         middleGate = gatePieces[1];
         lowerGate = gatePieces[2];
+
+        middleStartPos = middleGate.transform.position;
+        lowerStartPos = lowerGate.transform.position;
 
         if (state == GateState.Open)
         {
