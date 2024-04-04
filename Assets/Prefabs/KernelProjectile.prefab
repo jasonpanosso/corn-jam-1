@@ -267,8 +267,8 @@ MonoBehaviour:
   rightBoundaryThreshhold: 0.1
   aboveBoundaryThreshhold: 0.1
   belowBoundaryThreshhold: 0.1
-  detectRightOfScreen: 1
-  detectLeftOfScreen: 1
-  detectAboveScreen: 1
+  detectRightOfScreen: 0
+  detectLeftOfScreen: 0
+  detectAboveScreen: 0
   detectBelowScreen: 1
   boundaryCheckInterval: 1
