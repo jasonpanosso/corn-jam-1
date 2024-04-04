@@ -49,10 +49,11 @@ public class InteractableTimerGate : Interactable
 
     public override void Interact(GameObject _)
     {
-        StopAllCoroutines();
-
         if (state == GateState.Closed)
+        {
+            StopAllCoroutines();
             RaiseGate();
+        }
 
         curTimer = timerLength;
         state = GateState.Open;
