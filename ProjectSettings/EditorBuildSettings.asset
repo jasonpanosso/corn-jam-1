@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Lab/Lab_0.unity
     guid: ec2236a3380ee0a48a66fd67e4334407
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell/Hell_1.unity
+    guid: 7065ea15ec45c8b4fb481b2b986d4a42
   m_configObjects: {}
