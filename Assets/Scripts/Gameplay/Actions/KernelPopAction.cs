@@ -4,7 +4,7 @@ using CareBoo.Serially;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class KernelPopAction : Action
+public class KernelPopAction : MonoBehaviour, IAction
 {
     [TypeFilter(derivedFrom: typeof(IInteractable))]
     [SerializeField]
@@ -23,7 +23,7 @@ public class KernelPopAction : Action
 
     private bool isPopped = false;
 
-    public override void Execute()
+    public void Execute()
     {
         if (!isPopped)
             Pop();

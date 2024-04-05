@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c564d6f1b05f5ba7c4514038e659b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactablesToToggle:
+  _interactablesToToggle:
   - {fileID: 5051917073946524176}
   timerLength: 10
 --- !u!1001 &782307437163707860

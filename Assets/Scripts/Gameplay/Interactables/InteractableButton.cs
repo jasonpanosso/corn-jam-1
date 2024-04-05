@@ -1,10 +1,14 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InteractableButton : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private List<IInteractable> interactables = new();
+    [SerializeField, InterfaceType(typeof(IInteractable))]
+    private Object[] _interactables;
+    private IInteractable[] interactables;
+
+    private void Awake() =>
+        interactables = _interactables.OfType<IInteractable>().ToArray();
 
     public void Interact(GameObject _)
     {

@@ -1,10 +1,11 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InteractableToggler : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private List<IInteractable> interactablesToToggle = new();
+    [SerializeField, InterfaceType(typeof(IInteractable))]
+    private Object[] _interactablesToToggle;
+    private IInteractable[] interactablesToToggle;
 
     [SerializeField]
     private float timerLength = 10f;
@@ -12,6 +13,9 @@ public class InteractableToggler : MonoBehaviour, IInteractable
     private float curTimer = 0f;
 
     private bool isCountingDown = false;
+
+    private void Awake() =>
+        interactablesToToggle = _interactablesToToggle.OfType<IInteractable>().ToArray();
 
     private void Update()
     {

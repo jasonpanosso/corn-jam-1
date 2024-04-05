@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInput), typeof(ProjectileShooter))]
 public class ActionPool : MonoBehaviour
 {
-    private readonly Queue<Action> activeActions = new();
+    private readonly Queue<IAction> activeActions = new();
 
     private ProjectileShooter shooter;
     private PlayerInput playerInput;
@@ -32,7 +32,7 @@ public class ActionPool : MonoBehaviour
 
     private void EnqueueAction(GameObject go)
     {
-        if (go.TryGetComponent<Action>(out var action))
+        if (go.TryGetComponent<IAction>(out var action))
             activeActions.Enqueue(action);
         else
             Debug.LogWarning("GameObject added to ActionPool did not have Action component");
