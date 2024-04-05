@@ -58,19 +58,14 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
         if (inputDirection != null)
             ReflectLaser((Direction)inputDirection);
 
-        RotateSprite();
-    }
-
-    private void RotateSprite()
-    {
-        transform.Rotate(0, 0, rotationMap[orientation]);
+        transform.Rotate(0, 0, -90f);
     }
 
     private void Awake()
     {
         emitter = GetComponent<LaserEmitter>();
         emitter.enabled = false;
-        RotateSprite();
+        transform.Rotate(0, 0, rotationMap[orientation]);
     }
 
     private readonly Dictionary<(MirrorOrientation, Direction), Direction> reflectionMap =
