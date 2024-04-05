@@ -1,15 +1,16 @@
+using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-20)]
 public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 {
-    public event System.Action OnLevelComplete = delegate { };
-    public event System.Action OnLevelLoaded = delegate { };
-    public event System.Action OnLevelLoadBegin = delegate { };
+    public event Action OnLevelComplete = delegate { };
+    public event Action OnLevelLoaded = delegate { };
+    public event Action OnLevelLoadBegin = delegate { };
 
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
