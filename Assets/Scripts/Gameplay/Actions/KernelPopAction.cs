@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class KernelPopAction : Action
 {
-    [TypeFilter(derivedFrom: typeof(Interactable))]
+    [TypeFilter(derivedFrom: typeof(IInteractable))]
     [SerializeField]
     private List<SerializableType> interactableTypes = new();
 
@@ -42,7 +42,7 @@ public class KernelPopAction : Action
             {
                 if (hit.TryGetComponent(type.Type, out var component))
                 {
-                    Interactable target = component as Interactable;
+                    IInteractable target = component as IInteractable;
                     target.Interact(gameObject);
                 }
             }

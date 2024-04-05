@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableButton : Interactable
+public class InteractableButton : MonoBehaviour, IInteractable
 {
     [SerializeField]
-    private List<Interactable> interactables = new();
+    private List<IInteractable> interactables = new();
 
-    public override void Interact(GameObject _)
+    public void Interact(GameObject _)
     {
         foreach (var interactable in interactables)
             interactable.Interact(gameObject);

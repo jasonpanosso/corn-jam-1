@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableToggler : Interactable
+public class InteractableToggler : MonoBehaviour, IInteractable
 {
     [SerializeField]
-    private List<Interactable> interactablesToToggle = new();
+    private List<IInteractable> interactablesToToggle = new();
 
     [SerializeField]
     private float timerLength = 10f;
@@ -27,7 +27,7 @@ public class InteractableToggler : Interactable
         }
     }
 
-    public override void Interact(GameObject _)
+    public void Interact(GameObject _)
     {
         curTimer = timerLength;
 

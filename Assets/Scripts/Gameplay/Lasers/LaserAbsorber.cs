@@ -4,7 +4,7 @@ using UnityEngine;
 public class LaserAbsorber : MonoBehaviour, ILaserTarget
 {
     [SerializeField]
-    private List<Interactable> interactables = new();
+    private List<IInteractable> interactables = new();
 
     public void OnLaserExit()
     {

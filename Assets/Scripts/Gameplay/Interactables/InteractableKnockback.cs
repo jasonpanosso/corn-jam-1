@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class KnockbackOnInteract : Interactable
+public class InteractableKnockback : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private float knockbackForce = 30f;
@@ -10,7 +10,7 @@ public class KnockbackOnInteract : Interactable
 
     private void Awake() => rb = GetComponent<Rigidbody2D>();
 
-    public override void Interact(GameObject interactor)
+    public void Interact(GameObject interactor)
     {
         Vector2 knockbackDirection = (
             transform.position - interactor.transform.position
