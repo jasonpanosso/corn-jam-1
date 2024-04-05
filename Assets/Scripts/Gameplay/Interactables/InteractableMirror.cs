@@ -57,12 +57,20 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
 
         if (inputDirection != null)
             ReflectLaser((Direction)inputDirection);
+
+        RotateSprite();
+    }
+
+    private void RotateSprite()
+    {
+        transform.Rotate(0, 0, rotationMap[orientation]);
     }
 
     private void Awake()
     {
         emitter = GetComponent<LaserEmitter>();
         emitter.enabled = false;
+        RotateSprite();
     }
 
     private readonly Dictionary<(MirrorOrientation, Direction), Direction> reflectionMap =
@@ -76,5 +84,14 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
             { (MirrorOrientation.SouthEast, Direction.East), Direction.South },
             { (MirrorOrientation.SouthWest, Direction.South), Direction.West },
             { (MirrorOrientation.SouthWest, Direction.West), Direction.South }
+        };
+
+    private readonly Dictionary<MirrorOrientation, float> rotationMap =
+        new()
+        {
+            { MirrorOrientation.NorthEast, 0f },
+            { MirrorOrientation.SouthEast, -90f },
+            { MirrorOrientation.SouthWest, 180f },
+            { MirrorOrientation.NorthWest, 90f }
         };
 }
