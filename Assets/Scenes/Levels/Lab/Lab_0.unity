@@ -136,7 +136,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
+      propertyPath: _interactables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: interactables.Array.data[0]
+      value: 
+      objectReference: {fileID: 1702229764}
+    - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
+      propertyPath: _interactables.Array.data[0]
       value: 
       objectReference: {fileID: 1702229764}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
@@ -2371,7 +2379,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9196695377085026848, guid: 988f018dfd4a46406abb3f07859756a8, type: 3}
+      propertyPath: _interactables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196695377085026848, guid: 988f018dfd4a46406abb3f07859756a8, type: 3}
       propertyPath: interactables.Array.data[0]
+      value: 
+      objectReference: {fileID: 884885346}
+    - target: {fileID: 9196695377085026848, guid: 988f018dfd4a46406abb3f07859756a8, type: 3}
+      propertyPath: _interactables.Array.data[0]
       value: 
       objectReference: {fileID: 884885346}
     m_RemovedComponents: []
