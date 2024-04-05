@@ -387,7 +387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13
+      value: 11.73
       objectReference: {fileID: 0}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -469,6 +469,10 @@ PrefabInstance:
     - target: {fileID: 4714789262068824665, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051917073946524176, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
+      propertyPath: state
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5197506615775664515, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
@@ -667,6 +671,10 @@ PrefabInstance:
       propertyPath: timerLength
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5051917073946524176, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
+      propertyPath: state
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5197506615775664515, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
       value: 4
@@ -677,7 +685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7043022038181159383, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.5
+      value: 16.58
       objectReference: {fileID: 0}
     - target: {fileID: 7043022038181159383, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1731,7 +1739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4714789262068824665, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051917073946524176, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
+      propertyPath: state
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5197506615775664515, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
@@ -1974,7 +1986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4714789262068824665, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051917073946524176, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
+      propertyPath: state
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5197506615775664515, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: timerLength
@@ -2019,6 +2035,10 @@ PrefabInstance:
     - target: {fileID: 7043022038181159383, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739021728466131971, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 8368168385297059401, guid: 3f39ca73251a24a7bac019ccd590af23, type: 3}
       propertyPath: m_Color.b
@@ -2227,7 +2247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: _interactables.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: interactables.Array.data[0]
@@ -2253,6 +2273,10 @@ PrefabInstance:
       propertyPath: _interactables.Array.data[2]
       value: 
       objectReference: {fileID: 88341043}
+    - target: {fileID: 5578602747904915802, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
+      propertyPath: _interactables.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -2271,7 +2295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.5
+      value: 13.05
       objectReference: {fileID: 0}
     - target: {fileID: 7831199229218856163, guid: b16ba371b8a41f9b9bec818e30a890bf, type: 3}
       propertyPath: m_LocalPosition.z
