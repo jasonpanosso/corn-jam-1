@@ -448,6 +448,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   moveDuration: 1
+  lowerGate: {fileID: 2722406591751717065}
+  middleGate: {fileID: 8135377018645866370}
+  upperGate: {fileID: 7280561333820415606}
 --- !u!1 &7280561333820415606
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,8 +16,13 @@ public class InteractableGate : MonoBehaviour, IInteractable
     [SerializeField]
     private float moveDuration = 1f;
 
+    [SerializeField]
     private GameObject lowerGate;
+
+    [SerializeField]
     private GameObject middleGate;
+
+    [SerializeField]
     private GameObject upperGate;
 
     private Vector3 lowerStartPos;
@@ -75,19 +79,6 @@ public class InteractableGate : MonoBehaviour, IInteractable
 
     private void InitializeGatePieces()
     {
-        var gatePieces = new List<GameObject>();
-        foreach (Transform child in transform)
-            gatePieces.Add(child.gameObject);
-
-        if (gatePieces.Count != 3)
-            Debug.LogWarning("Unimplemented: Gates with more than three gate pieces/cubes");
-
-        gatePieces.Sort((a, b) => a.transform.position.y < b.transform.position.y ? 1 : 0);
-
-        upperGate = gatePieces[0];
-        middleGate = gatePieces[1];
-        lowerGate = gatePieces[2];
-
         middleStartPos = middleGate.transform.position;
         lowerStartPos = lowerGate.transform.position;
 
