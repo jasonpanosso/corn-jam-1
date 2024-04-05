@@ -3,12 +3,30 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-public class LaserEmitter : MonoBehaviour
+public class LaserEmitter : MonoBehaviour, IInteractable
 {
     public Direction LaserDirection;
 
     [SerializeField]
     private float laserMaxLength = 50f;
+
+    [SerializeField]
+    private bool _isEmitting = true;
+
+    public bool IsEmitting
+    {
+        get => _isEmitting;
+        set
+        {
+            lr.enabled = value;
+            _isEmitting = value;
+
+            if (!target.IsUnityNull())
+                target.OnLaserExit();
+
+            target = null;
+        }
+    }
 
     private LineRenderer lr;
 
@@ -18,6 +36,9 @@ public class LaserEmitter : MonoBehaviour
 
     private void Update()
     {
+        if (!IsEmitting)
+            return;
+
         var dir = directionToVecMap[LaserDirection];
         var hit = Physics2D.Raycast(transform.position, dir);
 
@@ -31,14 +52,14 @@ public class LaserEmitter : MonoBehaviour
 
         if (hit.collider != null && hit.collider.TryGetComponent<ILaserTarget>(out var laserTarget))
         {
-            if (laserTarget != target)
-            {
-                if (!target.IsUnityNull())
-                    target.OnLaserExit();
+            if (laserTarget == target)
+                return;
 
-                laserTarget.OnLaserEnter(inverseDirectionMap[LaserDirection]);
-                target = laserTarget;
-            }
+            if (!target.IsUnityNull())
+                target.OnLaserExit();
+
+            laserTarget.OnLaserEnter(inverseDirectionMap[LaserDirection]);
+            target = laserTarget;
         }
         else if (!target.IsUnityNull())
         {
@@ -47,26 +68,9 @@ public class LaserEmitter : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        lr = GetComponent<LineRenderer>();
-    }
+    private void Awake() => lr = GetComponent<LineRenderer>();
 
-    private void OnEnable()
-    {
-        lr.enabled = true;
-    }
-
-    private void OnDisable()
-    {
-        lr.enabled = false;
-
-        if (!target.IsUnityNull())
-        {
-            target.OnLaserExit();
-            target = null;
-        }
-    }
+    public void Interact(GameObject _) => IsEmitting = !IsEmitting;
 
     private readonly Dictionary<Direction, Vector2> directionToVecMap =
         new()

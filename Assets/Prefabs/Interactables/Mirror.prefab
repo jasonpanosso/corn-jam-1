@@ -257,10 +257,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2801975247090105702}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 886caf87b59cb05b9ac805d2d3def098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LaserDirection: 0
   laserMaxLength: 50
+  _isEmitting: 0

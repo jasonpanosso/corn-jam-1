@@ -21,8 +21,6 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
 
     public void Interact(GameObject _) => RotateClockwise();
 
-    public void OnLaserEnter(Direction inDir) => ReflectLaser(inDir);
-
     private void ReflectLaser(Direction inDir)
     {
         inputDirection = inDir;
@@ -30,18 +28,20 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
         if (reflectionMap.TryGetValue((orientation, inDir), out var reflectedDir))
         {
             emitter.LaserDirection = reflectedDir;
-            emitter.enabled = true;
+            emitter.IsEmitting = true;
         }
         else
-            emitter.enabled = false;
+        {
+            emitter.IsEmitting = false;
+        }
     }
+
+    public void OnLaserEnter(Direction inDir) => ReflectLaser(inDir);
 
     public void OnLaserExit()
     {
         inputDirection = null;
-
-        if (emitter != null)
-            emitter.enabled = false;
+        emitter.IsEmitting = false;
     }
 
     private void RotateClockwise()
@@ -64,7 +64,7 @@ public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
     private void Awake()
     {
         emitter = GetComponent<LaserEmitter>();
-        emitter.enabled = false;
+        // emitter.IsEmitting = false;
         transform.Rotate(0, 0, rotationMap[orientation]);
     }
 
