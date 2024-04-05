@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class InteractableGate : Interactable
+public class InteractableGate : MonoBehaviour, IInteractable
 {
     private enum GateState
     {
@@ -29,7 +29,7 @@ public class InteractableGate : Interactable
         InitializeGatePieces();
     }
 
-    public override void Interact(GameObject _)
+    public void Interact(GameObject _)
     {
         StopAllCoroutines();
 

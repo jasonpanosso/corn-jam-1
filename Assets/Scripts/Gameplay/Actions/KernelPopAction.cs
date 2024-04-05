@@ -4,9 +4,9 @@ using CareBoo.Serially;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class KernelPopAction : Action
+public class KernelPopAction : MonoBehaviour, IAction
 {
-    [TypeFilter(derivedFrom: typeof(Interactable))]
+    [TypeFilter(derivedFrom: typeof(IInteractable))]
     [SerializeField]
     private List<SerializableType> interactableTypes = new();
 
@@ -23,7 +23,7 @@ public class KernelPopAction : Action
 
     private bool isPopped = false;
 
-    public override void Execute()
+    public void Execute()
     {
         if (!isPopped)
             Pop();
@@ -42,7 +42,7 @@ public class KernelPopAction : Action
             {
                 if (hit.TryGetComponent(type.Type, out var component))
                 {
-                    Interactable target = component as Interactable;
+                    IInteractable target = component as IInteractable;
                     target.Interact(gameObject);
                 }
             }

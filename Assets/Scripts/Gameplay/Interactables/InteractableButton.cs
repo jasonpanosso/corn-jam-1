@@ -1,12 +1,16 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class InteractableButton : Interactable
+public class InteractableButton : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private List<Interactable> interactables = new();
+    [SerializeField, InterfaceType(typeof(IInteractable))]
+    private Object[] _interactables;
+    private IInteractable[] interactables;
 
-    public override void Interact(GameObject _)
+    private void Awake() =>
+        interactables = _interactables.OfType<IInteractable>().ToArray();
+
+    public void Interact(GameObject _)
     {
         foreach (var interactable in interactables)
             interactable.Interact(gameObject);

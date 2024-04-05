@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D), typeof(LaserEmitter))]
-public class InteractableMirror : Interactable, ILaserTarget
+public class InteractableMirror : MonoBehaviour, IInteractable, ILaserTarget
 {
     private enum MirrorOrientation
     {
@@ -19,7 +19,7 @@ public class InteractableMirror : Interactable, ILaserTarget
 
     private Direction? inputDirection = null;
 
-    public override void Interact(GameObject _) => RotateClockwise();
+    public void Interact(GameObject _) => RotateClockwise();
 
     public void OnLaserEnter(Direction inDir) => ReflectLaser(inDir);
 
