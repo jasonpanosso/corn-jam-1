@@ -32,7 +32,8 @@ public class LaserEmitter : MonoBehaviour
         {
             if (laserTarget != target)
             {
-                target?.OnLaserExit();
+                if (target != null)
+                    target.OnLaserExit();
 
                 laserTarget.OnLaserEnter(inverseDirectionMap[LaserDirection]);
                 target = laserTarget;

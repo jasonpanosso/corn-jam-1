@@ -2,4 +2,4 @@ root = true
 [*]
 end_of_line = lf
 [*.{cs}]
-dotnet_diagnostic.IDE0051.severity = none
+dotnet_diagnostic.IDE0031.severity = none
