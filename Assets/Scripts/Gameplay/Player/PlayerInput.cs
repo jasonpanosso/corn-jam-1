@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public event Action<float> OnMoveInput = delegate { };
-    public event System.Action OnJumpDown = delegate { };
+    public event Action OnJumpDown = delegate { };
     public event Action<Vector2> OnLeftClickDown = delegate { };
     public event Action<Vector2> OnLeftClickUp = delegate { };
     public event Action<Vector2> OnRightClickDown = delegate { };
