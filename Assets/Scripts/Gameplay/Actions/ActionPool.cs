@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // HACK/FIXME: This is mega-coupled with player input and projectileshooter.
@@ -23,7 +24,7 @@ public class ActionPool : MonoBehaviour
             return;
 
         // GameObjects could be despawned, which requires this jank logic.
-        if (activeActions.TryDequeue(out var action) && action != null)
+        if (activeActions.TryDequeue(out var action) && !action.IsUnityNull())
             action.Execute();
         else
             // retry if GO is null until valid action is found or queue is empty

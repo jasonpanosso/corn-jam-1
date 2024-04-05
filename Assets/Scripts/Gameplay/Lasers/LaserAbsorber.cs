@@ -1,4 +1,5 @@
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LaserAbsorber : MonoBehaviour, ILaserTarget
@@ -15,14 +16,8 @@ public class LaserAbsorber : MonoBehaviour, ILaserTarget
 
     private void SafelyInteract()
     {
-        if (this == null || gameObject)
-        {
-            Destroy(this);
-            return;
-        }
-
         foreach (var interactable in interactables)
-            if (interactable != null)
+            if (!interactable.IsUnityNull())
                 interactable.Interact(gameObject);
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
@@ -32,14 +33,14 @@ public class LaserEmitter : MonoBehaviour
         {
             if (laserTarget != target)
             {
-                if (target != null)
+                if (!target.IsUnityNull())
                     target.OnLaserExit();
 
                 laserTarget.OnLaserEnter(inverseDirectionMap[LaserDirection]);
                 target = laserTarget;
             }
         }
-        else if (target != null)
+        else if (!target.IsUnityNull())
         {
             target.OnLaserExit();
             target = null;
@@ -60,7 +61,7 @@ public class LaserEmitter : MonoBehaviour
     {
         lr.enabled = false;
 
-        if (target != null)
+        if (!target.IsUnityNull())
         {
             target.OnLaserExit();
             target = null;
