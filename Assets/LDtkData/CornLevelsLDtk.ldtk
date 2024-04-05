@@ -2498,7 +2498,7 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
-				"pxWid": 384,
+				"pxWid": 400,
 				"pxHei": 216,
 				"__bgColor": "#40465B",
 				"bgColor": "#40465B",
@@ -2508,7 +2508,7 @@
 				"bgPivotX": 0.5,
 				"bgPivotY": 0.5,
 				"__smartColor": "#9699A5",
-				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.0416666666666667,1.0416666666666667], "cropRect": [0,4.320000000000007,384,207.35999999999999] },
 				"externalRelPath": "CornLevelsLDtk/Hell_0.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Hell", "__tile": null, "defUid": 22, "realEditorValues": [{
@@ -2556,8 +2556,8 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
-				"pxWid": 384,
-				"pxHei": 216,
+				"pxWid": 392,
+				"pxHei": 232,
 				"__bgColor": "#40465B",
 				"bgColor": "#40465B",
 				"useAutoIdentifier": true,
@@ -2566,7 +2566,7 @@
 				"bgPivotX": 0.5,
 				"bgPivotY": 0.5,
 				"__smartColor": "#9699A5",
-				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.0740740740740742,1.0740740740740742], "cropRect": [9.517241379310377,1.4210854715202004e-14,364.96551724137925,215.99999999999997] },
 				"externalRelPath": "CornLevelsLDtk/Hell_2.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Hell", "__tile": null, "defUid": 22, "realEditorValues": [{
@@ -2585,7 +2585,7 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
-				"pxWid": 384,
+				"pxWid": 400,
 				"pxHei": 216,
 				"__bgColor": "#40465B",
 				"bgColor": "#40465B",
@@ -2595,7 +2595,7 @@
 				"bgPivotX": 0.5,
 				"bgPivotY": 0.5,
 				"__smartColor": "#9699A5",
-				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.0416666666666667,1.0416666666666667], "cropRect": [0,4.320000000000007,384,207.35999999999999] },
 				"externalRelPath": "CornLevelsLDtk/Hell_3.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Hell", "__tile": null, "defUid": 22, "realEditorValues": [{
