@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -6,19 +5,26 @@ using UnityEngine.UI;
 
 public class LevelButtonManager : MonoBehaviour
 {
-    public GameObject buttonPrefab;
-    public Transform panelParent;
-    public GameObject panelPrefab;
-    private List<GameObject> Panels = new();
-    public int ButtonsPerRow = 4;
-    void Start()
-    {
-        CreateLevelButtons();
-    }
-    void CreateLevelButtons()
+    [SerializeField]
+    private GameObject buttonPrefab;
+
+    [SerializeField]
+    private Transform panelParent;
+
+    [SerializeField]
+    private GameObject panelPrefab;
+
+    [SerializeField]
+    private int buttonsPerRow = 4;
+
+    private readonly List<GameObject> Panels = new();
+
+    private void Start() => CreateLevelButtons();
+
+    private void CreateLevelButtons()
     {
         int numberOfLevels = ServiceLocator.LevelManager.Levels.Count;
-        int numberOfPanels = Mathf.CeilToInt((float) numberOfLevels / ButtonsPerRow);
+        int numberOfPanels = Mathf.CeilToInt((float)numberOfLevels / buttonsPerRow);
 
         for (int i = 0; i < numberOfPanels; i++)
         {
@@ -30,7 +36,7 @@ public class LevelButtonManager : MonoBehaviour
         int buttonCount = 0;
         foreach (Level level in ServiceLocator.LevelManager.Levels)
         {
-            if (buttonCount >= ButtonsPerRow)
+            if (buttonCount >= buttonsPerRow)
             {
                 currentPanelIndex++;
                 buttonCount = 0;
@@ -41,22 +47,15 @@ public class LevelButtonManager : MonoBehaviour
 
             buttonText.text = "Level " + level.index;
 
-            if (level.completed)
-            {
+            if (level.unlocked)
                 button.interactable = true;
-                
-            }
             else
-            {
                 button.interactable = false;
-            }
+
             button.onClick.AddListener(() => LoadLevel(level.index));
             buttonCount++;
         }
     }
 
-    void LoadLevel (int levelNumber)
-    {
-        Debug.Log("Loading Level" + levelNumber);
-    }
+    private void LoadLevel(int levelNumber) => ServiceLocator.LevelManager.LoadLevel(levelNumber);
 }

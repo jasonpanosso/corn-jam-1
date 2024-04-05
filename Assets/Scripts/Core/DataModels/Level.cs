@@ -6,13 +6,15 @@ public class Level
     public string name = "";
     public string sceneName;
     public bool completed = false;
+    public bool unlocked = false;
 
     public Level(
         string sceneName,
         WorldType worldType,
         int index = 0,
         string name = "",
-        bool completed = false
+        bool completed = false,
+        bool unlocked = false
     )
     {
         this.sceneName = sceneName;
@@ -20,5 +22,6 @@ public class Level
         this.index = index;
         this.name = name;
         this.completed = completed;
+        this.unlocked = unlocked;
     }
 }
