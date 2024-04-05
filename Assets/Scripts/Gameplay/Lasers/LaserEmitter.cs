@@ -68,7 +68,11 @@ public class LaserEmitter : MonoBehaviour, IInteractable
         }
     }
 
-    private void Awake() => lr = GetComponent<LineRenderer>();
+    private void Awake()
+    {
+        lr = GetComponent<LineRenderer>();
+        lr.enabled = IsEmitting;
+    }
 
     public void Interact(GameObject _) => IsEmitting = !IsEmitting;
 
