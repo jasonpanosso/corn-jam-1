@@ -14,7 +14,7 @@ public class InteractableToggler : MonoBehaviour, IInteractable
 
     private bool isCountingDown = false;
 
-    private void Awake() =>
+    private void OnEnable() =>
         interactablesToToggle = _interactablesToToggle.OfType<IInteractable>().ToArray();
 
     private void Update()

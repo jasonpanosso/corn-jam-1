@@ -8,7 +8,7 @@ public class LaserAbsorber : MonoBehaviour, ILaserTarget
     private Object[] _interactables;
     private IInteractable[] interactables;
 
-    private void Awake() => interactables = _interactables.OfType<IInteractable>().ToArray();
+    private void OnEnable() => interactables = _interactables.OfType<IInteractable>().ToArray();
 
     public void OnLaserExit() => SafelyInteract();
 
