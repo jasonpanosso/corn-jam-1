@@ -106,8 +106,7 @@ public class InteractableGate : Interactable
         style.fontSize = 10;
 
         Vector3 position = transform.position;
-        position.y -= 3.5f;
-        position.x -= 2.0f;
+        position.x += 0.3f;
 
         string label = $"Gate: {state}";
 
