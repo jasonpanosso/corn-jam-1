@@ -109,3 +109,9 @@ MonoBehaviour:
     sceneName: Lab_0
     completed: 0
     unlocked: 0
+  - index: 16
+    worldType: 3
+    name: 
+    sceneName: Lab_1
+    completed: 0
+    unlocked: 0
