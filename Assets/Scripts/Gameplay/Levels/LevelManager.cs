@@ -1,7 +1,7 @@
 using System;
-using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -57,6 +57,9 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
     public void CompleteCurrentLevel()
     {
         CurrentLevel.completed = true;
+        if (CurrentLevel.index < Levels.Count)
+            Levels[CurrentLevel.index + 1].unlocked = true;
+
         SaveProgress();
         OnLevelComplete.Invoke();
     }
@@ -73,6 +76,8 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         }
 
         Levels = allLevelsData.Levels;
+        // HACK: Just set the first level to be unlocked! : )
+        Levels[0].unlocked = true;
         // HACK: stop loading progress because it's hella broken hehe
         // LoadProgress(allLevelsData.Levels);
     }
