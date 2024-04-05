@@ -2614,8 +2614,8 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
-				"pxWid": 384,
-				"pxHei": 216,
+				"pxWid": 416,
+				"pxHei": 240,
 				"__bgColor": "#40465B",
 				"bgColor": "#40465B",
 				"useAutoIdentifier": true,
@@ -2624,7 +2624,7 @@
 				"bgPivotX": 0.5,
 				"bgPivotY": 0.5,
 				"__smartColor": "#9699A5",
-				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.1111111111111112,1.1111111111111112], "cropRect": [4.800000000000011,0,374.4,216] },
 				"externalRelPath": "CornLevelsLDtk/Hell_4.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Hell", "__tile": null, "defUid": 22, "realEditorValues": [{
