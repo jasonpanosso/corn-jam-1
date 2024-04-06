@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5068381716087439818}
   - component: {fileID: 8310741213385001836}
   - component: {fileID: 4482046504331698352}
+  - component: {fileID: 7435381071188718380}
   m_Layer: 0
   m_Name: LevelGoalHell
   m_TagString: Finish
@@ -96,7 +97,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3289747af1e94f59198cd5566bf3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onEnterSFX: SFX_Sizzle
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7435381071188718380}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SFX_Sizzle
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &8310741213385001836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -194,3 +209,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.583277, y: 0.7931079}
   m_EdgeRadius: 0
+--- !u!114 &7435381071188718380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344424294288507235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f8229b83444c948a794c8aebea30dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

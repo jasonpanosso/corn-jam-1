@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractableGate : MonoBehaviour, IInteractable
 {
@@ -9,6 +10,9 @@ public class InteractableGate : MonoBehaviour, IInteractable
         Closed,
         Open,
     }
+
+    public UnityEvent OnGateOpen;
+    public UnityEvent OnGateClose;
 
     [SerializeField]
     private GateState state = GateState.Closed;
@@ -51,12 +55,14 @@ public class InteractableGate : MonoBehaviour, IInteractable
 
     private void LowerGate()
     {
+        OnGateClose.Invoke();
         StartCoroutine(MoveCoroutine(middleGate, middleStartPos, moveDuration));
         StartCoroutine(MoveCoroutine(lowerGate, lowerStartPos, moveDuration));
     }
 
     private void RaiseGate()
     {
+        OnGateOpen.Invoke();
         StartCoroutine(MoveCoroutine(middleGate, upperGate.transform.position, moveDuration));
         StartCoroutine(MoveCoroutine(lowerGate, upperGate.transform.position, moveDuration));
     }
