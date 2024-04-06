@@ -1,8 +1,12 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractableToggler : MonoBehaviour, IInteractable
 {
+    public UnityEvent OnActivation;
+    public UnityEvent OnDeactivation;
+
     [SerializeField, InterfaceType(typeof(IInteractable))]
     private Object[] _interactablesToToggle;
     private IInteractable[] interactablesToToggle;
@@ -26,6 +30,7 @@ public class InteractableToggler : MonoBehaviour, IInteractable
 
         if (curTimer <= 0f)
         {
+            OnDeactivation.Invoke();
             ToggleAll();
             isCountingDown = false;
         }
@@ -37,6 +42,7 @@ public class InteractableToggler : MonoBehaviour, IInteractable
 
         if (!isCountingDown)
         {
+            OnActivation.Invoke();
             ToggleAll();
             isCountingDown = true;
         }

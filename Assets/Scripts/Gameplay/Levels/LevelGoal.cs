@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider2D))]
 public class LevelGoal : MonoBehaviour
 {
-    [SerializeField]
-    private string onEnterSFX = "SFX_Sizzle";
+    public UnityEvent OnEnter;
 
     private bool hasTriggered = false;
 
@@ -12,9 +12,9 @@ public class LevelGoal : MonoBehaviour
     {
         if (!hasTriggered && collider.CompareTag("Player"))
         {
+            OnEnter.Invoke();
             hasTriggered = true;
             ServiceLocator.LevelManager.CompleteCurrentLevel();
-            ServiceLocator.AudioManager.PlayAudioItem(onEnterSFX);
         }
     }
 }

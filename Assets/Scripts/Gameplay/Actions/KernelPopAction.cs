@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using CareBoo.Serially;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 public class KernelPopAction : MonoBehaviour, IAction
 {
+    public UnityEvent OnPop;
+
     [TypeFilter(derivedFrom: typeof(IInteractable))]
     [SerializeField]
     private List<SerializableType> interactableTypes = new();
-
-    [SerializeField]
-    private string audioKey = "SFX_PopcornPop";
 
     [SerializeField]
     private float popRadius = 2f;
@@ -48,7 +48,7 @@ public class KernelPopAction : MonoBehaviour, IAction
             }
         }
 
-        ServiceLocator.AudioManager.PlayAudioItem(audioKey);
+        OnPop.Invoke();
         isPopped = true;
     }
 

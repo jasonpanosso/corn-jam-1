@@ -1,12 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(PlayerInput))]
 public class ProjectileShooter : MonoBehaviour
 {
-    [SerializeField]
-    private string audioItemKey = "SFX_KernelPop";
-
     [SerializeField]
     private GameObject projectilePrefab;
 
@@ -14,6 +12,7 @@ public class ProjectileShooter : MonoBehaviour
     private float fireRate = 0.3f;
 
     public event Action<GameObject> OnShoot = delegate { };
+    public UnityEvent OnShootUE;
 
     private float lastFireTime = 0f;
     private PlayerInput playerInput;
@@ -32,11 +31,10 @@ public class ProjectileShooter : MonoBehaviour
 
         GameObject projectile = Instantiate(projectilePrefab, transform.position, rotation);
         OnShoot.Invoke(projectile);
+        OnShootUE.Invoke();
 
         projectile.GetComponent<Projectile>().Launch(direction);
         lastFireTime = Time.time;
-
-        ServiceLocator.AudioManager.PlayAudioItem(audioItemKey);
     }
 
     private void Awake() => playerInput = GetComponent<PlayerInput>();
