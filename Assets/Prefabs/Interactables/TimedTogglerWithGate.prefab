@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7043022038181159383}
   - component: {fileID: 4714789262068824665}
+  - component: {fileID: 2847490042451777426}
   m_Layer: 0
-  m_Name: TimedTogglingGate
+  m_Name: TimedTogglerWithGate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +46,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c564d6f1b05f5ba7c4514038e659b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeactivation:
+    m_PersistentCalls:
+      m_Calls: []
   _interactablesToToggle:
   - {fileID: 5051917073946524176}
   timerLength: 10
+--- !u!114 &2847490042451777426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999269344570740028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f8229b83444c948a794c8aebea30dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &782307437163707860
 PrefabInstance:
   m_ObjectHideFlags: 0
