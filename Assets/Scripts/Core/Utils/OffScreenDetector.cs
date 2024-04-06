@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class OffScreenDetector : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class OffScreenDetector : MonoBehaviour
     private float boundaryCheckInterval = 1f;
 
     public event Action<GameObject> OnGameObjectOffscreen = delegate { };
+    public UnityEvent OnGameObjectOffscreenUE;
 
     private float nextBoundaryCheckTime = 0f;
 
@@ -39,7 +41,10 @@ public class OffScreenDetector : MonoBehaviour
         if (Time.time >= nextBoundaryCheckTime)
         {
             if (IsOutsideScreenBounds())
+            {
+                OnGameObjectOffscreenUE.Invoke();
                 OnGameObjectOffscreen.Invoke(gameObject);
+            }
 
             nextBoundaryCheckTime = Time.time + boundaryCheckInterval;
         }
@@ -63,4 +68,16 @@ public class OffScreenDetector : MonoBehaviour
 
         return false;
     }
+
+    private void OnEnable()
+    {
+        ServiceLocator.LevelManager.OnLevelComplete += Disable;
+    }
+
+    private void OnDisable()
+    {
+        ServiceLocator.LevelManager.OnLevelComplete -= Disable;
+    }
+
+    private void Disable() => enabled = false;
 }
