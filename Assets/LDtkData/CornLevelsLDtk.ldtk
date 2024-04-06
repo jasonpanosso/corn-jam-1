@@ -11,7 +11,7 @@
 	"iid": "f2b5a480-d7b0-11ee-9b8b-5b47641fa00c",
 	"jsonVersion": "1.5.3",
 	"appBuildId": 473703,
-	"nextUid": 218,
+	"nextUid": 219,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": null,
@@ -2879,6 +2879,35 @@
 				"worldX": -1,
 				"worldY": -1,
 				"worldDepth": 0,
+				"pxWid": 424,
+				"pxHei": 256,
+				"__bgColor": "#696A79",
+				"bgColor": null,
+				"useAutoIdentifier": true,
+				"bgRelPath": "LabBG.png",
+				"bgPos": "Cover",
+				"bgPivotX": 0.5,
+				"bgPivotY": 0.5,
+				"__smartColor": "#ADADB5",
+				"__bgPos": { "topLeftPx": [0,0], "scale": [1.1851851851851851,1.1851851851851851], "cropRect": [13.125,0,357.75,216] },
+				"externalRelPath": "CornLevelsLDtk/Lab_3.ldtkl",
+				"fieldInstances": [
+					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Lab", "__tile": null, "defUid": 22, "realEditorValues": [{
+						"id": "V_String",
+						"params": ["Lab"]
+					}] },
+					{ "__identifier": "LevelName", "__type": "String", "__value": "LEVEL_NAME", "__tile": null, "defUid": 123, "realEditorValues": [] }
+				],
+				"layerInstances": null,
+				"__neighbours": []
+			},
+			{
+				"identifier": "Lab_4",
+				"iid": "2f076b80-d7b0-11ee-8565-2730f0588241",
+				"uid": 218,
+				"worldX": -1,
+				"worldY": -1,
+				"worldDepth": 0,
 				"pxWid": 384,
 				"pxHei": 216,
 				"__bgColor": "#696A79",
@@ -2890,7 +2919,7 @@
 				"bgPivotY": 0.5,
 				"__smartColor": "#ADADB5",
 				"__bgPos": { "topLeftPx": [0,0], "scale": [1,1], "cropRect": [0,0,384,216] },
-				"externalRelPath": "CornLevelsLDtk/Lab_3.ldtkl",
+				"externalRelPath": "CornLevelsLDtk/Lab_4.ldtkl",
 				"fieldInstances": [
 					{ "__identifier": "Biome", "__type": "LocalEnum.Biome", "__value": "Lab", "__tile": null, "defUid": 22, "realEditorValues": [{
 						"id": "V_String",

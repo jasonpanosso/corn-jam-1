@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: SFX_DeathSounds
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 5534234c3d0c2fb469ce0e0fda8543d8, type: 3}
+  - {fileID: 8300000, guid: 61b52f4ee0015824a9da0272e62d4ab7, type: 3}
+  - {fileID: 8300000, guid: 850629eed1a845841b3d0065eb30b5c6, type: 3}
   volume: 1
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0
