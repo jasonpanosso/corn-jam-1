@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
@@ -8,7 +7,13 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     [SerializeField]
     private int initialAudioPoolSize = 10;
 
-    public float GlobalVolumeMod = 1f;
+    private float _globalVolumeMod = 1f;
+    public float GlobalVolumeMod
+    {
+        get => _globalVolumeMod;
+        set => _globalVolumeMod = value;
+    }
+
     private readonly Dictionary<string, AudioItem> audioItems = new();
     private readonly List<AudioSource> audioSourcePool = new();
 
@@ -16,21 +21,16 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     {
         InitializeAudioItemsFromResources();
         InitializeAudioPool();
-        
     }
 
     public void UpdateGlobalVolume(float newVolume)
     {
         GlobalVolumeMod = newVolume;
         foreach (var source in audioSourcePool)
-        {
             if (source != null)
-            {
                 source.volume *= GlobalVolumeMod;
-            }           
-        }
-        Debug.Log(newVolume);
     }
+
     private void StopAudioSources()
     {
         foreach (var source in audioSourcePool)
