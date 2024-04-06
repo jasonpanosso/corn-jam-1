@@ -275,6 +275,18 @@ MonoBehaviour:
           m_StringArgument: SFX_Sizzle
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 365038058830637556}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SFX_WinQuip
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &8310741213385001836
 SpriteRenderer:
   m_ObjectHideFlags: 0
