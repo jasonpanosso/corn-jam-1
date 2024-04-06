@@ -21,11 +21,17 @@ public class KernelPopAction : MonoBehaviour, IAction
 
     private Animator anim;
 
-    private bool isPopped = false;
+    public bool HasExecuted
+    {
+        get => _isPopped;
+        set => _isPopped = value;
+    }
+
+    private bool _isPopped = false;
 
     public void Execute()
     {
-        if (!isPopped)
+        if (!HasExecuted)
             Pop();
     }
 
@@ -49,7 +55,7 @@ public class KernelPopAction : MonoBehaviour, IAction
         }
 
         OnPop.Invoke();
-        isPopped = true;
+        HasExecuted = true;
     }
 
     private IEnumerator SwapToPopcornLayerAfterDelay()

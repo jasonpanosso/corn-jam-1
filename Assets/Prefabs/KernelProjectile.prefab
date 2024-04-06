@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -772072594715220054}
   - component: {fileID: 869505806253595864}
   - component: {fileID: 450868891240260359}
+  - component: {fileID: -2980164530733482733}
   m_Layer: 8
   m_Name: KernelProjectile
   m_TagString: Untagged
@@ -232,11 +233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0369c76c9217c20cbb8d28117a8e7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableTypes:
-  - typeId: InteractableKnockback, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - typeId: InteractableButton, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   OnPop:
     m_PersistentCalls:
       m_Calls:
@@ -252,6 +248,11 @@ MonoBehaviour:
           m_StringArgument: SFX_PopcornPop
           m_BoolArgument: 0
         m_CallState: 2
+  interactableTypes:
+  - typeId: InteractableKnockback, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeId: InteractableButton, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   popRadius: 2
   ignoreCollisionDuration: 0.1
 --- !u!114 &-772072594715220054
@@ -287,6 +288,9 @@ MonoBehaviour:
   detectAboveScreen: 0
   detectBelowScreen: 1
   boundaryCheckInterval: 1
+  OnGameObjectOffscreenUE:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &450868891240260359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,3 +303,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f8229b83444c948a794c8aebea30dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2980164530733482733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517045921475706807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9c12ba28b21828fa02184306e5f393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHitByLaser:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2378287643045907536}
+        m_TargetAssemblyTypeName: KernelPopAction, Assembly-CSharp
+        m_MethodName: Execute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LaserHitEnded:
+    m_PersistentCalls:
+      m_Calls: []

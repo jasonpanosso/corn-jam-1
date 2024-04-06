@@ -24,7 +24,11 @@ public class ActionPool : MonoBehaviour
             return;
 
         // GameObjects could be despawned, which requires this jank logic.
-        if (activeActions.TryDequeue(out var action) && !action.IsUnityNull())
+        if (
+            activeActions.TryDequeue(out var action)
+            && !action.IsUnityNull()
+            && !action.HasExecuted
+        )
             action.Execute();
         else
             // retry if GO is null until valid action is found or queue is empty
