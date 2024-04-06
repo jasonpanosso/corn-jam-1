@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac2b55cb99ed6d850b102def4d68ed7a, type: 3}
+  m_Name: SFX_Gate
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 376cdd01713e45946a5cd542864d22b1, type: 3}
+  - {fileID: 8300000, guid: 50357d306c01461429c90e47a3b5b0dd, type: 3}
+  - {fileID: 8300000, guid: 8d5512b2446e4814caa0d3d38ac9535b, type: 3}
+  - {fileID: 8300000, guid: 4414bd6390cef92438598286c1074228, type: 3}
+  - {fileID: 8300000, guid: eaacffac73b9c4140879151623f8537f, type: 3}
+  volume: 0.5
+  lowerSemitoneOffset: 0
+  upperSemitoneOffset: 0
+  loop: 0
