@@ -16,6 +16,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5534234c3d0c2fb469ce0e0fda8543d8, type: 3}
   - {fileID: 8300000, guid: 61b52f4ee0015824a9da0272e62d4ab7, type: 3}
   - {fileID: 8300000, guid: 850629eed1a845841b3d0065eb30b5c6, type: 3}
+  - {fileID: 8300000, guid: 41de9545e2a4f2d44bf28ae6ed1701d4, type: 3}
+  - {fileID: 8300000, guid: 3f0e9a92b102a304f8e73a11594e4da0, type: 3}
+  - {fileID: 8300000, guid: 3f4b07e531941c54c87825963674ef36, type: 3}
   volume: 1
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0
