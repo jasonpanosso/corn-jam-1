@@ -1016,7 +1016,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5452128256796865907, guid: 7df1dfcee1c431f4f88de1f77b3da939, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1029,6 +1030,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 492626501}
     m_Modifications:
+    - target: {fileID: 632622935331604344, guid: b02f4623cfb6b3127a62db725355f9b6, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3696600613578801580, guid: b02f4623cfb6b3127a62db725355f9b6, type: 3}
       propertyPath: m_Name
       value: LaserEmitter

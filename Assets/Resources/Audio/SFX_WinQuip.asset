@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bbb4e16ca1c3d244ab4671ac23505cd8, type: 3}
   - {fileID: 8300000, guid: 2a4c2b9b262f25496a26515e3670c504, type: 3}
   - {fileID: 8300000, guid: e1c44ef6262662c629b3e6223e749a28, type: 3}
-  volume: 1
+  volume: 2
   lowerSemitoneOffset: 0
   upperSemitoneOffset: 0
   loop: 0
