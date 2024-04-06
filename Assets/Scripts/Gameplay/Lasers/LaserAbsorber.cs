@@ -8,11 +8,24 @@ public class LaserAbsorber : MonoBehaviour, ILaserTarget
     private Object[] _interactables;
     private IInteractable[] interactables;
 
+    private int curEmitterCount = 0;
+
     private void OnEnable() => interactables = _interactables.OfType<IInteractable>().ToArray();
 
-    public void OnLaserExit() => SafelyInteract();
+    public void OnLaserExit()
+    {
+        curEmitterCount -= 1;
+        if (curEmitterCount == 0)
+            SafelyInteract();
+    }
 
-    public void OnLaserEnter(Direction _) => SafelyInteract();
+    public void OnLaserEnter(Direction _)
+    {
+        if (curEmitterCount == 0)
+            SafelyInteract();
+
+        curEmitterCount += 1;
+    }
 
     private void SafelyInteract()
     {
