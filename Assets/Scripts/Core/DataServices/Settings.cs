@@ -3,7 +3,7 @@ using UnityEngine;
 public static class Settings
 {
     private const float defaultVolumeLevel = 1.0f;
-    private static readonly string volumeKey = "VolumeLevel";
+    private const string volumeKey = "VolumeLevel";
 
     public static float VolumeLevel
     {
