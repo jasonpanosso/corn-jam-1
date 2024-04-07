@@ -9,12 +9,8 @@ public class VolumeSliderController : MonoBehaviour
     public void Awake()
     {
         slider = GetComponent<Slider>();
-        var savedVolume = Settings.VolumeLevel;
-        slider.value = savedVolume;
+        slider.value = Settings.VolumeLevel;
     }
 
-    public void OnVolumeSliderChange()
-    {
-        Settings.VolumeLevel = slider.value;
-    }
+    public void OnVolumeSliderChange() => Settings.VolumeLevel = slider.value;
 }
