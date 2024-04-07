@@ -10,12 +10,20 @@ public class InteractableButton : MonoBehaviour, IInteractable
     private Object[] _interactables;
     private IInteractable[] interactables;
 
-    private void OnEnable() => interactables = _interactables.OfType<IInteractable>().ToArray();
+    private Animator animator;
+
+    private void OnEnable()
+    {
+        interactables = _interactables.OfType<IInteractable>().ToArray();
+        animator = GetComponent<Animator>();
+    }
 
     public void Interact(GameObject _)
     {
         OnActivation.Invoke();
         foreach (var interactable in interactables)
             interactable.Interact(gameObject);
+
+        animator.SetTrigger("IsHit");
     }
 }
