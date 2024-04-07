@@ -66,7 +66,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 
         SaveProgress(save);
 
-        if (CurrentLevel.index < Levels.Count)
+        if (CurrentLevel.index + 1 < Levels.Count)
         {
             var next = LevelSaveData[CurrentLevel.index + 1];
             if (!next.unlocked)
