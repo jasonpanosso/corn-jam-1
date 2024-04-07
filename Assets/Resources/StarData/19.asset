@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 19
   m_EditorClassIdentifier: 
   levelIndex: 19
-  threeStarShots: 0
-  twoStarShots: 0
-  oneStarShots: 0
+  threeStarShots: 11
+  twoStarShots: 14
+  oneStarShots: 20

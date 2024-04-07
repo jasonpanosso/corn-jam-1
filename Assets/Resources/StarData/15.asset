@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 15
   m_EditorClassIdentifier: 
   levelIndex: 15
-  threeStarShots: 0
-  twoStarShots: 0
-  oneStarShots: 0
+  threeStarShots: 6
+  twoStarShots: 8
+  oneStarShots: 11
