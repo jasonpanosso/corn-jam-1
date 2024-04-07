@@ -7,7 +7,7 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
     [SerializeField]
     private int initialAudioPoolSize = 10;
 
-    private float _globalVolumeMod = 1f;
+    private float _globalVolumeMod;
     public float GlobalVolumeMod
     {
         get => _globalVolumeMod;
@@ -19,6 +19,7 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
 
     private void Awake()
     {
+        GlobalVolumeMod = Settings.VolumeLevel;
         InitializeAudioItemsFromResources();
         InitializeAudioPool();
     }
@@ -31,7 +32,7 @@ public class AudioManager : GenericSingletonMonoBehaviour<AudioManager>
                 source.volume *= GlobalVolumeMod;
     }
 
-    private void StopAudioSources()
+    public void StopAudioSources()
     {
         foreach (var source in audioSourcePool)
             if (source != null)

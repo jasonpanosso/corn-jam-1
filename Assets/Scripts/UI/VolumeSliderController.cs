@@ -1,12 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Slider))]
 public class VolumeSliderController : MonoBehaviour
 {
+    private Slider slider;
+
+    public void Awake()
+    {
+        slider = GetComponent<Slider>();
+        var savedVolume = Settings.VolumeLevel;
+        slider.value = savedVolume;
+    }
+
     public void OnVolumeSliderChange()
     {
-        ServiceLocator.AudioManager.UpdateGlobalVolume(GetComponent<Slider>().value);
+        Settings.VolumeLevel = slider.value;
     }
 }

@@ -52,6 +52,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitToMainMenu()
     {
+        ServiceLocator.AudioManager.StopAudioSources();
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
         isPaused = false;
