@@ -29,10 +29,15 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
     {
         OnLevelLoadBegin.Invoke();
 
-        if (levelIndex < 0 || levelIndex >= Levels.Count)
+        if (levelIndex < 0)
             Debug.LogError(
                 $"levelIndex passed to LevelManager.LoadLevel out of range: {levelIndex}"
             );
+        else if (levelIndex >= Levels.Count)
+        {
+            SceneManager.LoadScene("Menu");
+            return;
+        }
 
         Level nextLevel = Levels[levelIndex];
         StartCoroutine(LoadLevelAsync(nextLevel));
