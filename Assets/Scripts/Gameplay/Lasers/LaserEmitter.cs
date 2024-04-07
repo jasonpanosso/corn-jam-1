@@ -18,6 +18,7 @@ public class LaserEmitter : MonoBehaviour, IInteractable
         get => _isEmitting;
         set
         {
+            lr.SetPositions(new Vector3[] { transform.position, transform.position });
             lr.enabled = value;
             _isEmitting = value;
 
