@@ -64,8 +64,6 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         var starData = StarDataService.StarData[save.index];
         save.stars = starData.GetStarsFromShotsFired(shotsFired);
 
-        Debug.Log(save.stars);
-
         SaveProgress(save);
 
         if (CurrentLevel.index < Levels.Count)
