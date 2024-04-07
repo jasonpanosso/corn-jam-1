@@ -37,6 +37,8 @@ public class PlayerInput : MonoBehaviour
 
     public void DisableInput() => inputEnabled = false;
 
+    public void DisableInput(int _) => inputEnabled = false;
+
     public float GetHorizontalInput() => Input.GetAxis("Horizontal");
 
     public bool GetJumpDown() => Input.GetButtonDown("Jump");

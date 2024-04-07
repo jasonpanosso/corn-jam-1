@@ -14,7 +14,9 @@ public class LevelGoal : MonoBehaviour
         {
             OnEnter.Invoke();
             hasTriggered = true;
-            ServiceLocator.LevelManager.CompleteCurrentLevel();
+
+            var shotsFired = collider.GetComponent<ShotCounter>().ShotsFired;
+            ServiceLocator.LevelManager.CompleteCurrentLevel(shotsFired);
         }
     }
 }

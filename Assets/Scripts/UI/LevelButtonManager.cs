@@ -34,25 +34,22 @@ public class LevelButtonManager : MonoBehaviour
 
         int currentPanelIndex = 0;
         int buttonCount = 0;
-        foreach (Level level in ServiceLocator.LevelManager.Levels)
+        foreach (var level in ServiceLocator.LevelManager.LevelSaveData)
         {
             if (buttonCount >= buttonsPerRow)
             {
                 currentPanelIndex++;
                 buttonCount = 0;
             }
+
             GameObject buttonObj = Instantiate(buttonPrefab, Panels[currentPanelIndex].transform);
             Button button = buttonObj.GetComponent<Button>();
             TextMeshProUGUI buttonText = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
 
-            buttonText.text = "Level " + level.index;
-
-            if (level.unlocked)
-                button.interactable = true;
-            else
-                button.interactable = false;
-
+            buttonText.text = "Level " + (level.index + 1);
+            button.interactable = level.unlocked;
             button.onClick.AddListener(() => LoadLevel(level.index));
+
             buttonCount++;
         }
     }

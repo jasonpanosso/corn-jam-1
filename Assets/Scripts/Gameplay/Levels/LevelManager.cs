@@ -8,13 +8,14 @@ using UnityEngine.SceneManagement;
 [DefaultExecutionOrder(-20)]
 public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 {
-    public event Action OnLevelComplete = delegate { };
+    public event Action<int> OnLevelComplete = delegate { };
     public event Action OnLevelLoaded = delegate { };
     public event Action OnLevelLoadBegin = delegate { };
 
     [SerializeField]
     private string allLevelsDataResourcePath = "AllLevelsData";
 
+    public List<LevelSaveData> LevelSaveData { get; private set; } = new();
     public List<Level> Levels { get; private set; } = new();
     public Level CurrentLevel { get; private set; }
 
@@ -54,14 +55,30 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
 
     public void RestartLevel() => LoadLevel(CurrentLevel.index);
 
-    public void CompleteCurrentLevel()
+    public void CompleteCurrentLevel(int shotsFired)
     {
-        CurrentLevel.completed = true;
-        if (CurrentLevel.index < Levels.Count)
-            Levels[CurrentLevel.index + 1].unlocked = true;
+        var save = LevelSaveData[CurrentLevel.index];
+        save.completed = true;
+        save.unlocked = true;
 
-        SaveProgress();
-        OnLevelComplete.Invoke();
+        var starData = StarDataService.StarData[save.index];
+        save.stars = starData.GetStarsFromShotsFired(shotsFired);
+
+        Debug.Log(save.stars);
+
+        SaveProgress(save);
+
+        if (CurrentLevel.index < Levels.Count)
+        {
+            var next = LevelSaveData[CurrentLevel.index + 1];
+            if (!next.unlocked)
+            {
+                next.unlocked = true;
+                SaveProgress(next);
+            }
+        }
+
+        OnLevelComplete.Invoke(save.stars);
     }
 
     private void InitializeLevels()
@@ -76,10 +93,7 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         }
 
         Levels = allLevelsData.Levels;
-        // HACK: Just set the first level to be unlocked! : )
-        Levels[0].unlocked = true;
-        // HACK: stop loading progress because it's hella broken hehe
-        // LoadProgress(allLevelsData.Levels);
+        LoadProgress(allLevelsData.Levels);
     }
 
     private void TrySetCurrentLevelFromSceneName()
@@ -97,19 +111,16 @@ public class LevelManager : GenericSingletonMonoBehaviour<LevelManager>
         CurrentLevel = cur ?? Levels[0];
     }
 
-    private void LoadProgress(IEnumerable<Level> levelsWithoutProgression)
+    private void LoadProgress(IEnumerable<Level> levels)
     {
-        var levelsWithProgression = PersistentLevelProgressDataStorage.LoadLevelProgression(
-            levelsWithoutProgression
-        );
+        var saveData = PersistentLevelProgressDataStorage.LoadLevelSaveData(levels);
 
-        if (levelsWithProgression.Count() != 0)
-            Levels = levelsWithProgression.ToList();
-        else
-            Levels = levelsWithoutProgression.ToList();
+        LevelSaveData = saveData.ToList();
+        LevelSaveData[0].unlocked = true;
     }
 
-    private void SaveProgress() => PersistentLevelProgressDataStorage.SaveLevelProgress(Levels);
+    private void SaveProgress(LevelSaveData toSave) =>
+        PersistentLevelProgressDataStorage.SaveLevelSaveData(toSave);
 
 #if UNITY_EDITOR
     protected override void OnEnable()

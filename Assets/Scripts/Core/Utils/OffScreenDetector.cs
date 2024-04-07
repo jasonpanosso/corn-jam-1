@@ -79,5 +79,5 @@ public class OffScreenDetector : MonoBehaviour
         ServiceLocator.LevelManager.OnLevelComplete -= Disable;
     }
 
-    private void Disable() => enabled = false;
+    private void Disable(int _) => enabled = false;
 }

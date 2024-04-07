@@ -7,10 +7,10 @@ public class PostLevelSummary : MonoBehaviour
 
     private StarAnimator anim;
 
-    public void Show()
+    public void Show(int stars)
     {
         postLevelPanel.SetActive(true);
-        anim.ShowStars(3);
+        anim.ShowStars(stars);
     }
 
     public void RetryLevel()

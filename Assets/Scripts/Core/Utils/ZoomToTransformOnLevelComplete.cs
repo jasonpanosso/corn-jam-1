@@ -11,7 +11,7 @@ public class ZoomToTransformOnLevelComplete : MonoBehaviour
     [SerializeField]
     private float zoomFactor = 2.5f;
 
-    private void PlayZoomCutscene()
+    private void PlayZoomCutscene(int _)
     {
         CameraMovementEvent cme =
             new(transform.position, zoomStartTime, zoomDuration, zoomFactor: zoomFactor);
