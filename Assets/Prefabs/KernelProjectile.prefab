@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 869505806253595864}
   - component: {fileID: 450868891240260359}
   - component: {fileID: -2980164530733482733}
-  - component: {fileID: 4948438299889800100}
   m_Layer: 8
   m_Name: KernelProjectile
   m_TagString: Untagged
@@ -334,18 +333,3 @@ MonoBehaviour:
   LaserHitEnded:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4948438299889800100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7517045921475706807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c001b1b83998a847baa12d71a276128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kernelPopAction: {fileID: -2378287643045907536}
-  childAnimator: {fileID: 0}
-  animationTrigger: Pop
